@@ -81,14 +81,17 @@ app.get('/ui/madi.png', function (req, res) {
 app.get('/ui/main.js', function (req, res) {
      res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
+
+app.get('/test', function (req, res) {
+  res.send('test requested and served');
+});
+
 app.get('/:articleName', function (req, res) {
   var articleName = req.params.articleName;    
   res.send(createTemplate(article[articleName]));
 });
 
-app.get('/test', function (req, res) {
-  res.send('test requested and served');
-});
+
 
 app.get('/about-Me', function (req, res) {
   res.send('About me requested');
