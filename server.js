@@ -87,7 +87,7 @@ app.get('/:articleName', function (req, res) {
 });
 
 
-app.get('/aboutMe', function (req, res) {
+app.get('/about-Me', function (req, res) {
   res.send('About me requested');
 });
 
