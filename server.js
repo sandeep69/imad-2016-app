@@ -88,7 +88,7 @@ app.get('/:articleName', function (req, res) {
 
 
 app.get('/aboutMe.html', function (req, res) {
-    alert("i am here");
+    console.log("I am here");
   res.sendFile(path.join(__dirname, 'ui', 'aboutMe.html'));
 });
 
