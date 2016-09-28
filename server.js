@@ -86,6 +86,9 @@ app.get('/:articleName', function (req, res) {
   res.send(createTemplate(article[articleName]));
 });
 
+app.get('/test', function (req, res) {
+  res.send('test requested and served');
+});
 
 app.get('/about-Me', function (req, res) {
   res.send('About me requested');
