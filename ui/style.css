@@ -46,6 +46,7 @@ body {
 .menu {
     background:url(http://4.bp.blogspot.com/-GrqvdXuW17w/Ud2KEawCwOI/AAAAAAAAAb0/yO-WCD3NtNE/s1600/Moroccan+Pattern.jpg);
      left: -285px;  /* start off behind the scenes */
+     margin-top:0;
       height: 100%;
       position: fixed;
       width: 285px;
