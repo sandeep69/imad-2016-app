@@ -91,6 +91,10 @@ app.get('/ui/app.js', function (req, res) {
      res.sendFile(path.join(__dirname, 'ui', 'app.js'));
 });
 
+app.get('/ui/app.js', function (req, res) {
+     res.sendFile('//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js');
+});
+
 
 app.get('/:articleName', function (req, res) {
   var articleName = req.params.articleName;    
