@@ -33,10 +33,9 @@ body {
 /*About Me */
 .aboutBody {
     background:url(https://s-media-cache-ak0.pinimg.com/564x/8b/98/b7/8b98b71ae62f2762c0548249eca5106d.jpg);
-    margin:0 auto;
+    left:0;
     text-align:left;
     max-width: 800px;
-
     padding-left:20;
     padding-right:20;
     font-size:150%;
