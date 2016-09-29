@@ -87,6 +87,10 @@ app.get('/aboutMe', function (req, res) {
      res.sendFile(path.join(__dirname, 'ui', 'aboutMe.html'));
 });
 
+app.get('/app.js', function (req, res) {
+     res.sendFile(path.join(__dirname, 'ui', 'app.js'));
+});
+
 
 app.get('/:articleName', function (req, res) {
   var articleName = req.params.articleName;    
