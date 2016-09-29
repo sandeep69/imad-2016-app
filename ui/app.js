@@ -5,7 +5,7 @@ var main = function() {
         $('.menu').animate({
             left:'0px'
         },200);
-        $('.aboutBody').animate({
+        $('.menuHeading').animate({
             left:'400px'
         },200);
     });
