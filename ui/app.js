@@ -6,7 +6,7 @@ var main = function() {
             left:'0px'
         },200);
         $('.menuHeading').animate({
-            left:'400px'
+            left:'0px'
         },200);
     });
 
