@@ -8,7 +8,7 @@ var main = function() {
         $('.aboutBody').animate({
             left:'285px'
         },200);
-        })
+        });
     });
 
 };
