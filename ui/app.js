@@ -1,4 +1,5 @@
 var main = function() {
+    alert('app.js loaded');
     $('.menuHeading').click(function() {
         alert('clicked menu');
         $('.menu').animate({
