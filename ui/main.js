@@ -8,6 +8,7 @@ button.onclick = function(){
     
     //check if response status has changed
     request.onreadystatechange = function(){
+          alert("got response successfully");
         //check it result has been loaded
         if(request.readyState === XMLHttpRequest.DONE){
             //check if it was a success
