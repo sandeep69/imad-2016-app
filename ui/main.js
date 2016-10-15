@@ -16,6 +16,9 @@ button.onclick = function(){
                 span.innerHTML = counter.toString(); 
             }
         }
+        //make a request to get the counter 
+        request.open('GET', 'http://sandeep69.imad.hasura-app.io/counter',true);
+        request.send(null);
     }
     
 }
