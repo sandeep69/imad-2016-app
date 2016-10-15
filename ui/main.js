@@ -4,6 +4,7 @@ var button= document.getElementById("counter");
 button.onclick = function(){
     //get the response
     var request = new XMLHttpRequest();
+    alert("got reques");
     
     //check if response status has changed
     request.onreadystatechange = function(){
