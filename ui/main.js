@@ -12,6 +12,7 @@ button.onclick = function(){
         if(request.readyState === XMLHttpRequest.DONE){
             //check if it was a success
             if (request.status === 200) {
+                 alert("got response successfully");
                 var counter = request.responseText;
                 var span= document.getElementById("count");
                 span.innerHTML = counter.toString(); 
