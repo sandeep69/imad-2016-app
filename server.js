@@ -51,7 +51,7 @@ var htmlTemplate= `<html>
                 <hr/>
             </div>
             <div>
-                <h2 id="PH"> ${heading}</h2>
+                <h2 id="myHeader"> ${heading}</h2>
             </div>
             <div>
                 <h3>Date: ${date}</h3>
