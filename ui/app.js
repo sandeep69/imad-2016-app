@@ -41,6 +41,13 @@ commentSB.onclick = function(){
      var page='';
     page=pageH.innerHTML; 
     alert(pageH.innerHTML);
+    
+    for(var i=0;i<page.length;i++){
+        if (page[i]==='w') {
+         alert("article2 detected");
+         page='article-two';
+    }
+    }
     if (page === "Article-two")
     alert("equal");
      if (pageH.innerHTML === 'Article one') {
