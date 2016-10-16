@@ -5,6 +5,65 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var article = {
+    'article-one': {
+                    title:"Article One - Susan",
+                    heading:"Article One",
+                    date:"24 September 2016",
+                    content:`<p>This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool</p>
+                                <p>This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool</p>
+                                <p>This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool</p>`
+                    
+                },
+    'article-two': {
+                    title:"Article two - Susan",
+                    heading:"Article two",
+                    date:"24 September 2016",
+                    content:`<p>This is the second article. I am so excited. This is pretty cool. This is the second article. I am so excited. This is pretty cool. This is the second article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the second article. I am so excited. This is pretty cool</p>
+                                <p>This is the second article. I am so excited. This is pretty cool. This is the second article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the second article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the second article. I am so excited. This is pretty cool</p>
+                                <p>This is the second article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the second article. I am so excited. This is pretty cool. This is the second article. I am so excited. This is pretty cool. This is the second article. I am so excited. This is pretty cool. This is the second article. I am so excited. This is pretty cool</p>`
+                },
+    'article-three': {
+            title:"Article three - Susan",
+                    heading:"Article three",
+                    date:"24 September 2016",
+                    content:`<p>This is the third article. I am so excited. This is pretty cool. This is the third article. I am so excited. This is pretty cool. This is the third article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the third article. I am so excited. This is pretty cool. This is the third article. I am so excited. This is pretty cool</p>`
+                },
+    };
+
+function createTemplate(data){
+var title = data.title;
+var heading = data.heading;
+var date = data.date;
+var content = data.content;
+
+var htmlTemplate= `<html>
+
+    <head>
+        <title> ${title}</title>
+        <link rel="stylesheet" href="/ui/style.css/">
+    </head>
+    <body>
+        
+        <div class="container">
+            <div>
+                <a href="/"> Home</a>
+                <hr/>
+            </div>
+            <div>
+                <h2> ${heading}</h2>
+            </div>
+            <div>
+                <h3>Date: ${date}</h3>
+            </div>
+            <div>
+                ${content}
+            </div>
+        </div>
+    </body>
+</html>`;
+return htmlTemplate;
+}
 
 
 app.get('/', function (req, res) {
@@ -34,7 +93,14 @@ app.get('/name_list', function (req, res) {
     var user = req.query.name;
     names.push(user);
      res.send(JSON.stringify(names));
+     
 });
+
+app.get('/:articleName', function (req, res) {
+  var articleName = req.params.articleName;    
+  res.send(createTemplate(article[articleName]));
+});
+
 
 
 
