@@ -30,8 +30,8 @@ app.get('/counter', function (req, res) {
 });
 
 var names=[];
-app.get('/name_list/:name', function (req, res) {
-    var user = req.params.name;
+app.get('/name_list', function (req, res) {
+    var user = req.query.name;
     names.push(user);
      res.send(JSON.stringify(names));
 });
