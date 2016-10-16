@@ -60,8 +60,8 @@ var htmlTemplate= `<html>
                 ${content}
             </div>
             <hr/>
-            <input type="text" id="comment" placeholder="Comment">
-            <input type="submit" value="Submit" id="commentB">
+            <input type="text" id="comment" placeholder="Comment"></input>
+            <input type="submit" value="Submit" id="commentB"></input>
             <ul id="commentList">
             </ul>
         </div>
