@@ -109,6 +109,7 @@ app.get('/ui/app.js', function (req, res) {
 
 var comments=[];
 app.get('/comment_list', function (req, res) {
+    alert("received comment request");
     var feedback = req.query.comment;
     names.push(feedback);
      res.send(JSON.stringify(comments));
