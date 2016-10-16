@@ -1,4 +1,4 @@
-
+    alert(here);
 var button= document.getElementById("counter");
 
 button.onclick = function(){
@@ -25,6 +25,11 @@ button.onclick = function(){
   
     request.open('GET', 'http://sandeep69.imad.hasura-app.io/counter',true);
     request.send(null);
+    
+    
+    //to modify the list
+    
+    
     alert(here);
     var names = ['name1','name2','name3','name4'];
     var list='';
