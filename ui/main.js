@@ -1,4 +1,4 @@
-    alert('here');
+
 var button= document.getElementById("counter");
 
 button.onclick = function(){
@@ -30,7 +30,6 @@ button.onclick = function(){
     //to modify the list
     
     
-    alert('here');
     var names = ['name1','name2','name3','name4'];
     var list='';
     for(var i=0; i<names.length;i++){
