@@ -35,7 +35,8 @@ commentSB.onclick = function(){
     
     };
      var user = document.getElementById("comment");
-    request.open('GET', 'http://sandeep69.imad.hasura-app.io/article-one/comment_list?comment='+user.value,true);
+
+    request.open('GET', 'http://sandeep69.imad.hasura-app.io/comment_list?comment='+user.value,true);
     request.send(null);
  
 };
