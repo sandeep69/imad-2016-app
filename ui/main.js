@@ -70,12 +70,13 @@ submitB.onclick = function(){
 
 //adding comments in article
 
-var commentSB= document.getElementById('submitButton');
+var commentSB= document.getElementById('commentB');
 
 commentSB.onclick = function(){
     //get the response
     var request = new XMLHttpRequest();
    
+    alert("submit clicked");
     
     //check if response status has changed
     request.onreadystatechange = function(){
