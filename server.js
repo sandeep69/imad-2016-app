@@ -103,6 +103,10 @@ app.get('/name_list', function (req, res) {
      
 });
 
+app.get('/ui/app.js', function (req, res) {
+     res.sendFile(path.join(__dirname, 'ui', 'app.js'));
+});
+
 var comments=[];
 app.get('/comment_list', function (req, res) {
     var feedback = req.query.comment;
