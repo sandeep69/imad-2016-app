@@ -40,13 +40,13 @@ commentSB.onclick = function(){
      
      var page='';
     page=pageH.innerHTML; 
-    alert(pageH.value);
+    alert(pageH.innerHTML);
     if (page === "Article-two")
     alert("equal");
      if (pageH.innerHTML === 'Article one') {
          page='article-one';
      }
-     else if(pageH.innerHTML === 'Article two') {
+     else if(pageH.innerHTML === 'Article-two') {
          alert("article2 detected");
          page='article-two';
      }
