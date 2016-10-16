@@ -40,7 +40,7 @@ commentSB.onclick = function(){
      
      var page='';
     page=pageH.innerHTML; 
-    alert(pageH.innerHTML);
+    alert(pageH.value);
     if (page === "Article-two")
     alert("equal");
      if (pageH.innerHTML === 'Article one') {
