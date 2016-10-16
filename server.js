@@ -8,7 +8,7 @@ app.use(morgan('combined'));
 var article = {
     'article-one': {
                     title:"Article One - Susan",
-                    heading:"Article One",
+                    heading:"Article one",
                     date:"24 September 2016",
                     content:`<p>This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool</p>
                                 <p>This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool</p>
@@ -51,7 +51,7 @@ var htmlTemplate= `<html>
                 <hr/>
             </div>
             <div>
-                <h2> ${heading}</h2>
+                <h2 id="pageheading"> ${heading}</h2>
             </div>
             <div>
                 <h3>Date: ${date}</h3>
@@ -107,12 +107,12 @@ app.get('/ui/app.js', function (req, res) {
      res.sendFile(path.join(__dirname, 'ui', 'app.js'));
 });
 
-var comments=[];
-app.get('/comment_list', function (req, res) {
-
+var comments={'article-one':[], 'article-two':[], 'article-three':[]};
+app.get('/:an/comment_list', function (req, res) {
+    var an = req.params.an;
     var feedback = req.query.comment;
-    comments.push(feedback);
-     res.send(JSON.stringify(comments));
+    comments[an].push(feedback);
+     res.send(JSON.stringify(comments[an]));
      
 });
 
