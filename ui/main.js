@@ -62,7 +62,7 @@ submitB.onclick = function(){
     
     };
      var user = document.getElementById("name");
-    request.open('GET', 'http://sandeep69.imad.hasura-app.io/name_list?name='+user,true);
+    request.open('GET', 'http://sandeep69.imad.hasura-app.io/name_list?name='+user.value,true);
     request.send(null);
  
 };
