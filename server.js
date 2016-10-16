@@ -109,7 +109,7 @@ app.get('/ui/app.js', function (req, res) {
 
 var comments=[];
 app.get('article-one/comment_list', function (req, res) {
-    alert("received comment request");
+
     var feedback = req.query.comment;
     comments.push(feedback);
      res.send(JSON.stringify(comments));
@@ -117,7 +117,7 @@ app.get('article-one/comment_list', function (req, res) {
 });
 
 app.get('/:articleName', function (req, res) {
-  console.log("received article req");
+
   var articleName = req.params.articleName;    
   res.send(createTemplate(article[articleName]));
 });
