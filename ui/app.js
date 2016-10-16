@@ -56,12 +56,7 @@ commentSB.onclick = function(){
          page='article-three';
      }
     }
-    if (page === "Article-two")
-    alert("equal");
-     if (pageH.innerHTML === 'Article one') {
-         page='article-one';
-     }
-     
+    
 
     request.open('GET', 'http://sandeep69.imad.hasura-app.io/'+page+'/comment_list?comment='+user.value,true);
     request.send(null);
