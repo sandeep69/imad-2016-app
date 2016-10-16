@@ -29,8 +29,11 @@ app.get('/counter', function (req, res) {
      res.send(counter.toString());
 });
 
-app.get('/ui/app.js', function (req, res) {
-     res.sendFile(path.join(__dirname, 'ui', 'app.js'));
+var names=[];
+app.get('/name_list/:name', function (req, res) {
+    var user = req.params.name;
+    names.push(user);
+     res.send(JSON.stringify(names));
 });
 
 
