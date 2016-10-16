@@ -41,14 +41,14 @@ commentSB.onclick = function(){
      var page='';
  
     alert(pageH.innerHTML);
-     if (pageH.innerHTML === 'article one') {
+     if (pageH.innerHTML === 'Article one') {
          page='article-one';
      }
-     else if(pageH.innerHTML === 'article two') {
+     else if(pageH.innerHTML === 'Article two') {
          alert("article2 detected");
          page='article-two';
      }
-     else if(pageH.innerHTML === 'article three') {
+     else if(pageH.innerHTML === 'Article three') {
          page='article-three';
      }
 
