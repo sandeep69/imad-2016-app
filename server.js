@@ -17,7 +17,7 @@ var article = {
                 },
     'article-two': {
                     title:"Article two - Susan",
-                    heading:"Article two",
+                    heading:"Article-two",
                     date:"24 September 2016",
                     content:`<p>This is the second article. I am so excited. This is pretty cool. This is the second article. I am so excited. This is pretty cool. This is the second article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the second article. I am so excited. This is pretty cool</p>
                                 <p>This is the second article. I am so excited. This is pretty cool. This is the second article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the second article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the second article. I am so excited. This is pretty cool</p>
