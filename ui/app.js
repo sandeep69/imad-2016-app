@@ -46,20 +46,22 @@ commentSB.onclick = function(){
         if (page[i]==='w') {
          alert("article2 detected");
          page='article-two';
-    }
+        }
+        else if(page[i] === 'n') {
+         alert("article1 detected");
+         page='article-one';
+     }
+     else if(page[i] === 'h') {
+          alert("article3 detected");
+         page='article-three';
+     }
     }
     if (page === "Article-two")
     alert("equal");
      if (pageH.innerHTML === 'Article one') {
          page='article-one';
      }
-     else if(pageH.innerHTML === 'Article-two') {
-         alert("article2 detected");
-         page='article-two';
-     }
-     else if(pageH.innerHTML === 'Article three') {
-         page='article-three';
-     }
+     
 
     request.open('GET', 'http://sandeep69.imad.hasura-app.io/'+page+'/comment_list?comment='+user.value,true);
     request.send(null);
