@@ -70,7 +70,7 @@ submitB.onclick = function(){
 
 //adding comments in article
 
-window.onload = function() {
+
 var commentSB= document.getElementById('commentB');
     alert("submit clicked");
 commentSB.onclick = function(){
@@ -108,5 +108,4 @@ commentSB.onclick = function(){
     request.open('GET', 'http://sandeep69.imad.hasura-app.io/article-one/comment_list?comment='+user.value,true);
     request.send(null);
  
-};
 };
