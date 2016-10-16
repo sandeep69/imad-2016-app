@@ -38,7 +38,7 @@ commentSB.onclick = function(){
      var pageH = document.getElementById("myHeader");
 
      
-     var page;
+     var page='';
  
     alert(pageH.innerHTML);
      if (pageH.innerHTML === 'article one') {
