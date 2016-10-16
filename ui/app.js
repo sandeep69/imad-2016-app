@@ -45,6 +45,7 @@ commentSB.onclick = function(){
          page='article-one';
      }
      else if(pageH.innerHTML === 'article two') {
+         alert("article2 detected");
          page='article-two';
      }
      else if(pageH.innerHTML === 'article three') {
