@@ -29,13 +29,38 @@ button.onclick = function(){
     
     //to modify the list
     
+var submit= document.getElementById("submitButton");
+
+submit.onclick = function(){
+    //get the response
+    var request = new XMLHttpRequest();
+   
     
+    //check if response status has changed
+    request.onreadystatechange = function(){
+         
+        //check it result has been loaded
+        if(request.readyState === XMLHttpRequest.DONE){
+            //check if it was a success
+            if (request.status === 200) {
+                
+                var names = request.responseText;
+                names = JSON.parse(names);
+                var list='';
+                for(var i=0; i<names.length;i++){
+                    list= list+ '<li>' + names[i] + '</li>';
+                }
+                var nameList = document.getElementById("names");
+                nameList.innerHTML = list;
+            }
+        }
+        //make a request to get the counter 
+        
+    };
+    var user = document.getElementById("name")
+    request.open('GET', 'http://sandeep69.imad.hasura-app.io/name_list?name='+user,true);
+    request.send(null);
+  
     var names = ['name1','name2','name3','name4'];
-    var list='';
-    for(var i=0; i<names.length;i++){
-        list= list+ '<li>' + names[i] + '</li>';
-        alert(i);
-    }
-    var nameList = document.getElementById("names");
-    nameList.innerHTML = list;
+    
 };
