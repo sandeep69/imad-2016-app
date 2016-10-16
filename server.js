@@ -108,7 +108,7 @@ app.get('/ui/app.js', function (req, res) {
 });
 
 var comments=[];
-app.get('article-one/comment_list', function (req, res) {
+app.get('/comment_list', function (req, res) {
 
     var feedback = req.query.comment;
     comments.push(feedback);
