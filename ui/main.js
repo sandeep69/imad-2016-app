@@ -71,7 +71,7 @@ submitB.onclick = function(){
 //adding comments in article
 
 var commentSB= document.getElementById('commentB');
-
+    alert("submit clicked");
 commentSB.onclick = function(){
     //get the response
     var request = new XMLHttpRequest();
