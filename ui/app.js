@@ -40,7 +40,7 @@ commentSB.onclick = function(){
      
      var page;
  
-
+    alert(pageH.innerHTML);
      if (pageH.innerHTML === 'article one') {
          page='article-one';
      }
