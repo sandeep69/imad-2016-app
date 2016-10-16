@@ -39,15 +39,15 @@ commentSB.onclick = function(){
 
      
      var page;
-     page = pageH.innerHTML;
-     alert(page);
-     if (pageH.value === 'article one') {
+ 
+
+     if (pageH.innerHTML === 'article one') {
          page='article-one';
      }
-     else if(pageH.value === 'article two') {
+     else if(pageH.innerHTML === 'article two') {
          page='article-two';
      }
-     else if(pageH.value === 'article three') {
+     else if(pageH.innerHTML === 'article three') {
          page='article-three';
      }
 
