@@ -36,7 +36,7 @@ commentSB.onclick = function(){
     };
      var user = document.getElementById("comment");
      var pageH = document.getElementById("myHeader");
-     pageH.innerHTML = 'NEW';
+   ;
      
      var page;
      page = pageH.innerHTML;
