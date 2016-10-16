@@ -37,7 +37,10 @@ commentSB.onclick = function(){
      var user = document.getElementById("comment");
      var pageH = document.getElementById("myHeader");
      pageH.innerHTML = 'NEW';
+     
      var page;
+     page = pageH.value;
+     alert(page);
      if (pageH.value === 'article one') {
          page='article-one';
      }
