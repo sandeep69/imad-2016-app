@@ -35,7 +35,7 @@ commentSB.onclick = function(){
     
     };
      var user = document.getElementById("comment");
-     var pageH=document.getElementById("PH");
+     var pageH=document.getElementById("myHeader");
         alert(pageH.value);
      var page;
      if (pageH.value === 'article one') page='article-one';
