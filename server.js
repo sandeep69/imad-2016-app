@@ -59,6 +59,11 @@ var htmlTemplate= `<html>
             <div>
                 ${content}
             </div>
+            <hr/>
+            <input type="text" id="comment" placeholder="Comment">
+            <input type="submit" value="Submit" id="submitButton">
+            <ul id="commentList">
+            </ul>
         </div>
     </body>
 </html>`;
@@ -93,6 +98,14 @@ app.get('/name_list', function (req, res) {
     var user = req.query.name;
     names.push(user);
      res.send(JSON.stringify(names));
+     
+});
+
+var comments=[];
+app.get('/comment', function (req, res) {
+    var feedback = req.query.comment;
+    names.push(feedback);
+     res.send(JSON.stringify(comments));
      
 });
 
