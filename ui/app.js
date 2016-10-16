@@ -41,7 +41,7 @@ commentSB.onclick = function(){
      var page='';
     page=pageH.innerHTML; 
     alert(pageH.innerHTML);
-    if (page === "Article two")
+    if (page === "Article-two")
     alert("equal");
      if (pageH.innerHTML === 'Article one') {
          page='article-one';
