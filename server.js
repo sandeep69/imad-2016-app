@@ -59,6 +59,7 @@ var htmlTemplate= `<html>
             <div>
                 ${content}
             </div>
+            <p id="check">Susan</p>
             <hr/>
             <input type="text" id="comment" placeholder="Comment"></input>
             <input type="submit" value="Submit" id="commentB"></input>
