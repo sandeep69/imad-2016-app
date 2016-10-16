@@ -25,13 +25,13 @@ button.onclick = function(){
   
     request.open('GET', 'http://sandeep69.imad.hasura-app.io/counter',true);
     request.send(null);
+};    
     
+//to modify the list
     
-    //to modify the list
-    
-var submit= document.getElementById("submitButton");
+var submitB= document.getElementById('submitButton');
 
-submit.onclick = function(){
+submitB.onclick = function(){
     //get the response
     var request = new XMLHttpRequest();
    
@@ -56,11 +56,11 @@ submit.onclick = function(){
         }
         //make a request to get the counter 
         
-    };
-    var user = document.getElementById("name")
+ 
+    var user = document.getElementById("name");
     request.open('GET', 'http://sandeep69.imad.hasura-app.io/name_list?name='+user,true);
     request.send(null);
-  
-    var names = ['name1','name2','name3','name4'];
+ 
     
+};
 };
