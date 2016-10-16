@@ -46,10 +46,10 @@ var htmlTemplate= `<html>
     <body>
         
         <div class="container">
-            <div>
+            
                 <a href="/" id="home"> Home</a>
                 <hr/>
-            </div>
+       
             <div>
                 <h2 id="myHeader"> ${heading}</h2>
             </div>
