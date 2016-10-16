@@ -57,10 +57,11 @@ submitB.onclick = function(){
         //make a request to get the counter 
         
  
-    var user = document.getElementById("name");
+   
+    
+    };
+     var user = document.getElementById("name");
     request.open('GET', 'http://sandeep69.imad.hasura-app.io/name_list?name='+user,true);
     request.send(null);
  
-    
-};
 };
