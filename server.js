@@ -111,7 +111,7 @@ var comments=[];
 app.get('article-one/comment_list', function (req, res) {
     alert("received comment request");
     var feedback = req.query.comment;
-    names.push(feedback);
+    comments.push(feedback);
      res.send(JSON.stringify(comments));
      
 });
