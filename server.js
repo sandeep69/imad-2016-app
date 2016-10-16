@@ -61,7 +61,7 @@ var htmlTemplate= `<html>
             </div>
             <hr/>
             <input type="text" id="comment" placeholder="Comment">
-            <input type="submit" value="Submit" id="submitButton">
+            <input type="submit" value="Submit" id="commentB">
             <ul id="commentList">
             </ul>
         </div>
