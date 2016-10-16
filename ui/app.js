@@ -37,9 +37,9 @@ commentSB.onclick = function(){
      var user = document.getElementById("comment");
      var pageH=document.getElementById("pageheading");
      var page;
-     if (pageH.value == 'article one') page='article-one';
-     else if(pageH.value == 'article two') page='article-two';
-     else if(pageH.value == 'article three') page='article-three';
+     if (pageH.value === 'article one') page='article-one';
+     else if(pageH.value === 'article two') page='article-two';
+     else if(pageH.value === 'article three') page='article-three';
     alert(page);
     request.open('GET', 'http://sandeep69.imad.hasura-app.io/'+page+'/comment_list?comment='+user.value,true);
     request.send(null);
