@@ -117,6 +117,7 @@ app.get('article-one/comment_list', function (req, res) {
 });
 
 app.get('/:articleName', function (req, res) {
+    alert("received article req");
   var articleName = req.params.articleName;    
   res.send(createTemplate(article[articleName]));
 });
