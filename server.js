@@ -82,7 +82,7 @@ var htmlTemplate= `<html>
 return htmlTemplate;
 }
 
-var pool = new Pol(config);
+var pool = new Pool(config);
 
 app.get ('/test-db', function (req,res) {
     pol.query('SELECT * FROM test', function(err,result){ 
