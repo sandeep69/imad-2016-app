@@ -84,7 +84,6 @@ return htmlTemplate;
 }
 
 var pool = new Pool(config);
-console.log ("Here");
 
 app.get ('/test-db', function (req,res) {
 
