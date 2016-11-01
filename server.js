@@ -137,7 +137,7 @@ app.get('/:an/comment_list', function (req, res) {
      
 });
 
-app.get('article//:articleName', function (req, res) {
+app.get('article/:articleName', function (req, res) {
 
   var articleName = req.params.articleName;    
   pool.query("SELECT * FROM article WHERE title='" + articleNAme +"'", function(err,result){
