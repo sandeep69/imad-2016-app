@@ -11,7 +11,7 @@ var config = {
     password: process.env.DB_PASSWORD
 };
 
-alert ("Starting");
+
 var app = express();
 app.use(morgan('combined'));
 
@@ -86,7 +86,7 @@ return htmlTemplate;
 var pool = new Pool(config);
 
 app.get ('/test-db', function (req,res) {
-    alert("Hi");
+
     pool.query('SELECT * FROM test', function(err,result){ 
         if (err) {
             res.status(500).send(err.toString());
@@ -142,7 +142,7 @@ app.get('/:an/comment_list', function (req, res) {
 app.get('/article/:articleName', function (req, res) {
 
   var articleName = req.params.articleName;    
-  alert ("HEre 1");
+
   pool.query("SELECT * FROM article WHERE title='" + articleName +"'", function(err,result){
       if (err) {
           res.status(500).send(err.toString());
