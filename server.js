@@ -85,6 +85,7 @@ return htmlTemplate;
 var pool = new Pool(config);
 
 app.get ('/test-db', function (req,res) {
+    alert("Hi")
     pool.query('SELECT * FROM test', function(err,result){ 
         if (err) {
             res.status(500).send(err.toString());
