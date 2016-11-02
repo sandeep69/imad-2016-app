@@ -1,6 +1,7 @@
 
 var day = document.getElementById(todaysDate);
 day.innerHTML = Date();
+alert (Date());
 var button= document.getElementById("counter");
 
 button.onclick = function(){
