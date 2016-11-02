@@ -1,8 +1,6 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-
-//to connect to the data base
 var Pool = require('pg').Pool;
 //create a configuration
 var config = {
@@ -17,6 +15,31 @@ var config = {
 var app = express();
 app.use(morgan('combined'));
 
+var article = {
+    'article-one': {
+                    title:"Article One - Susan",
+                    heading:"Article one",
+                    date:"24 September 2016",
+                    content:`<p>This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool</p>
+                                <p>This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool</p>
+                                <p>This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool</p>`
+                    
+                },
+    'article-two': {
+                    title:"Article two - Susan",
+                    heading:"Article-two",
+                    date:"24 September 2016",
+                    content:`<p>This is the second article. I am so excited. This is pretty cool. This is the second article. I am so excited. This is pretty cool. This is the second article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the second article. I am so excited. This is pretty cool</p>
+                                <p>This is the second article. I am so excited. This is pretty cool. This is the second article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the second article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the second article. I am so excited. This is pretty cool</p>
+                                <p>This is the second article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the second article. I am so excited. This is pretty cool. This is the second article. I am so excited. This is pretty cool. This is the second article. I am so excited. This is pretty cool. This is the second article. I am so excited. This is pretty cool</p>`
+                },
+    'article-three': {
+            title:"Article three - Susan",
+                    heading:"Article three",
+                    date:"24 September 2016",
+                    content:`<p>This is the third article. I am so excited. This is pretty cool. This is the third article. I am so excited. This is pretty cool. This is the third article. I am so excited. This is pretty cool. This is the first article. I am so excited. This is pretty cool. This is the third article. I am so excited. This is pretty cool. This is the third article. I am so excited. This is pretty cool</p>`
+                },
+    };
 
 function createTemplate(data){
 var title = data.title;
@@ -60,7 +83,6 @@ var htmlTemplate= `<html>
 return htmlTemplate;
 }
 
-//create dbase pool globally before a query is made
 var pool = new Pool(config);
 
 app.get ('/test-db', function (req,res) {
