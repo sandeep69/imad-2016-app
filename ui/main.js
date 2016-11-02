@@ -3,7 +3,6 @@ var day = document.getElementById("todaysDate");
 
 var d = new Date();
 day.innerHTML = d.toDateString();
-</script>
 
 alert ("updated date");
 var button= document.getElementById("counter");
