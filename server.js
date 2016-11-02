@@ -1,6 +1,8 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
+
+// to connect to dbase
 var Pool = require('pg').Pool;
 //create a configuration
 var config = {
@@ -58,6 +60,7 @@ var htmlTemplate= `<html>
 return htmlTemplate;
 }
 
+//create a dbase pool globally before you make a query
 var pool = new Pool(config);
 
 app.get ('/test-db', function (req,res) {
