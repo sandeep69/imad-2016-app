@@ -1,6 +1,8 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
+
+//to connect to the data base
 var Pool = require('pg').Pool;
 //create a configuration
 var config = {
@@ -58,6 +60,7 @@ var htmlTemplate= `<html>
 return htmlTemplate;
 }
 
+//create dbase pool globally before a query is made
 var pool = new Pool(config);
 
 app.get ('/test-db', function (req,res) {
@@ -118,7 +121,7 @@ app.get('/article/:articleName', function (req, res) {
 
   var articleName = req.params.articleName;    
 
-  pool.query("SELECT * FROM article WHERE title='" + articleName +"'", function(err,result){
+  pool.query("SELECT * FROM article WHERE title=$1" ,[articleName], function(err,result){
       if (err) {
           res.status(500).send(err.toString());
       } else {
