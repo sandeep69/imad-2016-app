@@ -1,6 +1,6 @@
 
 var day = document.getElementById(todaysDate);
-day.innerHTML = Date();
+day.innerHTML = Date().toString();
 
 alert ("updated date");
 var button= document.getElementById("counter");
