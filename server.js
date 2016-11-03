@@ -117,12 +117,13 @@ app.get('/insert', function (req, res) {
       pool.query("INSERT INTO comments (article, date, comment) VALUES ('article-one', '2016-03-03', 'dsfasdf')", function(err,result){
       if (err) {
           res.status(500).send(err.toString());
-      }   else {
+      } else {
             
              res.send("Inserting into the database");
       
-    });
+      }
   
+});
 });
 
 var comments={'article-one':[], 'article-two':[], 'article-three':[]};
