@@ -132,12 +132,16 @@ app.get('/:an/comment_list', function (req, res) {
     var an = req.params.an;
     var feedback = req.query.comment;
     var date = new Date();
+    
+    an = "'"+an+"'";
+    feedback = "'"+feedback+"'";
+    date= "'"+date+"'";
     res.send("Reached here");
     
     console.log(an);
     console.log(feedback);
     console.log(date);
-    pool.query("INSERT INTO comments (article, date, comment) VALUES (an, date, feedback)", function(err,result){
+    pool.query("INSERT INTO comments (article, date, comment) VALUES (an,date+,feedback)", function(err,result){
       if (err) {
           res.status(500).send(err.toString());
       } else {
