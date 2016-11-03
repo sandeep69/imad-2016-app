@@ -111,13 +111,40 @@ app.get('/ui/app.js', function (req, res) {
 });
 
 var comments={'article-one':[], 'article-two':[], 'article-three':[]};
+
 app.get('/:an/comment_list', function (req, res) {
     var an = req.params.an;
     var feedback = req.query.comment;
-    comments[an].push(feedback);
-     res.send(JSON.stringify(comments[an]));
+    var date = new Date();
+    
+  // putting comment info into a seperate db called comments
+      pool.query("INSERT INTO comments (article, date, comment) values (an,date,feedback)", function(err,result){
+      if (err) {
+          res.status(500).send(err.toString());
+      } else {
+      pool.query("SELECT * FROM comment WHERE article=$1", [an], function(err,result){
+          if (err) {
+              res.status(500).send(err.toString());
+          } else {  
+              if (result.rows.length === 0){
+                  res.status(404).send("Article not found");
+              }
+              else {
+                 var articleData = result.rows;
+                 res.send(JSON.stringify(articleData));
+              }
+         }
+      });
+      }
+  });
+  
+    
+   // comments[an].push(feedback);
+  //     res.send(JSON.stringify(comments[an]));
      
 });
+});
+
 
 app.get('/article/:articleName', function (req, res) {
 
