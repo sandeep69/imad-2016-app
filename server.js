@@ -113,8 +113,11 @@ app.get('/ui/app.js', function (req, res) {
 
 //trying to insert
 app.get('/insert', function (req, res) {
+    var an ='article-one';
+    var date = '2016-03-03';
+    var comment= 'dsfasdf';
     
-      pool.query("INSERT INTO comments (article, date, comment) VALUES ('article-one', '2016-03-03', 'dsfasdf')", function(err,result){
+      pool.query("INSERT INTO comments (article, date, comment) VALUES (an,date,comment)", function(err,result){
       if (err) {
           res.status(500).send(err.toString());
       } else {
