@@ -110,6 +110,19 @@ app.get('/ui/app.js', function (req, res) {
      res.sendFile(path.join(__dirname, 'ui', 'app.js'));
 });
 
+
+//trying to insert
+app.get('/insert', function (req, res) {
+    
+      pool.query("INSERT INTO comments (article, date, comment) VALUES ('article-one', '2016-03-03', 'dsfasdf')", function(err,result){
+      if (err) {
+          res.status(500).send(err.toString());
+      } 
+      
+    });
+  
+});
+
 var comments={'article-one':[], 'article-two':[], 'article-three':[]};
 
 app.get('/:an/comment_list', function (req, res) {
