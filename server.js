@@ -132,6 +132,8 @@ app.get('/:an/comment_list', function (req, res) {
     var an = req.params.an;
     var feedback = req.query.comment;
     var date = new Date();
+    res.send("Reached here");
+    
     console.log(an);
     console.log(feedback);
     console.log(date);
