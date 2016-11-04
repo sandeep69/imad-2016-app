@@ -41,7 +41,7 @@ commentSB.onclick = function(){
      
      var page='';
     page=pageH.innerHTML; 
-    alert("The inner html = "+pageH.innerHTML);
+    alert("The inner html = "+page);
     
     //str1.localeCompare(str2);
     
