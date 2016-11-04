@@ -121,8 +121,8 @@ app.get('/insert', function (req, res) {
       if (err) {
           res.status(500).send(err.toString());
       } else {
-            
-             res.send("Inserting into the database");
+          
+            res.send("Inserting into the database");
       
       }
   
@@ -149,7 +149,13 @@ app.get('/:an/comment_list', function (req, res) {
           res.status(500).send(err.toString());
       } else {
             
-             res.send("Inserting into the database");
+            if (result.rows.length === 0){
+              res.status(404).send("Article not found");
+          }
+          else {
+             var articleData = result.rows;
+             res.send(JSON.stringify(articleData));
+          }
       }
     });  
     
