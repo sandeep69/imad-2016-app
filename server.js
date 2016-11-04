@@ -136,9 +136,9 @@ app.get('/:an/comment_list', function (req, res) {
     var feedback = req.query.comment;
     var date = new Date();
     
-    an = "'"+an+"'";
-    feedback = "'"+feedback+"'";
-    date= "'"+date.toDateString()+"'";
+    //an = "'"+an+"'";
+    //feedback = "'"+feedback+"'";
+    //date= "'"+date.toDateString()+"'";
 
     
     console.log(an);
