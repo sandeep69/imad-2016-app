@@ -17,16 +17,16 @@ commentSB.onclick = function(){
             //check if it was a success
             if (request.status === 200) {
                 
-               /* var names = request.responseText;
-                names = JSON.parse(names);
+                var comments = request.responseText;
+                comments = JSON.parse(comments);
                 var list='';
-                for(var i=0; i<names.length;i++){
-                    list= list+ '<li>' + names[i] + '</li>';
-                }*/
-                //alert(list);
-                //var nameList = document.getElementById("commentList");
-                //nameList.innerHTML = list;
-                alert ("inserted comment");
+                for(var i=0; i<comments.length;i++){
+                    list= list+ '<li>' + comments[i] + '</li>';
+                }
+                console.log(list);
+                var nameList = document.getElementById("commentList");
+                nameList.innerHTML = list;
+                console.log ("inserted comment");
             }
         }
         //make a request to get the counter 
