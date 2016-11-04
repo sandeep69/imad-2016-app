@@ -21,7 +21,7 @@ commentSB.onclick = function(){
                 comments = JSON.parse(comments);
                 var list='';
                 for(var i=0; i<comments.length;i++){
-                    list= list+ '<li>' + comments[i].date + comments[i].comment + '</li>';
+                    list= list+ '<li>' + comments[i].date +'     '+ comments[i].comment + '</li>';
                 }
                 console.log(list);
                 var nameList = document.getElementById("commentList");
