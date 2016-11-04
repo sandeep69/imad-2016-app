@@ -148,14 +148,17 @@ app.get('/:an/comment_list', function (req, res) {
       if (err) {
           res.status(500).send(err.toString());
       } else {
-            
-            if (result.rows.length === 0){
-              res.status(404).send("Article not found");
-          }
-          else {
-             var articleData = result.rows;
-             res.send(JSON.stringify(articleData));
-          }
+            pool.query("SELECT* FROM comments WHERE article= $1", [an],function(err,result){
+                if(err) {
+                    res.status(500).send(err.toString());
+                } else if (result.rows.length === 0){
+                  res.status(404).send("Article not found");
+                }
+                else {
+                     var articleData = result.rows;
+                     res.send(JSON.stringify(articleData));
+                }
+            });
       }
     });  
     
