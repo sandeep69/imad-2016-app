@@ -45,7 +45,8 @@ commentSB.onclick = function(){
     
     //str1.localeCompare(str2);
     
-    for(var i=0;i<page.length;i++){
+    
+   /* for(var i=0;i<page.length;i++){
         if (page[i]==='w') {
          alert("article2 detected");
          page='article-two';
@@ -59,7 +60,7 @@ commentSB.onclick = function(){
          page='article-three';
      }
     }
-    
+    */
 
     request.open('GET', 'http://sandeep69.imad.hasura-app.io/'+page+'/comment_list?comment='+user.value,true);
     request.send(null);
