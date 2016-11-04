@@ -113,7 +113,7 @@ app.get('/ui/app.js', function (req, res) {
 
 //trying to insert
 app.get('/insert', function (req, res) {
-    var art ='article-one';
+    var art ="article-one";
     var date = '2016-03-03';
     var comment= 'dsfasdf';
     
