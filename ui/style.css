@@ -19,16 +19,16 @@ body {
 .img-medium {
     height: 200px;
 }
-
+/*
 .container {
     font-family:sans-serif;
     margin: 0 auto;
     text-align:left;
-    /*max-width: 800px;*/
+    max-width: 800px;
     padding-left:20;
     padding-right:20;
 }
-
+*/
 
 /*About Me */
 .aboutBody {
