@@ -34,23 +34,24 @@ body {
 
 #profile-pic{
     position: absolute;
-    margin:0px;
-    top:0px;
-    left:0px;
+    margin:0;
+    top:0;
+    left:0;
 }
 
 #side-text{
     position: absolute;
-    margin:0px;
+    margin:0;
     top:20px;
     left:400px;
 }
 
 #bottom-text{
     position: absolute;
-    margin:0px;
+    margin:0;
     top:300px;
-    left:0px;
+    left:0;
+    text-align: justify;
 }
 /*About Me */
 .aboutBody {
