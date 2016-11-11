@@ -70,8 +70,8 @@ submitB.onclick = function(){
     
      var username = document.getElementById("logusername").value;
      var password = document.getElementById("logpassword").value;
-     console.log (logusername);
-     console.log (logpassword);
+     console.log (username);
+     console.log (password);
     request.open('POST', 'http://sandeep69.imad.hasura-app.io/login',true);
     request.setRequestHeader('Content-Type','application/json');
     request.send(JSON.stringify({username:username,password:password}));
