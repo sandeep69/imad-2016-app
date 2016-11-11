@@ -7,6 +7,8 @@
 var submitB= document.getElementById('submitButton');
 
 submitB.onclick = function(){
+    
+    alert ('submit clicked');
     //get the response
     var request = new XMLHttpRequest();
    
