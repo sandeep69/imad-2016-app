@@ -145,7 +145,36 @@ app.post ('/create-user', function(req,res){
 });
 
 //creating a login API
-// TBD
+app.post ('/login', function(req,res){
+    //get username and password from the req.body
+    var username = req.body.username;
+    var password = req.body.password;
+    
+    //check if username and pw matches with that in the user database
+    pool.query ('SELECT * FROM "user" WHERE username=$1)',[username], function(err,result) {
+        if (err){
+            res.status(500).send(err.toString());
+        } else {
+            if (result.rows.length === 0) {
+                res.send(403).send('username or password is invalid');
+            }
+            else {
+                var dbString = result.rows[0].password;
+                var salt = dbString.split('$')[2];
+                var hashedPw = hash(password,salt);
+                
+                if (hashedPw === dbString) {
+                    res.send("you have been successfully logged in");
+                } else {
+                    res.send(403).send("Invalid username or password"); 
+                }
+            }
+           
+        }
+   });
+ 
+});
+
 
 
 
