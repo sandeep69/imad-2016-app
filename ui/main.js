@@ -44,8 +44,9 @@ submitB.onclick = function(){
         if(request.readyState === XMLHttpRequest.DONE){
             //check if it was a success
             if (request.status === 200) {
-                
-                var names = request.responseText;
+  
+                alert ('Successfully signed up');
+ /*               var names = request.responseText;
                 names = JSON.parse(names);
                 var list='';
                 for(var i=0; i<names.length;i++){
@@ -54,6 +55,10 @@ submitB.onclick = function(){
                 alert(list);
                 var nameList = document.getElementById("names");
                 nameList.innerHTML = list;
+*/
+            }
+            else { 
+                alert(request.responseText);
             }
         }
         //make a request to get the counter 
@@ -62,9 +67,14 @@ submitB.onclick = function(){
    
     
     };
-     var user = document.getElementById("name");
-    request.open('GET', 'http://sandeep69.imad.hasura-app.io/name_list?name='+user.value,true);
-    request.send(null);
+    
+     var username = document.getElementById("username").value;
+     var password = document.getElementById("password").value;
+     console.log (username);
+     console.log (password);
+    request.open('GET', 'http://sandeep69.imad.hasura-app.io/create-user',true);
+    request.setRequestHeader('Content-Type','application/json');
+    request.send(JSON.stringify({username:username,password:password}));
  
 };
 
