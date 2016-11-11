@@ -166,7 +166,7 @@ app.post ('/login', function(req,res){
                 if (hashedPw === dbString) {
                     res.send("you have been successfully logged in");
                 } else {
-                    res.send(403).send("Invalid username or password"); 
+                    res.status(403).send("Invalid username or password"); 
                 }
             }
            
