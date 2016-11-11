@@ -3,6 +3,7 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
+var crypto = require('crypto');
 
 // to connect to dbase
 var Pool = require('pg').Pool;
@@ -110,6 +111,15 @@ app.get('/ui/app.js', function (req, res) {
      res.sendFile(path.join(__dirname, 'ui', 'app.js'));
 });
 
+function hash(input,salt){
+    var hashed = crypto.pbkdf2Sync(input,salt,10000, 512, 'Sha512');
+    return(hashed.toString('hex'));
+}
+
+app.get('/hash/:input', function(req,res) {
+    var hashedString = hash(req.params.input,'Hi-I-am-Susan');
+    res.send(hashedString);
+});
 
 //trying to insert
 app.get('/insert', function (req, res) {
@@ -148,8 +158,8 @@ app.get('/:an/comment_list', function (req, res) {
                   res.status(404).send("Article not found");
                 }
                 else {
-                     var articleData = result.rows;
-                     res.send(JSON.stringify(articleData));
+                     var CommentList = result.rows;
+                     res.send(JSON.stringify(CommentList));
                 }
             });
       }
