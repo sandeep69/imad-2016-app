@@ -6,6 +6,7 @@ var path = require('path');
 var crypto = require('crypto');
 //to send json obsect as the req body in express
 var bodyParser = require('body-parser');
+var session = require('express-session');
 
 // to connect to dbase
 var Pool = require('pg').Pool;
@@ -21,7 +22,11 @@ var config = {
 
 var app = express();
 app.use(morgan('combined'));
-app.use(bodyParser.json()); //to use json on req body
+app.use(bodyParser.json());       //to use json on req body
+app.use(session( {
+    secret:'somerandomvalue',     //to encrypt the cookie
+    cookie:{maxAge:1000*60*60*30} //long lasting cookie that lasts a month
+}));
 
 
 function createTemplate(data){
@@ -164,6 +169,8 @@ app.post ('/login', function(req,res){
                 var hashedPw = hash(password,salt);
                 
                 if (hashedPw === dbString) {
+                    //set session
+                    req.session.auth = {userId:result.rows[0].id}; //on the server side express session maps the random sessionid to the user id
                     res.send("you have been successfully logged in");
                 } else {
                     res.status(403).send("Invalid username or password"); 
@@ -176,7 +183,20 @@ app.post ('/login', function(req,res){
 });
 
 
+//api to check if logged in 
+app.get('/check-login', function(req,res){
+    if (req.session && req.session.auth && req.session.auth.userId){
+        res.send("You are logged in as :" + req.session.auth.userId.toString());
+    } else {
+        res.send("You are not logged in");
+    }
+});
 
+//api to log out
+app.get('/logout', function(req,res){
+    delete req.session.auth; 
+    req.send("You have logged out");
+});
 
 
 //trying to insert
