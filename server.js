@@ -195,7 +195,7 @@ app.get('/check-login', function(req,res){
 //api to log out
 app.get('/logout', function(req,res){
     delete req.session.auth; 
-    req.send("You have logged out");
+    res.send("You have logged out");
 });
 
 
