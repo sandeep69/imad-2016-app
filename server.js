@@ -4,6 +4,8 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var crypto = require('crypto');
+//to send json obsect as the req body in express
+var bodyParser = require('body-parser');
 
 // to connect to dbase
 var Pool = require('pg').Pool;
@@ -19,6 +21,7 @@ var config = {
 
 var app = express();
 app.use(morgan('combined'));
+app.use(bodyParser.json()); //to use json on req body
 
 
 function createTemplate(data){
@@ -119,6 +122,26 @@ function hash(input,salt){
 app.get('/hash/:input', function(req,res) {
     var hashedString = hash(req.params.input,'Hi-I-am-Susan');
     res.send(hashedString);
+});
+
+//function to create a new user- we use a post instead of a get for additional security
+app.post ('/create-user', function(req,res){
+    //get username and password from the req.body
+    var username = req.body.username;
+    var password = req.body.password;
+    
+    //generate a random salt
+    var salt = crypto.RandomBytes(128).toString('hex');
+    var dbString = hash(password,salt);
+    
+    //insert username and pw to the user database
+    pool.query ('INSERT INTO "user" (username,password) VALUES($1,$2)',[username,dbString], function(err,result) {
+        if (err){
+            res.status(500).send(err.toString());
+        } else {
+            res.send("User successfully created"+ username);
+        }
+   });
 });
 
 //trying to insert
