@@ -151,7 +151,7 @@ app.post ('/login', function(req,res){
     var password = req.body.password;
     
     //check if username and pw matches with that in the user database
-    pool.query ('SELECT * FROM "user" WHERE username=$1)',[username], function(err,result) {
+    pool.query ('SELECT * FROM "user" WHERE username=$1',[username], function(err,result) {
         if (err){
             res.status(500).send(err.toString());
         } else {
