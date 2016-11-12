@@ -204,7 +204,7 @@ app.get('/logout', function(req,res){
 
 
 // api to get the list of all articles
-app.get('/list',function(req,res){
+app.get('/listOfArticles',function(req,res){
     res.send("List");
 })
 /*
