@@ -65,8 +65,9 @@ a {
     color:white;
 }
 
-.leftAlign{
+.rttAlign{
     text-align:right;
+    color:green;
 }
 
 .profile {
