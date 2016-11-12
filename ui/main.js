@@ -10,20 +10,17 @@ $(document).ready(function(){
         if(request.readyState === XMLHttpRequest.DONE){
             //check if it was a success
             if (request.status === 200) {
-                var nameList = document.getElementById("articleList");
-                nameList.innerHTML = '<li> <p>' + request.responseText + '</p> </li>';
                
-               /* 
                 var articleList = request.responseText;
                 articleList = JSON.parse(articleList);
                 var list='';
-                for(var i=0; i<comments.length;i++){
+                for(var i=0; i<articleList.length;i++){
                     list= list+ '<li> <p>' + articleList[i].date + articleList[i].heading + '</p></li>';
                 }
                 console.log(list);
                 var nameList = document.getElementById("articleList");
                 nameList.innerHTML = list;
-                */
+           
             }
         }
         
