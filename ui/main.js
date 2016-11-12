@@ -11,22 +11,18 @@ $(document).ready(function(){
             //check if it was a success
             if (request.status === 200) {
                 
-                var comments = request.responseText;
-                comments = JSON.parse(comments);
+                var articleList = request.responseText;
+                comments = JSON.parse(articleList);
                 var list='';
                 for(var i=0; i<comments.length;i++){
-                    list= list+ '<li> <p>' + comments[i].date +'</p><p>'+ comments[i].comment + '</p></li>';
+                    list= list+ '<li> <p>' + articleList[i].date +'</p><p>'+ articleList[i].heading + '</p></li>';
                 }
                 console.log(list);
-                var nameList = document.getElementById("commentList");
+                var nameList = document.getElementById("articleList");
                 nameList.innerHTML = list;
             }
         }
-        //make a request to get the counter 
         
- 
-   
-    
     };
      
     
