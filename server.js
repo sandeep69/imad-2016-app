@@ -205,7 +205,9 @@ app.get('/logout', function(req,res){
 
 // api to get the list of all articles
 app.get('/listOfArticles',function(req,res){
+    res.send("List of Articles")
 
+/*
       pool.query('SELECT * FROM "article"', function(err,result){
       if (err) {
           res.status(500).send(err.toString());
@@ -220,6 +222,7 @@ app.get('/listOfArticles',function(req,res){
       }
   
 });
+*/
 });
 
 
