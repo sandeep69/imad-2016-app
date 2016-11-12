@@ -54,27 +54,7 @@ body {
     text-align: justify;
     line-height: 30px
 }
-/*About Me */
-.aboutBody {
-/*  background:url(https://s-media-cache-ak0.pinimg.com/564x/8b/98/b7/8b98b71ae62f2762c0548249eca5106d.jpg);*/
-    margin:0 auto;
-    left:0;
-    text-align:left;
-    max-width: 800px;
-    padding-left:20;
-    padding-right:20;
-    font-size:150%;
-    font-family:cursive;
-}
 
-.menu {
-    background:url(http://s3.amazonaws.com/spoonflower/public/design_thumbnails/0190/4301/new_peach_quatrefoil_shop_preview.png);
-     left: -285px;  /* start off behind the scenes */
-     margin-top:0;
-      height: 100%;
-      position: fixed;
-      width: 285px;
-}
 
 .profile {
     background:url(https://s-media-cache-ak0.pinimg.com/564x/8b/98/b7/8b98b71ae62f2762c0548249eca5106d.jpg);
