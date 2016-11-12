@@ -205,24 +205,22 @@ app.get('/logout', function(req,res){
 
 // api to get the list of all articles
 app.get('/listOfArticles',function(req,res){
-    res.send("List of Articles")
-
-/*
-      pool.query('SELECT * FROM "article"', function(err,result){
-      if (err) {
-          res.status(500).send(err.toString());
-      } else {
-           if (result.rows.length === 0){
-                  res.status(404).send("Article not found");
-            }
-            else {
-                var articletList = result.rows;
-                res.send(JSON.stringify(articleList));
-            }  
-      }
+   
+    pool.query('SELECT * FROM "article"', function(err,result){
+    if (err) {
+        res.status(500).send(err.toString());
+    } else {
+        if (result.rows.length === 0){
+            res.status(404).send("Article not found");
+        }
+        else {
+            var articletList = result.rows;
+            res.send(JSON.stringify(articleList));
+        }  
+   }
   
 });
-*/
+
 });
 
 
