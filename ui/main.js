@@ -1,5 +1,7 @@
 
-
+document.ready(function(){
+    alert("Doc loaded");
+});
 
     
 //to create a login account
