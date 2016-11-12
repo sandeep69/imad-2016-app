@@ -15,7 +15,7 @@ $(document).ready(function(){
                 articleList = JSON.parse(articleList);
                 var list='';
                 for(var i=0; i<articleList.length;i++){
-                    var day = articleList[i].date;
+                    var day = new Date();
                     console.log(day.toDateString());
                     list= list+ '<li> <p>' +  articleList[i].heading + '</p></li>';
                 }
