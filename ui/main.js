@@ -16,7 +16,7 @@ $(document).ready(function(){
                 var list='';
                 for(var i=0; i<articleList.length;i++){
                     var day = articleList[i].date;
-                    alert(day.toString());
+                    alert(CONVERT(VARCHAR(11),day,106));
                     list= list+ '<li> <p>' +  articleList[i].heading + '</p></li>';
                 }
                 console.log(list);
