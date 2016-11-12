@@ -86,7 +86,7 @@ app.get ('/test-db', function (req,res) {
 });
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'aboutMe.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'mainPage.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
@@ -98,7 +98,7 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 app.get('/profile', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'profile.html'));
 });
 
 app.get('/ui/main.js', function (req, res) {
