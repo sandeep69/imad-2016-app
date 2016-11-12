@@ -203,10 +203,10 @@ app.get('/logout', function(req,res){
 });
 
 // api to get the list of all articles
-app.get('/article-list', function(req, res) {
+app.get('/article-list', function(req,res){
    
        res.send("article list");
-});  
+}); 
 
 //trying to insert
 app.get('/insert', function (req, res) {
