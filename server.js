@@ -204,18 +204,9 @@ app.get('/logout', function(req,res){
 
 
 // api to get the list of all articles
-app.get('/article-list', function(req,res){
-   
-       res.send("article list");
-}); 
-
-//trying to insert
 app.get('/insert', function (req, res) {
-    var an ='article-one';
-    var date = '2016-03-03';
-    var comment= 'dsfasdf';
-    
-      pool.query("INSERT INTO comments (article, date, comment) VALUES ($1,$2,$3)",[an,date,comment], function(err,result){
+   
+      pool.query('SELECT * FROM article', function(err,result){
       if (err) {
           res.status(500).send(err.toString());
       } else {
