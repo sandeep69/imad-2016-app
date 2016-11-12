@@ -208,19 +208,19 @@ app.get('/listOfArticles',function(req,res){
    
     
     pool.query('SELECT * FROM "article"', function(err,result){
+        
     if (err) {
         res.status(500).send(err.toString());
     } else {
-        res.send(JSON.stringify(result.rows));
-        /*
+        
+
         if (result.rows.length === 0){
             res.status(404).send("Article not found");
         }
         else {
-            var articletList = result.rows;
-            res.send(JSON.stringify(articleList));
+           res.send(JSON.stringify(result.rows));
         } 
-        */
+ 
    }
   
 });
