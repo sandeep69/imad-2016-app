@@ -29,8 +29,6 @@ $(document).ready(function(){
     
     request.open('GET','http://sandeep69.imad.hasura-app.io/listOfArticles',true);
     request.send(null);
-    alert("sent request");
-
 
 });
 
