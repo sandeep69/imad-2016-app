@@ -222,7 +222,6 @@ app.get('/article-list', function (req, res) {
 });
 });
 
-var comments={'article-one':[], 'article-two':[], 'article-three':[]};
 
 app.get('/:an/comment_list', function (req, res) {
     var an = req.params.an;
@@ -248,9 +247,7 @@ app.get('/:an/comment_list', function (req, res) {
       }
     });  
     
- //   comments[an].push(feedback);
-//    res.send(JSON.stringify(comments[an]));
-     
+  
 
 });
 
