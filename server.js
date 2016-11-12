@@ -206,8 +206,8 @@ app.get('/logout', function(req,res){
 // api to get the list of all articles
 app.get('/listOfArticles',function(req,res){
    
-    pool.query ('SELECT * FROM "user" WHERE username=$1',["susan"], function(err,result){
-    /*pool.query('SELECT * FROM "article"', function(err,result){*/
+    
+    pool.query('SELECT * FROM "article"', function(err,result){
     if (err) {
         res.status(500).send(err.toString());
     } else {
