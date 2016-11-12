@@ -1,6 +1,39 @@
-
+// load all the articles names
 $(document).ready(function(){
-    alert("Doc loaded");
+   var request = new XMLHttpRequest();
+
+
+    //check if response status has changed
+    request.onreadystatechange = function(){
+         
+        //check it result has been loaded
+        if(request.readyState === XMLHttpRequest.DONE){
+            //check if it was a success
+            if (request.status === 200) {
+                
+                var comments = request.responseText;
+                comments = JSON.parse(comments);
+                var list='';
+                for(var i=0; i<comments.length;i++){
+                    list= list+ '<li> <p>' + comments[i].date +'</p><p>'+ comments[i].comment + '</p></li>';
+                }
+                console.log(list);
+                var nameList = document.getElementById("commentList");
+                nameList.innerHTML = list;
+            }
+        }
+        //make a request to get the counter 
+        
+ 
+   
+    
+    };
+     
+    
+    request.open('GET', 'http://sandeep69.imad.hasura-app.io/article-list',true);
+    request.send(null);
+
+
 });
 
     
