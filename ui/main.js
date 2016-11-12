@@ -12,10 +12,10 @@ $(document).ready(function(){
             if (request.status === 200) {
                 
                 var articleList = request.responseText;
-                comments = JSON.parse(articleList);
+                articleList = JSON.parse(articleList);
                 var list='';
                 for(var i=0; i<comments.length;i++){
-                    list= list+ '<li> <p>' + articleList[i].date +'</p><p>'+ articleList[i].heading + '</p></li>';
+                    list= list+ '<li> <p>' + articleList[i].date + articleList[i].heading + '</p></li>';
                 }
                 console.log(list);
                 var nameList = document.getElementById("articleList");
