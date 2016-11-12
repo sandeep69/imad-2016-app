@@ -203,19 +203,9 @@ app.get('/logout', function(req,res){
 });
 
 // api to get the list of all articles
-app.get('/article-list', function (req, res) {
+app.get('/article-list', function(req, res) {
    
-        pool.query('SELECT heading,date FROM article', function(err,result){
-            if(err) {
-                res.status(500).send(err.toString());
-            } else if (result.rows.length === 0){
-                 res.status(404).send("Article not found");
-            }
-            else {
-                var CommentList = result.rows;
-                res.send(JSON.stringify(CommentList));
-            }
-        });
+       res.send("article list");
 });  
 
 //trying to insert
