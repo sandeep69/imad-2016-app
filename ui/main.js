@@ -15,7 +15,7 @@ $(document).ready(function(){
                 articleList = JSON.parse(articleList);
                 var list='';
                 for(var i=0; i<articleList.length;i++){
-                    list= list+ '<li> <p>' + articleList[i].date + articleList[i].heading + '</p></li>';
+                    list= list+ '<li> <p>' +  articleList[i].heading + articleList[i].date.toDateString() + '</p></li>';
                 }
                 console.log(list);
                 var nameList = document.getElementById("articleList");
