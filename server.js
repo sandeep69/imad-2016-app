@@ -204,6 +204,10 @@ app.get('/logout', function(req,res){
 
 
 // api to get the list of all articles
+app.get('/list',function(req,res){
+    res.send("List");
+})
+/*
 app.get('/listOfArticles', function (req, res) {
    
       pool.query('SELECT * FROM article', function(err,result){
@@ -221,7 +225,7 @@ app.get('/listOfArticles', function (req, res) {
   
 });
 });
-
+*/
 
 app.get('/:an/comment_list', function (req, res) {
     var an = req.params.an;
