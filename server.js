@@ -202,6 +202,7 @@ app.get('/logout', function(req,res){
     res.send("You have logged out");
 });
 
+
 // api to get the list of all articles
 app.get('/article-list', function(req,res){
    
