@@ -10,7 +10,10 @@ $(document).ready(function(){
         if(request.readyState === XMLHttpRequest.DONE){
             //check if it was a success
             if (request.status === 200) {
-                
+                var nameList = document.getElementById("articleList");
+                nameList.innerHTML = '<li> <p>' + request.responseText + '</p> </li>';
+               
+               /* 
                 var articleList = request.responseText;
                 articleList = JSON.parse(articleList);
                 var list='';
@@ -20,6 +23,7 @@ $(document).ready(function(){
                 console.log(list);
                 var nameList = document.getElementById("articleList");
                 nameList.innerHTML = list;
+                */
             }
         }
         
