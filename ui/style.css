@@ -10,8 +10,8 @@ body {
 #tabs {
    position:absolute;
     height:50px;
-    width:150%;
-    left:-200px;
+    width:160%;
+    left:-250px;
     top:-100px; 
     background-color:grey;
     color:white;
