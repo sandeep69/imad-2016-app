@@ -109,4 +109,23 @@ submitB.onclick = function(){
  
 };
 
+/* signup tab - open and close*/
+signUpTab.onclick = function(){
+    
+    alert ('signup clicked');
+	var signUp = document.getElementById("signUpBox");
+	console.log(signUp);
+	signUp.style.display ="block";
+
+    	console.log(signUp);
+};
+closeButton.onclick = function(){
+    
+   
+	var signUp = document.getElementById("signUpBox");
+	console.log(signUp);
+	signUp.style.display ="none";
+
+    	console.log(signUp);
+};
 
