@@ -25,6 +25,13 @@ body {
     top:-40px;
 }
 
+#wood {
+    position:absolute;
+    height:150%;
+    width:30%;
+    left:-10px;
+    top:-40px;    
+}
 a {
     color:#C70039;
     font-weight:bold;
