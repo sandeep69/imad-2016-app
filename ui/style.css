@@ -92,21 +92,21 @@ a {
 #homeTab {
  	position:absolute;
 	margin: 0;
-	top :0;
+	top :-10px;
 	right: 25%;
 	font-size:20px;
 }
 #profileTab {
  	position:absolute;
 	margin: 0;
-	top :0;
-	right:15%;
+	top :-10px;
+	right:-5%;
 	font-size:20px;
 }
 #signUpTab {
  	position:absolute;
 	margin: 0;
-	top :0;
+	top :-10px;
 	right: -20%;
 	background-color:transparent;
 	border:none;
