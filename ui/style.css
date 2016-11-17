@@ -4,7 +4,7 @@ body {
     background-position:center;
     font-family: "Times New Roman";
     height:600px;	
-    background-size:cover 500px;
+    background-size:100% 50%;
     margin-top: 75px;
 }
 
