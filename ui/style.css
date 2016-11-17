@@ -1,6 +1,10 @@
 body {
-    background-image:url('http://wallpapercave.com/wp/2nec57u.jpg');
-    font-family: sans-serif;
+    background-image:url("https://66.media.tumblr.com/ce9f3620d9853e39af762069c14d083e/tumblr_o5mvbsAsju1vp6ydpo1_1280.jpg");
+    background-repeat:no-repeat;
+    background-position:center;
+    font-family: "Times New Roman";
+    height:600px;	
+    background-size:cover 500px;
     margin-top: 75px;
 }
 
@@ -8,6 +12,7 @@ a {
     color:#C70039;
     font-weight:bold;
     text-decoration:none;
+    font-size:20px;
 }
 
 .center {
@@ -31,10 +36,10 @@ a {
     font-family:sans-serif;
     margin: 0 auto;
     text-align:left;
-    max-width: 800px;
+    max-width: 1000px;
     padding-left:20;
     padding-right:20;
-    color: #795548;
+    color: black;
 }
 
 #profile-pic{
@@ -75,3 +80,108 @@ a {
     background-color:green;
 }
 
+/*added from local*/
+#homeTab {
+ 	position:absolute;
+	margin: 0;
+	top :0;
+	right: 300px;
+	font-size:20px;
+}
+#profileTab {
+ 	position:absolute;
+	margin: 0;
+	top :0;
+	right: 210px;
+	font-size:20px;
+}
+#signUpTab {
+ 	position:absolute;
+	margin: 0;
+	top :0;
+	right: 18px;
+	background-color:transparent;
+	border:none;
+	color:#C70039;
+ 	font-weight:bold;
+	font-family:"Times New Roman";
+    	text-decoration:none;
+	font-size:20px;
+}
+
+
+#signUpBox {
+	display : none;
+	position:fixed;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 10px 10px 5px #888888;
+	background-color:white;
+	padding :50px; 
+}
+
+#closeButton {
+	position : absolute;
+	margin: 0;
+	top :5px;
+	right:3px;
+	background-color:transparent;
+	border:none;
+	font-weight:bold;
+	text-decoration:none;
+	font-size:15px;
+}
+
+
+#articles {
+
+	position:absolute;
+	width:800px;
+	left:100px;
+	text-align:center;
+	color:black;
+	font-weight:bold;
+	font-size:40px;
+	
+}
+
+#articleOne {
+	position:absolute;
+	background-color:white;
+border:4px solid black;
+	width:800px;
+	left:100px;
+	top:90px;
+	padding:20px;
+font-size:20px;
+	color:black;
+}
+#articleTwo {
+	position:absolute;
+	background-color:#4793d0;
+	width:800px;
+	left:100px;
+	top:190px;
+	padding:20px;
+	color:white;
+}
+#articleThree {
+	position:absolute;
+	background-color:white;
+border:4px solid navy;
+	width:800px;
+	left:100px;
+	top:290px;
+	padding:20px;
+	color:black;
+}
+
+
+#MPheading {
+	
+	color:black;
+	text-align: right;
+	font-family:"sans-serif";
+	font-size:150px;
+}
