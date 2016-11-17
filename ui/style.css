@@ -13,7 +13,7 @@ body {
     width:200%;
     left:-400px;
     top:-100px; 
-    background-color:transparent;
+    background-color:grey;
     color:white;
 }
 
@@ -101,21 +101,21 @@ a {
 #homeTab {
  	position:absolute;
 	margin: 0;
-	top :-60px;
+	top :150px;
 	right: 10%;
 	font-size:20px;
 }
 #profileTab {
  	position:absolute;
 	margin: 0;
-	top :-60px;
+	top :15px;
 	right:-2%;
 	font-size:20px;
 }
 #signUpTab {
  	position:absolute;
 	margin: 0;
-	top :-60px;
+	top :15px;
 	right: -20%;
 	background-color:transparent;
 	border:none;
