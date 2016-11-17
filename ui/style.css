@@ -7,6 +7,14 @@ body {
    background-size:cover;
     margin-top: 75px;
 }
+#tabs {
+   position:absolute;
+    height:100px;
+    width:100%;
+    left:0;
+    top:-40px; 
+    background-color:black;
+}
 
 #compPic {
     position:absolute;
