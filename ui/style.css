@@ -11,7 +11,7 @@ body {
    position:absolute;
     height:50px;
     width:200%;
-    left:-100px;
+    left:-200px;
     top:-100px; 
     background-color:black;
 }
