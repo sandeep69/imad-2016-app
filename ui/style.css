@@ -1,11 +1,16 @@
 body {
-    background-image:url("https://66.media.tumblr.com/ce9f3620d9853e39af762069c14d083e/tumblr_o5mvbsAsju1vp6ydpo1_1280.jpg");
+    background-image:url("http://www.webdesignburn.com/wp-content/uploads/2015/04/Grey-Texture-Background-and-Wallpaper-24.jpg");
     background-repeat:no-repeat;
     /*background-position:center;*/
     font-family: "Times New Roman";
     height:600px;	
-   background-size:1500px 500px;
+   background-size:cover;
     margin-top: 75px;
+}
+
+#comPic {
+    height:50%;
+    width:100%;
 }
 
 a {
