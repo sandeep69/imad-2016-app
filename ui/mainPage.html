@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title> Good Old Shopping  </title>
+    <title>Mom & IMAD  </title>
     <link href="/ui/style.css" rel="stylesheet" />
  
  </head> 
@@ -9,21 +9,16 @@
      
     <div class="container">
         <p>
-        <a href='/profile' class="rtAlign">Profile</a>
+            <a href='/' id="homeTab">Home</a>
+            <a href='/profile' id="profileTab">Profile</a>
+    	    <input type="submit" value="Sign Up/Register" id="signUpTab"/>
         </p>
     
     
-         <h1>Good Old Shopping!! </h1> 
-    
-         <div>
-             <p>Are you one of those who miss the old fashioned way of shopping? Wandering along the small by ways and alleys...Discovering new treasure troves. Who loves interacting with the shop keeepers, feeling and seeing first hand the things you would love to buy...</p>
-             <p>That to me has essentially been shopping therapy.... I love the dirt and the dust and the noise.... Tha's my India... An India full of colour and life... An India I love....</p>
-             <p>There is no better place to shop than India. The variety is mind boggling. And the experience so varied. Whenever I visit a new place I always talk to a few of my like minded friends and cousins and  with their inputs I start of exploring the new terrain. </p>
-             <p>Do I end up splurging and buying a lot of things that I dont want....No... I buy only something I really love... For me the journey is the real fun...</p>
-        </div>
-        
-        <hr/>
-        <div>
+         <div id="mpheading">Mom & IMAD</div> 
+         
+          <div id = "signUpBox">
+	        <input type="submit" value="X" id="closeButton"/>
             <h2>Login/Sign Up</h2>
             <input type="text" id="username" placeholder="User Name"/>
             <input type="password" id="password" placeholder="password"/>
@@ -33,7 +28,8 @@
                 <input type="submit" value="Sign Up" id="submitButton"/>
             </p>
         </div>
-        <hr/>
+    
+    
         <div>
             <h2>My Articles</h2>
             <ul id = "articleList"></ul>
