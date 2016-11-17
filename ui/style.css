@@ -93,21 +93,21 @@ a {
  	position:absolute;
 	margin: 0;
 	top :0;
-	right: 300px;
+	right: 25%;
 	font-size:20px;
 }
 #profileTab {
  	position:absolute;
 	margin: 0;
 	top :0;
-	right: 210px;
+	right:15%;
 	font-size:20px;
 }
 #signUpTab {
  	position:absolute;
 	margin: 0;
 	top :0;
-	right: 18px;
+	right: 5%;
 	background-color:transparent;
 	border:none;
 	color:#C70039;
