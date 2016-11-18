@@ -15,7 +15,7 @@ $(document).ready(function(){
                 articleList = JSON.parse(articleList);
                 var list='';
                 for(var i=0; i<articleList.length;i++){
-                    list= list+ '<li> <p> <div> <a href = "/article/'+articleList[i].heading + '">' + articleList[i].heading + '</a><p> </div></p></li>';
+                    list= list+ '<li> <p> <a href = "/article/'+articleList[i].heading + '">' + articleList[i].heading + '</a> articleList[i].heading.substring(0,100)  &emsp;&emsp;&emsp;<a href="www.google.com">Read more....</a> </p></li>';
                 }
                 console.log(list);
                 var nameList = document.getElementById("articleList");
