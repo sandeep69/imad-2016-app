@@ -189,6 +189,10 @@ a {
     color:#3f6f3f;;
  }
 
+.likes {
+    text-align:right;
+}
+
 #articleTwo {
 	position:absolute;
 	background-color:#4793d0;
