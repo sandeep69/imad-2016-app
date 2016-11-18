@@ -160,8 +160,6 @@ a {
 #articles {
 
 	position:absolute;
-	width:500px;
-	left:0;
 	text-align:center;
 	color:black;
 	font-weight:bold;
@@ -171,7 +169,7 @@ a {
 
 #articleList {
     position:absolute;
-	left:0;
+	left:-80px;
 }
 .list {
 	background-color:#eac75e;
