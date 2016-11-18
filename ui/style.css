@@ -177,6 +177,12 @@ a {
     font-size:20px;
 	color:black;
 }
+.hiddenlist {
+	background-color:transparent;
+    width:800px;
+	padding:20px;
+   
+}
 
 #articleTwo {
 	position:absolute;
