@@ -18,9 +18,9 @@ body {
 
 #compPic {
     position:absolute;
-    height:450px;
-    width:70%;
-    right:-10px;
+    /*height:450px;*/
+    width:1000px;
+    right:0px;
     top:-40px;
 }
 
