@@ -16,7 +16,7 @@ $(document).ready(function(){
                 var list='';
                 for(var i=0; i<articleList.length;i++){
                     var x =articleList[i].content;
-                    list= list+ '<li class="list"> <p> <p><a class = "listHyp" href = "/article/'+articleList[i].heading + '">'+articleList[i].heading + '</a></p>'+ x.substring(3,120)+ '....&emsp;&emsp;&emsp;<a  class = "listHyp" href="www.google.com">Read more....</a><p>Likes: ' +articleList[i].likes + '</p></p></li>';
+                    list= list+ '<li class="list"> <p> <p><a class = "listHyp" href = "/article/'+articleList[i].heading + '">'+articleList[i].heading + '</a> <span class ="likes">Likes: ' +articleList[i].likes + '</span></p>'+ x.substring(3,120)+ '....&emsp;&emsp;&emsp;<a  class = "listHyp" href="www.google.com">Read more....</a></p></li>';
                     list=list+'<li class="hiddenlist"> </li>';
                 }
                 console.log(list);
