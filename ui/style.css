@@ -21,7 +21,7 @@ body {
     /*height:450px;*/
     width:1000px;
     right:0px;
-    top:-50px;
+    top:-70px;
 }
 
 /*#wood {
@@ -115,7 +115,7 @@ a {
  	position:absolute;
 	margin: 0;
 	top :15px;
-	right:0;
+	right:5%;
 	font-size:25px;
 }
 #signUpTab {
