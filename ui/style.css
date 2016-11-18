@@ -190,7 +190,7 @@ a {
  }
 
 .likes {
-    text-align:right;
+    float:right;
 }
 
 #articleTwo {
