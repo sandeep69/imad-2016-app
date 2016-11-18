@@ -20,7 +20,7 @@ h2, h1{
 }
 #articleH {
     position:absolute;
-    top:-50%;
+    top:-50px;
 }
 #compPic {
     position:absolute;
