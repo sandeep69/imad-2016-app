@@ -175,8 +175,8 @@ a {
 }
 .list {
 	background-color:#eac75e;
-    border:1px solid white;
-	width:700px;
+	box-shadow: 10px 10px 5px #888888;
+   	width:700px;
 	padding:10px;
     font-size:20px;
 	color:black;
