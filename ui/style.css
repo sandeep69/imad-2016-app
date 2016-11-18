@@ -1,21 +1,20 @@
 body {
     position: relative;
-    background-image:url("http://www.webdesignburn.com/wp-content/uploads/2015/04/Grey-Texture-Background-and-Wallpaper-24.jpg");
+    background-image:url("http://www.webdesignburn.com/wp-content/uploads/2015/04/Grey-Texture-Background-and-Wallpaper-9.jpg.jpg");
    /*background-position:center;*/
     font-family: "Times New Roman";
     height:600px;	
    background-size:cover;
     margin-top: 75px;
 }
-#tabs {
+/*#tabs {
    position:absolute;
     height:50px;
     width:160%;
     left:-280px;
     top:-100px; 
-    background-image:url("http://www.webdesignburn.com/wp-content/uploads/2015/04/Grey-Texture-Background-and-Wallpaper-9.jpg");
     color:white;
-}
+}*/
 
 #compPic {
     position:absolute;
@@ -25,14 +24,13 @@ body {
     top:-40px;
 }
 
-#wood {
+/*#wood {
     position:absolute;
-    background-image:url("http://www.webdesignburn.com/wp-content/uploads/2015/04/Grey-Texture-Background-and-Wallpaper-9.jpg");
     height:800%;
     width:41%;
     left:-250px;
     top:-80px;    
-}
+}*/
 a {
     color:#C70039;
     font-weight:bold;
