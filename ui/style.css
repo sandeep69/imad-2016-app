@@ -18,6 +18,10 @@ body {
 h2, h1{
     color:white;
 }
+#articleH {
+    position:absolute;
+    top:-5%;
+}
 #compPic {
     position:absolute;
     height:117%;
