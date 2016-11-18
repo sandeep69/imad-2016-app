@@ -15,11 +15,12 @@ $(document).ready(function(){
                 articleList = JSON.parse(articleList);
                 var list='';
                 for(var i=0; i<articleList.length;i++){
-                    list= list+ '<li> <p> <a href = "/article/'+articleList[i].heading + '">' + articleList[i].heading + '</a></p></li>';
+                    list= list+ '<li> <p> <div> <a href = "/article/'+articleList[i].heading + '">' + articleList[i].heading + '</a><p> </div></p></li>';
                 }
                 console.log(list);
                 var nameList = document.getElementById("articleList");
                 nameList.innerHTML = list;
+                nameList.style.display = block;
            
             }
         }
