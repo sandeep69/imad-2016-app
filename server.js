@@ -44,6 +44,7 @@ var htmlTemplate= `<html>
     <body>
         
         <div class="container">
+        <div class="articleContainer">
             <div>
                 <a href="/" id="home"> Home</a>
                 <hr/>
@@ -63,6 +64,7 @@ var htmlTemplate= `<html>
             <input type="submit" value="Submit" id="commentB"></input>
             <ul id="commentList">
             </ul>
+        </div>    
         </div>
         <script type="text/javascript" src="/ui/app.js">
         </script>
