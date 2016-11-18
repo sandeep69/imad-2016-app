@@ -188,10 +188,12 @@ a {
 .listHyp {
     color:#3f6f3f;
     float:right;
+    font-size:15px;
  }
 
 .likes {
     float:right;
+    font-size:15px;
 }
 
 #articleTwo {
