@@ -108,28 +108,28 @@ a {
  	position:absolute;
 	margin: 0;
 	top :15px;
-	right: 25%;
-	font-size:20px;
+	right: 20%;
+	font-size:25px;
 }
 #profileTab {
  	position:absolute;
 	margin: 0;
 	top :15px;
-	right:17%;
-	font-size:20px;
+	right:0;
+	font-size:25px;
 }
 #signUpTab {
  	position:absolute;
 	margin: 0;
 	top :15px;
-	right: -15%;
+	right: -20%;
 	background-color:transparent;
 	border:none;
 	color:#C70039;
  	font-weight:bold;
 	font-family:"Times New Roman";
     	text-decoration:none;
-	font-size:20px;
+	font-size:25px;
 }
 
 
