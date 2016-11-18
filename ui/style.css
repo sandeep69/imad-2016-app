@@ -185,6 +185,10 @@ a {
    
 }
 
+a.list {
+    color:green;
+}
+
 #articleTwo {
 	position:absolute;
 	background-color:#4793d0;
