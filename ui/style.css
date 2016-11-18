@@ -175,7 +175,7 @@ a {
 	box-shadow: 10px 10px 5px #504f4f;
    	width:700px;
 	padding:10px;
-    font-size:17px;
+    font-size:15px;
 	color:black;
 }
 .hiddenlist {
@@ -188,12 +188,17 @@ a {
 .listHyp {
     color:#3f6f3f;
     float:right;
-    font-size:15px;
+    font-size:12px;
+ }
+ 
+ .listHeading {
+     font-size:20px;
+     font-weight:bold;
  }
 
 .likes {
     float:right;
-    font-size:15px;
+    font-size:12px;
 }
 
 #articleTwo {
