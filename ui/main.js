@@ -18,6 +18,7 @@ $(document).ready(function(){
                     var x =articleList[i].content;
                     console.log(x.substring(0,50));
                     list= list+ '<li class="list"> <p> <p><a href = "/article/'+articleList[i].heading + '">'+articleList[i].heading + '</a></p>'+ x.substring(3,50)+ '....&emsp;&emsp;&emsp;<a href="www.google.com">Read more....</a></p></li>';
+                    list=list+'<li class="hiddenlist"> </li>'
                 }
                 console.log(list);
                 var nameList = document.getElementById("articleList");
