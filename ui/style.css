@@ -114,14 +114,14 @@ a {
 #profileTab {
  	position:absolute;
 	margin: 0;
-	top :15px;
+	top :5px;
 	right:5%;
 	font-size:25px;
 }
 #signUpTab {
  	position:absolute;
 	margin: 0;
-	top :15px;
+	top :10px;
 	right: -20%;
 	background-color:transparent;
 	border:none;
