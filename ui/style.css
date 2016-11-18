@@ -203,6 +203,7 @@ border:4px solid navy;
 
 #MPheading {
 	position:absolute;
+	opacity:0.5;
     width:200px;
     bottom:-220%;
     right:-20%;
