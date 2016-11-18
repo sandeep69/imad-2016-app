@@ -169,6 +169,10 @@ a {
 	
 }
 
+#articleList {
+    position:absolute;
+	left:0;
+}
 .list {
 	background-color:#eac75e;
     border:1px solid white;
