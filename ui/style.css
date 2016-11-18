@@ -186,7 +186,8 @@ a {
 }
 
 .listHyp {
-    color:#3f6f3f;;
+    color:#3f6f3f;
+    float:right;
  }
 
 .likes {
