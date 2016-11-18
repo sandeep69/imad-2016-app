@@ -15,8 +15,8 @@ $(document).ready(function(){
                 articleList = JSON.parse(articleList);
                 var list='';
                 for(var i=0; i<articleList.length;i++){
-                    var x =articleList[i].content.substring(0,100);
-                    console.log(x);
+                    var x =articleList[i].content;
+                    console.log(x.substring(0,100));
                     list= list+ '<li class="list"> <p> <a href = "/article/'+articleList[i].heading + '">' + articleList[i].heading + '</a> articleList[i].content.substring(0,100)  &emsp;&emsp;&emsp;<a href="www.google.com">Read more....</a> </p></li>';
                 }
                 console.log(list);
