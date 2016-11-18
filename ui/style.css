@@ -19,7 +19,7 @@ body {
 #compPic {
     position:absolute;
     /*height:450px;*/
-    width:1000px;
+    width:40%;
     right:0px;
     top:-90px;
 }
