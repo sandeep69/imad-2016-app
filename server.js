@@ -98,7 +98,7 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 app.get('/profile', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'profile.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/hours', function (req, res) {
