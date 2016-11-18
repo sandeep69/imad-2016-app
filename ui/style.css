@@ -15,12 +15,14 @@ body {
     top:-100px; 
     color:white;
 }*/
-
+h2, h1{
+    color:white;
+}
 #compPic {
     position:absolute;
     height:117%;
     width:50%;
-    right:0px;
+    right:0;
     top:-90px;
 }
 
