@@ -22,7 +22,7 @@ $(document).ready(function(){
                 console.log(list);
                 var nameList = document.getElementById("articleList");
                 nameList.innerHTML = list;
-                console.log( nameList.innerHTML) ;
+                console.log( nameList.innerHTML) 
               
             }
         }
