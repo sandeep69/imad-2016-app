@@ -161,7 +161,7 @@ a {
 
 	position:absolute;
 	width:500px;
-	left:50px;
+	left:0;
 	text-align:center;
 	color:black;
 	font-weight:bold;
@@ -173,7 +173,7 @@ a {
 	background-color:#eac75e;
     border:1px solid white;
 	width:500px;
-	padding:20px;
+	padding:10px;
     font-size:20px;
 	color:black;
 }
