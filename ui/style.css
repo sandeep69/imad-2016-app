@@ -64,6 +64,10 @@ a {
     color: black;
 }
 
+.articleContainer {
+    background-color:rgb(247, 232, 187);
+}
+
 #profile-pic{
     position: absolute;
     margin:0;
