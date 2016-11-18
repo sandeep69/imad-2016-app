@@ -169,7 +169,7 @@ a {
 
 #articleList {
     position:absolute;
-	left:-260px;
+	left:-50%;
 }
 .list {
 	background-color:#eac75e;
