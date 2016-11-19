@@ -1,4 +1,5 @@
 // load all the articles names
+/*
 $(document).ready(function(){
    var request = new XMLHttpRequest();
 
@@ -35,7 +36,7 @@ $(document).ready(function(){
 
 });
 
-    
+*/    
 //to create a login account
     
 var submitB= document.getElementById('submitButton');
