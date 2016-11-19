@@ -17,6 +17,7 @@ commentSB.onclick = function(){
                 
                 var comments = request.responseText;
                 comments = JSON.parse(comments);
+                console.log(comments);
                 var list='';
                 for(var i=0; i<comments.length;i++){
                     list= list+ '<li> <p>' + comments[i].date +'</p><p>'+ comments[i].comment + '</p></li>';
@@ -29,8 +30,6 @@ commentSB.onclick = function(){
         //make a request to get the counter 
         
  
-   
-    
     };
      var user = document.getElementById("comment");
      var pageH = document.getElementById("myHeader");
