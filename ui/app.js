@@ -21,7 +21,7 @@ commentSB.onclick = function(){
                
                 var list='';
                 for(var i=0; i<comments.length;i++){
-                    list= list+ '<li> <p>' + comments[i].comments.date +'</p><p>'+ comments[i].comments.comment + '</p></li>';
+                    list= list+ '<li> <p>' + comments[i].date +'</p><p>'+ comments[i].comment + '</p></li>';
                 }
               
                 var nameList = document.getElementById("commentList");
