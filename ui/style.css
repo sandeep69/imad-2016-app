@@ -166,6 +166,7 @@ a {
 #articleList {
     position:absolute;
 	left:-27%;
+	list-style:none;
 }
 .list {
 	background-color:rgb(247, 232, 187);
