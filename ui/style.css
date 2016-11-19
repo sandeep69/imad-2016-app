@@ -59,6 +59,7 @@ a {
 
 .articleContainer {
     background-color:rgb(247, 232, 187);
+    padding : 20;
 }
 
 #profile-pic{
