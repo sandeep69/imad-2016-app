@@ -60,8 +60,8 @@ submitB.onclick = function(){
             if (request.status === 200) {
                 
                 var signUp = document.getElementById("signUpBox");
-	            console.log(signUp);
 	            signUp.style.display ="none";
+	            console.log(signUp);
                 alert ('Successfully logged in');
             }
             else { 
