@@ -78,7 +78,7 @@ var htmlTemplate= `<html>
             </div>
         </div>    
         </div>
-        <script type="text/javascript" src="/ui/app.js">
+        <script type="text/javascript" src="/ui/app.js"> </script>
         <script type="text/javascript" src="/ui/main.js">
         </script>
     </body>
