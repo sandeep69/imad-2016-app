@@ -16,8 +16,9 @@ commentSB.onclick = function(){
             if (request.status === 200) {
                 
                 var comments = request.responseText;
+                 console.log(comments);
                 comments = JSON.parse(comments);
-                console.log(comments);
+               
                 var list='';
                 for(var i=0; i<comments.length;i++){
                     list= list+ '<li> <p>' + comments[i].date +'</p><p>'+ comments[i].comment + '</p></li>';
