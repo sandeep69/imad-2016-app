@@ -65,6 +65,17 @@ var htmlTemplate= `<html>
             <input type="submit" value="Submit" id="commentB"></input>
             <ul id="commentList">
             </ul>
+             <div id = "signUpBox">
+    	        <input type="submit" value="X" id="closeButton"/>
+                <h2>Login/Sign Up</h2>
+                <input type="text" id="username" placeholder="User Name"/>
+                <input type="password" id="password" placeholder="password"/>
+                <p>
+                    <input type="submit" value="Login" id="logsubmitButton"/>
+                    &emsp;&emsp;&emsp;
+                    <input type="submit" value="Sign Up" id="submitButton"/>
+                </p>
+            </div>
         </div>    
         </div>
         <script type="text/javascript" src="/ui/app.js">
