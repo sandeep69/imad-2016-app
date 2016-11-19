@@ -11,6 +11,11 @@ body {
 h1{
     color:white;
 }
+h3 {
+    font-size:15px;
+    text-decoration:none;
+}
+
 #articleH {
     position:absolute;
     top:-60px;
