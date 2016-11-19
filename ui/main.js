@@ -87,7 +87,7 @@ signUpTab.onclick = function(){
 };
 closeButton.onclick = function(){
     
-   
+    alert("close clicked");
 	var signUp = document.getElementById("signUpBox");
 	console.log(signUp);
 	signUp.style.display ="none";
