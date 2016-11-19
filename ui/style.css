@@ -63,6 +63,8 @@ a {
 }
 
 .articleContainer {
+    position:relative;
+    top:10%;
     background-color:rgb(247, 232, 187);
     padding : 20;
 }
@@ -75,16 +77,17 @@ a {
 }
 
 #side-text{
-    position: absolute;
+    position: relative;
     margin:0;
     top:20px;
-    left:400px;
+    left:60%
+
 }
 
 #bottom-text{
-    position: absolute;
+    position: relative;
     margin:0;
-    top:250px;
+    top:60%;
     left:0;
     text-align: justify;
     line-height: 30px
