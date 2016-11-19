@@ -65,7 +65,7 @@ a {
 .articleContainer {
     position:relative;
     top:20px;
-    background-color:rgb(247, 232, 187);
+   
     padding : 20px;
     z-index:-1;
 }
@@ -79,6 +79,7 @@ a {
 
 #side-text{
     position: relative;
+    background-color:rgb(247, 232, 187);
     margin:0;
     top:20px;
     left:60%;
@@ -88,6 +89,7 @@ a {
 
 #bottom-text{
     position: relative;
+    background-color:rgb(247, 232, 187);
     top:80%;
     left:0;
     text-align: justify;
