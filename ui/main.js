@@ -19,6 +19,9 @@ submitB.onclick = function(){
             if (request.status === 200) {
   
                 alert ('Successfully signed up');
+                var signUp = document.getElementById("signUpBox");
+	            console.log(signUp);
+	            signUp.style.display ="none";
 
             }
             else { 
@@ -55,9 +58,11 @@ submitB.onclick = function(){
         if(request.readyState === XMLHttpRequest.DONE){
             //check if it was a success
             if (request.status === 200) {
-  
+                
+                var signUp = document.getElementById("signUpBox");
+	            console.log(signUp);
+	            signUp.style.display ="none";
                 alert ('Successfully logged in');
-
             }
             else { 
                 alert(request.responseText);
