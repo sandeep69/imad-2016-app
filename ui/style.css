@@ -87,8 +87,7 @@ a {
 
 #bottom-text{
     position: relative;
-
-    top:80px;
+    top:80%;
     left:0;
     text-align: justify;
     line-height: 30px;
