@@ -65,9 +65,7 @@ a {
 .articleContainer {
     position:relative;
     top:20px;
-   
     padding : 20px;
-    z-index:-1;
 }
 
 #profile-pic{
