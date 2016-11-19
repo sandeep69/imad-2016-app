@@ -80,6 +80,7 @@ a {
 #side-text{
     position: relative;
     background-color:rgb(247, 232, 187);
+    width:500px;
     padding:20px;
     margin:0;
     top:20px;
