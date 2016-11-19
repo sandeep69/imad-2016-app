@@ -108,10 +108,13 @@ app.get('/hours', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'hours1.png'));
 });
 
+app.get('/ui/mainPage.js', function (req, res) {
+     res.sendFile(path.join(__dirname, 'ui', 'mainPage.js'));
+});
+
 app.get('/ui/main.js', function (req, res) {
      res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
-
 var counter=0;
 app.get('/counter', function (req, res) {
     counter++;
