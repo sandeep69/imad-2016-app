@@ -80,6 +80,7 @@ a {
 #side-text{
     position: relative;
     background-color:rgb(247, 232, 187);
+    padding:20px;
     margin:0;
     top:20px;
     left:60%;
@@ -90,7 +91,8 @@ a {
 #bottom-text{
     position: relative;
     background-color:rgb(247, 232, 187);
-    top:80%;
+    padding:20px;
+    top:100px;
     left:0;
     text-align: justify;
     line-height: 30px;
