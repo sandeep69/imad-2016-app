@@ -57,14 +57,14 @@ a {
     margin: 0 auto;
     text-align:left;
     max-width: 1000px;
-    padding-left:20;
-    padding-right:20;
+    padding-left:20px;
+    padding-right:20px;
     color: black;
 }
 
 .articleContainer {
     position:relative;
-    top:10%;
+    top:20px;
     background-color:rgb(247, 232, 187);
     padding : 20px;
 }
