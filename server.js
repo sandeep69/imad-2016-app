@@ -44,11 +44,13 @@ var htmlTemplate= `<html>
     <body>
         
         <div class="container">
+        <p id= "tabs">
+            <a href='/' id="homeTab">Home</a>
+            <a href='/profile' id="profileTab">Profile</a>
+    	    <input type="submit" value="Sign Up/Register" id="signUpTab"/>
+        </p>
         <div class="articleContainer">
-            <div>
-                <a href="/" id="home"> Home</a>
-                <hr/>
-            </div>
+           
             <div>
                 <h2 id="myHeader"> ${heading}</h2>
             </div>
@@ -58,8 +60,7 @@ var htmlTemplate= `<html>
             <div>
                 ${content}
             </div>
-            <p id="check">Susan</p>
-            <hr/>
+            
             <input type="text" id="comment" placeholder="Comment"></input>
             <input type="submit" value="Submit" id="commentB"></input>
             <ul id="commentList">
