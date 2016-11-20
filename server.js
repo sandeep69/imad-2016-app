@@ -60,9 +60,10 @@ var htmlTemplate= `<html>
             <div>
                 ${content}
             </div>
-            
-            <input type="text" id="comment" placeholder="Comment"></input>
-            <input type="submit" value="Submit" id="commentB"></input>
+            <div id = "commentDisplay">
+                <input type="text" id="comment" placeholder="Comment"></input>
+                <input type="submit" value="Submit" id="commentB"></input>
+            </div>
             <ul id="commentList">
             </ul>
              <div id = "signUpBox">
