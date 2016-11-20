@@ -224,3 +224,8 @@ a {
     bottom:-680px;
     right:-17%;
 }
+
+#comment, #commentB {
+    display:none;
+}
+}
