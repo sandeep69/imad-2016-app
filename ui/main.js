@@ -62,6 +62,10 @@ submitB.onclick = function(){
                 var signUp = document.getElementById("signUpBox");
 	            signUp.style.display ="none";
 	            console.log(signUp);
+	             var comment = document.getElementById("comment");
+	            comment.style.display ="block";
+	            comment = document.getElementById("commentB");
+	            comment.style.display ="block";
                 alert ('Successfully logged in');
             }
             else { 
