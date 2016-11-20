@@ -212,7 +212,21 @@ app.post ('/login', function(req,res){
 //api to check if logged in 
 app.get('/check-login', function(req,res){
     if (req.session && req.session.auth && req.session.auth.userId){
-        res.send("You are logged in as :" + req.session.auth.userId.toString());
+        //return the username
+        pool.query('SELECT * FROM "user" WHERE id = $1', [req.session.auth.userId], function(err,result){
+            if (err) {
+                  res.status(500).send(err.toString());
+              } else {
+                  if (result.rows.length === 0){
+                      res.status(404).send("Article not found");
+                  }
+                  else {
+                     var userData = result.rows[0];
+                     console.log(userData);
+                     res.send("You are logged in as :" + userData.username);
+              }
+          });
+       );
     } else {
         res.send("You are not logged in");
     }
@@ -273,8 +287,7 @@ app.get('/:an/comment_list', function (req, res) {
             });
       }
     });  
-    
-  
+ 
 
 });
 
