@@ -104,7 +104,7 @@ var an = "article-five";
     var date = new Date();
     date = date.toDateString();
     var name = "susan";
-pool.query("INSERT INTO comments (article, date, comment, user-name) VALUES ($1,$2,$3, $4)", [an,date,feedback, name],function(err,result){
+pool.query("INSERT INTO comments (article, date, comment, 'user-name') VALUES ($1,$2,$3, $4)", [an,date,feedback, name],function(err,result){
       if (err) {
           res.status(500).send(err.toString());
       } else {
