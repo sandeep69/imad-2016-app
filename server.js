@@ -103,7 +103,7 @@ var an = "article-five";
     var feedback = "try again";
     var date = new Date();
     date = date.toDateString();
-    var name = "susan"
+    var name = "susan";
 pool.query("INSERT INTO comments (article, date, comment, username) VALUES ($1,$2,$3, $4)", [an,date,feedback, name],function(err,result){
       if (err) {
           res.status(500).send(err.toString());
@@ -281,7 +281,7 @@ app.get('/:an/comment_list', function (req, res) {
     var feedback = req.query.comment;
     var date = new Date();
     date = date.toDateString();
-    var name = "susan"
+    var name = "susan";
     
     pool.query("INSERT INTO comments (article, date, comment, username) VALUES ($1,$2,$3, $4)", [an,date,feedback, name],function(err,result){
       if (err) {
