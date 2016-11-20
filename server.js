@@ -91,7 +91,7 @@ var pool = new Pool(config);
 
 app.get ('/test-db', function (req,res) {
 
-    pool.query('SELECT * FROM "user"', function(err,result){ 
+    pool.query('SELECT * FROM test', function(err,result){ 
         if (err) {
             res.status(500).send(err.toString());
         } else {
@@ -213,7 +213,7 @@ app.post ('/login', function(req,res){
 app.get('/check-login', function(req,res){
     if (req.session && req.session.auth && req.session.auth.userId){
         //return the username
-        pool.query('SELECT * FROM "user" WHERE id = $1', [req.session.auth.userId], function(err,result){
+    /*    pool.query("SELECT * FROM "user" WHERE id = $1", [req.session.auth.userId], function(err,result){
             if (err) {
                   res.status(500).send(err.toString());
               } else {
@@ -221,12 +221,14 @@ app.get('/check-login', function(req,res){
                       res.status(404).send("Article not found");
                   }
                   else {
-                     var userData = result.rows[0];
-                     console.log(userData);
-                     res.send("You are logged in as :" + userData.username);
+                     var articleData = result.rows[0];
+    */                 
+                     res.send("You are logged in as :" + req.session.auth.userId.toString());
+    /*                 
               }
           });
        );
+    */   
     } else {
         res.send("You are not logged in");
     }
