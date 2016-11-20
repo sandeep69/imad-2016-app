@@ -225,7 +225,7 @@ a {
     right:-17%;
 }
 
-#comment, #commentB {
+#commentDisplay {
     display:none;
 }
 }
