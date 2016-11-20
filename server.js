@@ -257,8 +257,9 @@ app.get('/:an/comment_list', function (req, res) {
     var feedback = req.query.comment;
     var date = new Date();
     date = date.toDateString();
+    var username = "Susan";
   
-    pool.query("INSERT INTO comments (article, date, comment) VALUES ($1,$2,$3)", [an,date,feedback],function(err,result){
+    pool.query("INSERT INTO comments (article, date, comment, username) VALUES ($1,$2,$3, $4)", [an,date,feedback,username],function(err,result){
       if (err) {
           res.status(500).send(err.toString());
       } else {
