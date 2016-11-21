@@ -322,8 +322,8 @@ app.get('/:an/:name/comment_list', function (req, res) {
 app.get('/:an/get_comment_list', function (req, res) {
     var an = req.params.an;
 
-res.send (an);   
-/* 
+/*res.send (an);   */
+ 
     pool.query("SELECT * FROM comments WHERE article = $1", [an],function(err,result){
        if(err) {
             res.status(500).send(err.toString());
@@ -337,7 +337,7 @@ res.send (an);
        });
     
     });  
-*/ 
+
 
 });
 
