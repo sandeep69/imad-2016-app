@@ -73,7 +73,7 @@ $(document).ready(function() { //remember to include jquery.min.js in the html f
   
     request.open('GET', 'http://sandeep69.imad.hasura-app.io/check-login',true);
     request.send(null);
- */ 
+
 });
 
 
