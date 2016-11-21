@@ -20,18 +20,19 @@ var name = '';
         if(request.readyState === XMLHttpRequest.DONE){
             //check if it was a success
             if (request.status === 200) {
+                console.log(request.responseText);
                name = name + request.responseText; 
+               return name;
             }
         }
        
     };
     
-    alert("username = "+name);
+  
     request.open('GET', 'http://sandeep69.imad.hasura-app.io/check-login',true);
     request.send(null);
     
-    return name;
-    
+ 
 }
 
 
