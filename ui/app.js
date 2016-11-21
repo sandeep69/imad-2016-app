@@ -2,12 +2,7 @@
 
 
 $(document).ready(function() {
-    // load existing comments 
    
-    //diplay the comment list from dbase
-    
-      //check if user logged in. If so get the username
-      
      //check if user has logged in - if yes show the commentDisplay box  
     var request = new XMLHttpRequest();
 
