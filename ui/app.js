@@ -1,5 +1,12 @@
 //adding comments in article
 
+function display_likes()
+{
+    console.log("going to fetch likes")
+}
+
+
+
 
 $(document).ready(function() { //remember to include jquery.min.js in the html file
    
@@ -47,6 +54,7 @@ $(document).ready(function() { //remember to include jquery.min.js in the html f
                   
                             var nameList = document.getElementById("commentList");
                             nameList.innerHTML = list;
+                            display_likes();
                         }
                 }
                 
