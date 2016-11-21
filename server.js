@@ -292,7 +292,7 @@ app.get('/listOfArticles',function(req,res){
 });
 
 
-app.get('/:an/likes', function (req, res) {
+app.get('/:an/like', function (req, res) {
     var an = req.params.an;
     res.send("likes");
 }
