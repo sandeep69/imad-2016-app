@@ -289,12 +289,12 @@ app.get('/listOfArticles',function(req,res){
 });
 
 
-app.get('/:an/comment_list', function (req, res) {
+app.get('/:an/:name/comment_list', function (req, res) {
     var an = req.params.an;
     var feedback = req.query.comment;
     var date = new Date();
     date = date.toDateString();
-    var name = "susan";
+    var name = req.params.name;
     
     pool.query("INSERT INTO comments (article, date, comment, name) VALUES ($1,$2,$3, $4)", [an,date,feedback, name],function(err,result){
       if (err) {
