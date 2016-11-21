@@ -1,6 +1,6 @@
 //adding comments in article
 
-function display_likes()
+function display_likes(page)
 {
     console.log("going to fetch likes");
     var request = new XMLHttpRequest();
@@ -17,11 +17,11 @@ function display_likes()
             }
         }
     };
-    
+    /*
     var pageH = document.getElementById("myHeader");
     var page=pageH.innerHTML; 
     console.log("getting likes count for:"+page);
-         
+    */     
     request.open('GET', 'http://sandeep69.imad.hasura-app.io/'+page+'/likes',true);
     request.send(null);
 }
@@ -76,7 +76,7 @@ $(document).ready(function() { //remember to include jquery.min.js in the html f
                             var nameList = document.getElementById("commentList");
                             nameList.innerHTML = list;
                             console.log ("article:"+page);
-                            display_likes();
+                            display_likes(page);
                         }
                 }
                 
