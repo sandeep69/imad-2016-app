@@ -317,11 +317,13 @@ app.get('/:an/:name/comment_list', function (req, res) {
 
 });
 
-/*
+
 //to only get the comment list
 app.get('/:an/get_comment_list', function (req, res) {
     var an = req.params.an;
-   
+
+res.send ("trial");   
+/* 
     pool.query("SELECT * FROM comments WHERE article = $1", [an],function(err,result){
        if(err) {
             res.status(500).send(err.toString());
@@ -335,10 +337,10 @@ app.get('/:an/get_comment_list', function (req, res) {
        });
     
     });  
- 
+*/ 
 
 });
-*/
+
 
 app.get('/article/:articleName', function (req, res) {
 
