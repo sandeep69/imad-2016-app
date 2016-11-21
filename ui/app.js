@@ -1,6 +1,15 @@
 //adding comments in article
 
 
+$(document).ready(function() {
+    // load existing comments 
+    //check if user has logged in - if yes show the commentDisplay box
+    //diplay the comment list from dbase
+});
+
+
+
+
 var commentSB= document.getElementById('commentB');
 commentSB.onclick = function(){
     //get the response
@@ -41,7 +50,7 @@ commentSB.onclick = function(){
      var page='';
     page=pageH.innerHTML; 
     alert("The inner html = "+page);
-    
+    //get the user name and send it too
     request.open('GET', 'http://sandeep69.imad.hasura-app.io/'+page+'/comment_list?comment='+user.value,true);
     request.send(null);
  
