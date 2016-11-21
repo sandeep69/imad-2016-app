@@ -318,6 +318,27 @@ app.get('/:an/:name/comment_list', function (req, res) {
 });
 
 
+//to only get the comment list
+app.get('/:an/get_comment_list', function (req, res) {
+    var an = req.params.an;
+   
+    pool.query("SELECT * FROM comments WHERE article = $1", [an],function(err,result){
+       if(err) {
+            res.status(500).send(err.toString());
+            } else if (result.rows.length === 0){
+              res.status(404).send("Be the first to Comments!");
+            }
+            else {
+                var CommentList = result.rows;
+                res.send(JSON.stringify(CommentList));
+            }
+       });
+    
+    });  
+ 
+
+});
+
 app.get('/article/:articleName', function (req, res) {
 
   var articleName = req.params.articleName;    
