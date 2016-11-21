@@ -206,8 +206,8 @@ a {
     background-color:white;
     padding-left:10px;
     padding-right:10px;
-    padding-top:10px;
-    padding-bottom:10px;
+    padding-top:4px;
+    padding-bottom:4px;
 }
 
 .hiddenlist {
@@ -250,11 +250,9 @@ a {
 #commentDisplay {
     position:relative;
     left:10%;
-   
     display:none;
 }
 
 #comment {
-    size: 700px;
+    width: 700px;
 }    
-}
