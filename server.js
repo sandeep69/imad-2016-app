@@ -292,6 +292,12 @@ app.get('/listOfArticles',function(req,res){
 });
 
 
+app.get('/:an/likes', function (req, res) {
+    var an = req.params.an;
+    res.send("likes");
+}
+
+
 app.get('/:an/:name/comment_list', function (req, res) {
     var an = req.params.an;
     var feedback = req.query.comment;
