@@ -254,5 +254,7 @@ a {
 }
 
 #comment {
+    position:relative;
     width: 700px;
+    left:5%;
 }    
