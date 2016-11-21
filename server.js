@@ -324,7 +324,7 @@ app.get('/:an/get_comment_list', function (req, res) {
 
 /*res.send (an);   */
  
-    pool.query("SELECT * FROM comments WHERE article = $1", [an],function(err,result){
+    pool.query("SELECT * FROM comments WHERE article = $1", [' ' +an],function(err,result){
        if(err) {
             res.status(500).send(err.toString());
             } else if (result.rows.length === 0){
