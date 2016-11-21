@@ -23,6 +23,7 @@ commentSB.onclick = function(){
                 for(var i=0; i<comments.length;i++){
                     console.log (comments[i].user-name);
                     list= list+ '<li class= "indComment"> <p>' + comments[i].name + '<span class ="listHyp">' +comments[i].date +'</span></p><p>'+ comments[i].comment + '</p></li>';
+                     list=list+'<li class="hiddenlist"> </li>'
                 }
               
                 var nameList = document.getElementById("commentList");
