@@ -58,6 +58,10 @@ var htmlTemplate= `<html>
             <div>
                 <h3>Date: ${date.toDateString()}</h3>
             </div>
+            <div class = "likeBox">
+                <input type="submit" value="Likes" id="likesButton"></input> <span id = "likesCount"> </span>
+              
+            </div>    
             <div>
                 ${content}
             </div>
