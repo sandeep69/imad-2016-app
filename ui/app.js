@@ -1,6 +1,6 @@
 //adding comments in article
 
-/*
+
 $(document).ready(function() {
    
      //check if user has logged in - if yes show the commentDisplay box  
@@ -75,7 +75,7 @@ $(document).ready(function() {
     request.send(null);
   
 });
-*/
+
 
 var commentSB= document.getElementById('commentB');
 commentSB.onclick = function(){
