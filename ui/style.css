@@ -223,6 +223,11 @@ a {
     font-size:12px;
  }
  
+ .bigBold {
+     size:20px;
+     font-weight:bold;
+ }
+ 
  .listHeading {
      font-size:20px;
      font-weight:bold;
@@ -245,6 +250,11 @@ a {
 #commentDisplay {
     position:relative;
     left:10%;
-    width: 700px;
+   
     display:none;
+}
+
+#comment {
+    size: 700px;
+}    
 }
