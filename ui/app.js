@@ -1,12 +1,9 @@
 //adding comments in article
 
 
-$(document).ready(function() {
+$(document).ready(function() { //remember to include jquery.min.js in the html file
    
-   console.log ("ready");
-   
-   /*
-     //check if user has logged in - if yes show the commentDisplay box  
+    //check if user has logged in - if yes show the commentDisplay box  
     var request = new XMLHttpRequest();
 
       //check if response status has changed
