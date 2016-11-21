@@ -8,30 +8,57 @@ $(document).ready(function() {
 });
 */
 
-function getUserName (){
+function getList (name){
 
-  var request = new XMLHttpRequest();
+  
+     var requestList = new XMLHttpRequest();
+    //get the response
+  
+    
+    console.log ("second");
+    console.log(name);
 
-var name = '';
     //check if response status has changed
-    request.onreadystatechange = function(){
+    requestList.onreadystatechange = function(){
          
         //check it result has been loaded
-        if(request.readyState === XMLHttpRequest.DONE){
+        if(requestList.readyState === XMLHttpRequest.DONE){
             //check if it was a success
-            if (request.status === 200) {
-                console.log("second");
-                console.log(request.responseText);
-                return request.responseText;
+            if (requestList.status === 200) {
+                
+                var comments = requestList.responseText;
+                 console.log(comments);
+                comments = JSON.parse(comments);
+               
+                var list='';
+                for(var i=0; i<comments.length;i++){
+                    console.log (comments[i].user-name);
+                    list= list+ '<li class= "indComment"> <p><span class ="bigBold">' + comments[i].name + '</span><span class ="listHyp">' +comments[i].date +'</span></p><p>'+ comments[i].comment + '</p></li>';
+                     list=list+'<li class="hiddenlist"> </li>';
+                }
+              
+                var nameList = document.getElementById("commentList");
+                nameList.innerHTML = list;
             }
         }
-       
+        //make a request to get the counter 
+        
+ 
     };
+     var user = document.getElementById("comment");
+     var pageH = document.getElementById("myHeader");
+
+     
+     var page='';
+    page=pageH.innerHTML; 
+    alert("The inner html = "+page);
+    //get the user name and send it too
+     console.log ("third");
+    console.log(name);
     
   
-    request.open('GET', 'http://sandeep69.imad.hasura-app.io/check-login',true);
-    request.send(null);
-    
+    requestList.open('GET', 'http://sandeep69.imad.hasura-app.io/'+page+'/comment_list?comment='+user.value,true);
+    requestList.send(null);
  
 }
 
@@ -55,6 +82,9 @@ commentSB.onclick = function(){
                 var name = request.responseText;
                 console.log(name);
                 //starts here
+                getList(name);
+                
+/*                
                 var requestList = new XMLHttpRequest();
     //get the response
   
@@ -103,7 +133,9 @@ commentSB.onclick = function(){
   
     requestList.open('GET', 'http://sandeep69.imad.hasura-app.io/'+page+'/comment_list?comment='+user.value,true);
     requestList.send(null);
-  
+ */ 
+ 
+ 
                 //ends here
             }
         }
