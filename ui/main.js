@@ -109,11 +109,11 @@ signOutTab.onclick = function(){
 	            if (comment !== null){
 	                comment.style.display ="none";
 	             }     
-	           alert ('Successfully logged Out');
-	           var signOut = document.getElementById("signOutTab");
-	           signOut.style.display = "none";
-	           var signUp = document.getElementById("signUpTab");
-	           signUp.style.display = "block";
+	            alert ('Successfully logged Out');
+	            var signOut = document.getElementById("signOutTab");
+	            signOut.style.display = "none";
+	            var signUp = document.getElementById("signUpTab");
+	            signUp.style.display = "block";
             }
             else { 
                 alert(request.responseText);
