@@ -279,3 +279,9 @@ a {
     top:-20px;
     width:120px;
 }
+
+.likeBox {
+    position:absolute;
+    top:10px;
+    right:10px;
+}
