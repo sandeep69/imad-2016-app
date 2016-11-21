@@ -88,6 +88,44 @@ submitB.onclick = function(){
  
 };
 
+var signOutTab = document.getElementById("signOutTab");
+signOutTab.onclick = function(){
+    
+    alert ('sign Out clicked');
+    //get the response
+    var request = new XMLHttpRequest();
+   
+    
+    //check if response status has changed
+    request.onreadystatechange = function(){
+         
+        //check it result has been loaded
+        if(request.readyState === XMLHttpRequest.DONE){
+            //check if it was a success
+            if (request.status === 200) {
+                
+                console.log("sign Out");
+	            var comment = document.getElementById("commentDisplay");
+	            if (comment !== null){
+	                comment.style.display ="none";
+	             }     
+	           alert ('Successfully logged Out');
+	           var signOut = document.getElementById("signOutTab");
+	           signOut.style.display = "none";
+	           var signUp = document.getElementById("signUpTab");
+	           signUp.style.display = "block";
+            }
+            else { 
+                alert(request.responseText);
+            }
+        }
+    };
+    
+    request.open('GET', 'http://sandeep69.imad.hasura-app.io/logout',true);
+    request.send(null);
+ 
+};
+
 /* signup tab - open and close*/
 signUpTab.onclick = function(){
     
@@ -98,6 +136,7 @@ signUpTab.onclick = function(){
 
     	console.log(signUp);
 };
+
 closeButton.onclick = function(){
     
     alert("close clicked");
