@@ -295,7 +295,7 @@ app.get('/listOfArticles',function(req,res){
 app.get('/like', function (req, res) {
     var an = req.params.an;
     res.send("likes");
-}
+});
 
 
 app.get('/:an/:name/comment_list', function (req, res) {
