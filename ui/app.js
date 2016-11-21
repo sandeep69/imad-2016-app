@@ -44,6 +44,7 @@ commentSB.onclick = function(){
     console.log ("first");
     var username = getUserName();
     console.log ("third");
+    console.log(username);
 
     //check if response status has changed
     request.onreadystatechange = function(){
@@ -80,10 +81,8 @@ commentSB.onclick = function(){
     page=pageH.innerHTML; 
     alert("The inner html = "+page);
     //get the user name and send it too
-    console.log ("first");
-    var username = getUserName();
-    console.log ("third");
-    console.log(username);
+   
+    
   
     request.open('GET', 'http://sandeep69.imad.hasura-app.io/'+page+'/comment_list?comment='+user.value,true);
     request.send(null);
