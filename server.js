@@ -73,7 +73,7 @@ var htmlTemplate= `<html>
                 <input type="password" id="password" placeholder="password"/>
                 <p>
                     <input type="submit" value="Login" id="logsubmitButton"/>
-                    &emsp;&emsp;&emsp;
+                    &emsp;&emsp;
                     <input type="submit" value="Sign Up" id="submitButton"/>
                 </p>
             </div>
