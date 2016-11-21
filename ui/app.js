@@ -13,7 +13,7 @@ function display_likes()
             //check if it was a success
             if (request.status === 200) {
                 var likeCount = document.getElementById("likeCount");
-                likeCount.value = request.responseText;
+                likeCount.innerHTML = request.responseText;
             }
         }
     };
