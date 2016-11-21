@@ -78,6 +78,7 @@ commentSB.onclick = function(){
     //get the user name and send it too
     
     var username = getUserName();
+    console.log (username);
     alert ('username' + username);
     request.open('GET', 'http://sandeep69.imad.hasura-app.io/'+page+'/comment_list?comment='+user.value,true);
     request.send(null);
