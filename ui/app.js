@@ -39,7 +39,7 @@ var name = '';
 var commentSB= document.getElementById('commentB');
 commentSB.onclick = function(){
     
-    
+     console.log ("entry");
       //check if user logged in. If so get the username
     var request = new XMLHttpRequest();
 
