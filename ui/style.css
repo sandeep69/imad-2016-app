@@ -198,8 +198,12 @@ a {
     width:700px;
     padding:10px;
     font-size:15px;
-  	background-color:white;
   	list-style:none;
+  	left:20%;
+}
+
+.indComment {
+    background-color:white;
 }
 
 .hiddenlist {
