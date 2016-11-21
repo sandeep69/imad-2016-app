@@ -48,6 +48,7 @@ var htmlTemplate= `<html>
             <a href='/' id="homeTab">Home</a>
             <a href='/profile' id="profileTab">Profile</a>
     	    <input type="submit" value="Sign Up/Register" id="signUpTab"/>
+    	    <input type="submit" value="Sign Out" id="signOutTab"/>
         </p>
         <div class="articleContainer">
            
