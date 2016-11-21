@@ -1,11 +1,12 @@
 //adding comments in article
 
-
+/*
 $(document).ready(function() {
     // load existing comments 
     //check if user has logged in - if yes show the commentDisplay box
     //diplay the comment list from dbase
 });
+*/
 
 function getUserName (){
     return "susan";
