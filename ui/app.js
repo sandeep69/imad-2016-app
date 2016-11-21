@@ -12,8 +12,8 @@ function display_likes()
         if(request.readyState === XMLHttpRequest.DONE){
             //check if it was a success
             if (request.status === 200) {
-                var likeCount = document.getElementById("likeCount");
-                likeCount.innerHTML = request.responseText;
+                var likesCount = document.getElementById("likesCount");
+                likesCount.innerHTML = request.responseText;
             }
         }
     };
