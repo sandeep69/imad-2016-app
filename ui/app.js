@@ -20,7 +20,7 @@ function display_likes()
     
     var pageH = document.getElementById("myHeader");
     var page=pageH.innerHTML; 
-    alert("getting likes count for:"+page);
+    console.log("getting likes count for:"+page);
          
     request.open('GET', 'http://sandeep69.imad.hasura-app.io/'+page+'/likes',true);
     request.send(null);
