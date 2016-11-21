@@ -3,6 +3,9 @@
 
 $(document).ready(function() {
    
+   console.log ("ready");
+   
+   /*
      //check if user has logged in - if yes show the commentDisplay box  
     var request = new XMLHttpRequest();
 
@@ -73,7 +76,7 @@ $(document).ready(function() {
   
     request.open('GET', 'http://sandeep69.imad.hasura-app.io/check-login',true);
     request.send(null);
-  
+ */ 
 });
 
 
