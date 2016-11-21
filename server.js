@@ -154,6 +154,7 @@ app.get('/ui/mainPage.js', function (req, res) {
 app.get('/ui/main.js', function (req, res) {
      res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
+
 var counter=0;
 app.get('/counter', function (req, res) {
     counter++;
@@ -289,6 +290,21 @@ app.get('/listOfArticles',function(req,res){
 });
 
 });
+
+app.get('/:an/likes', function(req,res) {
+    var an = req.params.an;
+    pool.query("SELECT * FROM article WHERE heading = $1", [an],function(err,result){
+        if(err) {
+            res.status(500).send(err.toString());
+        } else if (result.rows.length === 0){
+            res.status(404).send("Article not found");
+        }
+        else {
+            var likes = result.rows[0].likes;
+            res.send(likes.toString());
+        }
+    });
+}
 
 
 app.get('/:an/:name/comment_list', function (req, res) {
