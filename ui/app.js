@@ -2,7 +2,29 @@
 
 function display_likes()
 {
-    console.log("going to fetch likes")
+    console.log("going to fetch likes");
+    var request = new XMLHttpRequest();
+
+      //check if response status has changed
+    request.onreadystatechange = function(){
+         
+        //check it result has been loaded
+        if(request.readyState === XMLHttpRequest.DONE){
+            //check if it was a success
+            if (request.status === 200) {
+                var likeCount = document.getElementById("likeCount");
+                likeCount.value = request.responseText;
+            }
+        }
+    };
+    
+    var pageH = document.getElementById("myHeader");
+//var page='';
+    page=pageH.innerHTML; 
+    alert("getting likes count for: "+page);
+         
+    request.open('GET', 'http://sandeep69.imad.hasura-app.io/'+page+'/likes',true);
+    request.send(null);
 }
 
 
