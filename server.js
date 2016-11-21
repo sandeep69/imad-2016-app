@@ -328,12 +328,17 @@ app.get('/:an/get_comment_list', function (req, res) {
        
         if(err) {
             res.status(500).send(err.toString());
-            } else if (result.rows.length === 0){
-              res.status(404).send("Be the first to Comment!");
-            }
-            else {
-                var CommentList = result.rows;
-                res.send(JSON.stringify(CommentList));
+            } else { 
+                res.send("no err")
+                /*
+                if (result.rows.length === 0){
+                  res.status(404).send("Be the first to Comment!");
+                }
+                else {
+                    var CommentList = result.rows;
+                    res.send(JSON.stringify(CommentList));
+                }
+                */
             }
         });
     
