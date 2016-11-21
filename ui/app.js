@@ -53,6 +53,7 @@ commentSB.onclick = function(){
                 console.log("first");
                 console.log(request.responseText);
                 var name = request.responseText;
+                console.log(name);
                 //starts here
                 var requestList = new XMLHttpRequest();
     //get the response
