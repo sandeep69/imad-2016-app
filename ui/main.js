@@ -67,6 +67,10 @@ submitB.onclick = function(){
 	                comment.style.display ="block";
 	             }     
 	           alert ('Successfully logged in');
+	           var signUp = document.getElementById("signUpTab");
+	           signUp.style.display = "none";
+	           var signOut = document.getElementById("signOutTab");
+	           signOut.style.display = "block";
             }
             else { 
                 alert(request.responseText);
