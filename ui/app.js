@@ -38,27 +38,6 @@ var name = '';
 
 var commentSB= document.getElementById('commentB');
 commentSB.onclick = function(){
-    //check if user logged in. If so get the username
-    var request = new XMLHttpRequest();
-
-      //check if response status has changed
-    request.onreadystatechange = function(){
-         
-        //check it result has been loaded
-        if(request.readyState === XMLHttpRequest.DONE){
-            //check if it was a success
-            if (request.status === 200) {
-                console.log("first");
-                console.log(request.responseText);
-                var name = request.responseText;
-            }
-        }
-       
-    };
-    
-  
-    request.open('GET', 'http://sandeep69.imad.hasura-app.io/check-login',true);
-    request.send(null);
     
     var requestList = new XMLHttpRequest();
     //get the response
@@ -109,4 +88,26 @@ commentSB.onclick = function(){
     requestList.open('GET', 'http://sandeep69.imad.hasura-app.io/'+page+'/comment_list?comment='+user.value,true);
     requestList.send(null);
  
+  //check if user logged in. If so get the username
+    var request = new XMLHttpRequest();
+
+      //check if response status has changed
+    request.onreadystatechange = function(){
+         
+        //check it result has been loaded
+        if(request.readyState === XMLHttpRequest.DONE){
+            //check if it was a success
+            if (request.status === 200) {
+                console.log("first");
+                console.log(request.responseText);
+                var name = request.responseText;
+            }
+        }
+       
+    };
+    
+  
+    request.open('GET', 'http://sandeep69.imad.hasura-app.io/check-login',true);
+    request.send(null);
+   
 };
