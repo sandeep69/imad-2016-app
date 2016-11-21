@@ -1,7 +1,7 @@
 //adding comments in article
 
 
-$( "document" ).ready(function() {
+$(window).load(function() {
    
    console.log ("ready");
    
