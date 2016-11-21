@@ -238,14 +238,14 @@ app.post ('/login', function(req,res){
 app.get('/check-login', function(req,res){
     if (req.session && req.session.auth && req.session.auth.userId){
         //return the username
-         pool.query('SELECT * FROM "user" WHERE article = $1', [req.session.auth.userId],function(err,result){
+         pool.query('SELECT * FROM "user" WHERE id = $1', [req.session.auth.userId],function(err,result){
                 if(err) {
                     res.status(500).send(err.toString());
                 } else if (result.rows.length === 0){
                   res.status(404).send("Article not found");
                 }
                 else {
-                     var name= result.rows[0].name;
+                     var name= result.rows[0].username;
                      res.send(name);
                 }
             });
