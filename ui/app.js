@@ -27,9 +27,7 @@ commentSB.onclick = function(){
                 //as user is logged in get the list of comments by making next get request
                 var requestList = new XMLHttpRequest();
                 //get the response
-                console.log ("second");
-                console.log(name);
-
+             
                 //check if response status has changed
                 requestList.onreadystatechange = function(){
          
