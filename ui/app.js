@@ -40,7 +40,10 @@ var commentSB= document.getElementById('commentB');
 commentSB.onclick = function(){
     //get the response
     var request = new XMLHttpRequest();
-
+    
+    console.log ("first");
+    var username = getUserName();
+    console.log ("third");
 
     //check if response status has changed
     request.onreadystatechange = function(){
