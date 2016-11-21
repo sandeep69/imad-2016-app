@@ -19,7 +19,7 @@ function display_likes()
     };
     
     var pageH = document.getElementById("myHeader");
-//var page='';
+    var page='';
     page=pageH.innerHTML; 
     alert("getting likes count for: "+page);
          
