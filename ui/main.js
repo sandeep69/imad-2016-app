@@ -63,8 +63,9 @@ submitB.onclick = function(){
 	            signUp.style.display ="none";
 	            console.log(signUp);
 	             var comment = document.getElementById("commentDisplay");
-	             if (comment!=0)
+	             if (comment !=0){
 	                comment.style.display ="block";
+	             }     
 	           alert ('Successfully logged in');
             }
             else { 
