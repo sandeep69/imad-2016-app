@@ -9,7 +9,29 @@ $(document).ready(function() {
 */
 
 function getUserName (){
-    return "susan";
+
+  var request = new XMLHttpRequest();
+
+var name = '';
+    //check if response status has changed
+    request.onreadystatechange = function(){
+         
+        //check it result has been loaded
+        if(request.readyState === XMLHttpRequest.DONE){
+            //check if it was a success
+            if (request.status === 200) {
+               name = name + request.responseText; 
+            }
+        }
+       
+    };
+    
+    alert("username = "+name);
+    request.open('GET', 'http://sandeep69.imad.hasura-app.io/check-login',true);
+    request.send(null);
+    
+    return name;
+    
 }
 
 
