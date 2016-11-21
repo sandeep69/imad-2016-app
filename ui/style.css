@@ -256,9 +256,11 @@ a {
 #comment {
     position:relative;
     width: 700px;
-    left:5%;
+    left:-5%;
 } 
 #commentB {
     position:relative;
-    right:5%;
+    right:-73%;
+    top:-20px;
+    width:120px;
 }
