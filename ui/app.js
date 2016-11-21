@@ -22,7 +22,7 @@ commentSB.onclick = function(){
                 var list='';
                 for(var i=0; i<comments.length;i++){
                     console.log (comments[i].user-name);
-                    list= list+ '<li class= "indComment"> <p>>' + comments[i].name + '<span class ="listHyp">' +comments[i].date +'</span></p><p>'+ comments[i].comment + '</p></li>';
+                    list= list+ '<li class= "indComment"> <p><span class ="bigBold">' + comments[i].name + '</span><span class ="listHyp">' +comments[i].date +'</span></p><p>'+ comments[i].comment + '</p></li>';
                      list=list+'<li class="hiddenlist"> </li>'
                 }
               
