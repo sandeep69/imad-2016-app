@@ -38,23 +38,44 @@ var name = '';
 
 var commentSB= document.getElementById('commentB');
 commentSB.onclick = function(){
-    //get the response
+    //check if user logged in. If so get the username
     var request = new XMLHttpRequest();
-    
-    console.log ("first");
-    var username = getUserName();
-    console.log ("third");
-    console.log(username);
 
-    //check if response status has changed
+      //check if response status has changed
     request.onreadystatechange = function(){
          
         //check it result has been loaded
         if(request.readyState === XMLHttpRequest.DONE){
             //check if it was a success
             if (request.status === 200) {
+                console.log("first");
+                console.log(request.responseText);
+                var name = request.responseText;
+            }
+        }
+       
+    };
+    
+  
+    request.open('GET', 'http://sandeep69.imad.hasura-app.io/check-login',true);
+    request.send(null);
+    
+    var requestList = new XMLHttpRequest();
+    //get the response
+  
+    
+    console.log ("second");
+    console.log(username);
+
+    //check if response status has changed
+    requestList.onreadystatechange = function(){
+         
+        //check it result has been loaded
+        if(requestList.readyState === XMLHttpRequest.DONE){
+            //check if it was a success
+            if (requestList.status === 200) {
                 
-                var comments = request.responseText;
+                var comments = requestList.responseText;
                  console.log(comments);
                 comments = JSON.parse(comments);
                
@@ -81,10 +102,11 @@ commentSB.onclick = function(){
     page=pageH.innerHTML; 
     alert("The inner html = "+page);
     //get the user name and send it too
-   
+     console.log ("third");
+    console.log(username);
     
   
-    request.open('GET', 'http://sandeep69.imad.hasura-app.io/'+page+'/comment_list?comment='+user.value,true);
-    request.send(null);
+    requestList.open('GET', 'http://sandeep69.imad.hasura-app.io/'+page+'/comment_list?comment='+user.value,true);
+    requestList.send(null);
  
 };
