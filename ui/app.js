@@ -125,7 +125,7 @@ commentSB.onclick = function(){
                 console.log(name);
     
   
-                requestList.open('GET', 'http://sandeep69.imad.hasura-app.io/'+page+'/comment_list?comment='+user.value,true);
+                requestList.open('GET', 'http://sandeep69.imad.hasura-app.io/'+page+'/'+name+'/comment_list?comment='+user.value,true);
                 requestList.send(null);
  
  
