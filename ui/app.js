@@ -59,7 +59,7 @@ commentSB.onclick = function(){
   
     
     console.log ("second");
-    console.log(username);
+    console.log(name);
 
     //check if response status has changed
     requestList.onreadystatechange = function(){
@@ -97,7 +97,7 @@ commentSB.onclick = function(){
     alert("The inner html = "+page);
     //get the user name and send it too
      console.log ("third");
-    console.log(username);
+    console.log(name);
     
   
     requestList.open('GET', 'http://sandeep69.imad.hasura-app.io/'+page+'/comment_list?comment='+user.value,true);
