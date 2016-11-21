@@ -195,8 +195,8 @@ a {
 }
 
 #commentList {
+    position:relative;
     width:700px;
-    padding:10px;
     font-size:15px;
   	list-style:none;
   	left:200px;
@@ -204,6 +204,7 @@ a {
 
 .indComment {
     background-color:white;
+    padding:10px;
 }
 
 .hiddenlist {
