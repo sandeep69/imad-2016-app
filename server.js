@@ -292,9 +292,22 @@ app.get('/listOfArticles',function(req,res){
 });
 
 
-app.get('/like', function (req, res) {
+app.get('/:an/likes', function (req, res) {
     var an = req.params.an;
-    res.send("likes");
+   // res.send("likes");
+    pool.query("SELECT * FROM article WHERE title=$1", [an], function(err,result){
+      if (err) {
+          res.status(500).send(err.toString());
+      } else {
+          if (result.rows.length === 0){
+              res.status(404).send("Article not found");
+          }
+          else {
+             var likes = result.rows[0].likes;
+             res.send(likes.toString());
+          }
+      }
+    });
 });
 
 
