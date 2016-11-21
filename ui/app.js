@@ -21,8 +21,7 @@ var name = '';
             //check if it was a success
             if (request.status === 200) {
                 console.log(request.responseText);
-               name = name + request.responseText; 
-               return name;
+                return request.responseText;
             }
         }
        
@@ -79,7 +78,7 @@ commentSB.onclick = function(){
     //get the user name and send it too
     
     var username = getUserName();
-    alert (username);
+    alert ('username' + username);
     request.open('GET', 'http://sandeep69.imad.hasura-app.io/'+page+'/comment_list?comment='+user.value,true);
     request.send(null);
  
