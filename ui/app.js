@@ -85,9 +85,16 @@ $(document).ready(function() { //remember to include jquery.min.js in the html f
                 
                 // display enter comment box
                 var commentDisplay = document.getElementById("commentDisplay");
-	             if (commentDisplay !== null){
+	            if (commentDisplay !== null){
 	                commentDisplay.style.display ="block";
-	             } 
+	                
+	                
+	            }
+	           //already signed in change the signup/register 
+	           var signUp = document.getElementById("signUpTab");
+	           signUp.style.display = "none";
+	           var signOut = document.getElementById("signOutTab");
+	           signOut.style.display = "block";
             }
             //once the request for user name has been processed
             console.log("finished handling comment box display");
