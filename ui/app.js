@@ -1,6 +1,6 @@
 //adding comments in article
 
-function display_likes(page)
+function display_likes(page,inc)
 {
     console.log("going to fetch likes");
     var request = new XMLHttpRequest();
@@ -22,7 +22,7 @@ function display_likes(page)
     };
    
     page = page.substring(1,page.length);
-    request.open('GET', 'http://sandeep69.imad.hasura-app.io/'+ page +'/likes',true);
+    request.open('GET', 'http://sandeep69.imad.hasura-app.io/'+ page +'/likes?inc='+ inc,true);
     request.send(null);
 }
 
@@ -190,16 +190,13 @@ likesButton.onclick = function(){
             //check if it was a success
             if (request.status === 200) {
                 var name = request.responseText;
-                console.log(name);
+                console.log("HEre");
                 
                
             }
+        }    
                 
-                };
-                var user = document.getElementById("comment");
-                var pageH = document.getElementById("myHeader");
-
-     
+/*        
                 var page='';
                 page=pageH.innerHTML; 
                 alert("The inner html = "+page);
@@ -212,7 +209,7 @@ likesButton.onclick = function(){
                 //ends here
             }
         }
-       
+  */     
     };
     
   
