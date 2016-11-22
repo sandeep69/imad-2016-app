@@ -15,9 +15,7 @@ $(document).ready(function() { //remember to include jquery.min.js in the html f
 	           signUp.style.display = "none";
 	           var signOut = document.getElementById("signOutTab");
 	           signOut.style.display = "block";
-	                
-	                
-	        }
+	       }
 	           
         }
        
