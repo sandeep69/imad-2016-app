@@ -298,7 +298,7 @@ app.get('/listOfArticles',function(req,res){
 
 app.get('/:an/likes', function (req, res) {
     var an = req.params.an;
-  
+    var inc = req.query.inc;
     pool.query("SELECT * FROM article WHERE title = $1", [an], function(err,result){
       if (err) {
           res.status(500).send(err.toString());
@@ -308,6 +308,14 @@ app.get('/:an/likes', function (req, res) {
           }
           else {
              var likes = result.rows[0].likes;
+             if (inc === 1){
+                 ++likes;
+                 pool.query("INSERT INTO article (likes) VALUES ($1) WHERE title = $2", [likes,an],function(err,result){
+                    if (err) {
+                        res.status(500).send(err.toString());
+                    } 
+                 });
+             }    
              res.send(likes.toString());
           }
       }
