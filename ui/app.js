@@ -76,7 +76,7 @@ $(document).ready(function() { //remember to include jquery.min.js in the html f
                             var nameList = document.getElementById("commentList");
                             nameList.innerHTML = list;
                             console.log ("article:"+page);
-                            display_likes(page);
+                            display_likes(page,0);
                         }
                 }
                 
@@ -180,41 +180,9 @@ commentSB.onclick = function(){
 var likesButton= document.getElementById('likesButton');
 likesButton.onclick = function(){
     
-    var request = new XMLHttpRequest();
+    var pageH = document.getElementById("myHeader");
+    page=pageH.innerHTML; 
+    display_likes(page,1);
 
-      //check if response status has changed
-    request.onreadystatechange = function(){
-         
-        //check it result has been loaded
-        if(request.readyState === XMLHttpRequest.DONE){
-            //check if it was a success
-            if (request.status === 200) {
-                var name = request.responseText;
-                console.log("HEre");
-                
-               
-            }
-        }    
-                
-/*        
-                var page='';
-                page=pageH.innerHTML; 
-                alert("The inner html = "+page);
-               
-                requestList.open('GET', 'http://sandeep69.imad.hasura-app.io/'+page+'/'+name+'/comment_list?comment='+user.value,true);
-                requestList.send(null);
- 
- 
- 
-                //ends here
-            }
-        }
-  */     
-    };
-    
-  
-    request.open('GET', 'http://sandeep69.imad.hasura-app.io/check-login',true);
-    request.send(null);
-  
 };
 
