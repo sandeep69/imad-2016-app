@@ -176,3 +176,48 @@ commentSB.onclick = function(){
     request.send(null);
   
 };
+
+var likesButton= document.getElementById('likesButton');
+likesButton.onclick = function(){
+    
+    var request = new XMLHttpRequest();
+
+      //check if response status has changed
+    request.onreadystatechange = function(){
+         
+        //check it result has been loaded
+        if(request.readyState === XMLHttpRequest.DONE){
+            //check if it was a success
+            if (request.status === 200) {
+                var name = request.responseText;
+                console.log(name);
+                
+               
+            }
+                
+                };
+                var user = document.getElementById("comment");
+                var pageH = document.getElementById("myHeader");
+
+     
+                var page='';
+                page=pageH.innerHTML; 
+                alert("The inner html = "+page);
+               
+                requestList.open('GET', 'http://sandeep69.imad.hasura-app.io/'+page+'/'+name+'/comment_list?comment='+user.value,true);
+                requestList.send(null);
+ 
+ 
+ 
+                //ends here
+            }
+        }
+       
+    };
+    
+  
+    request.open('GET', 'http://sandeep69.imad.hasura-app.io/check-login',true);
+    request.send(null);
+  
+};
+
