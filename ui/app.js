@@ -147,11 +147,11 @@ function display_comments(name){
  }
  
  
-
+//on clicking submit button of comment
 var commentSB= document.getElementById('commentB');
 commentSB.onclick = function(){
     
-     //check if user logged in. If so get the username
+     //get the username
     var request = new XMLHttpRequest();
 
       //check if response status has changed
@@ -159,11 +159,10 @@ commentSB.onclick = function(){
          
         //check it result has been loaded
         if(request.readyState === XMLHttpRequest.DONE){
-            //check if it was a success - it should as button will be visible only then
             if (request.status === 200) {
                 var name = request.responseText;
                 console.log(name);
-                display_comments(name);
+                display_comments(name); //send name to insert the comment and display the list of comments
                 
     /*
     //as user is logged in get the list of comments by making next get request
