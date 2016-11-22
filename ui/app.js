@@ -28,7 +28,7 @@ function display_likes(page)
 }
 
 
-/*
+
 
 $(document).ready(function() { //remember to include jquery.min.js in the html file
    
@@ -106,7 +106,7 @@ $(document).ready(function() { //remember to include jquery.min.js in the html f
     request.send(null);
 
 });
-*/
+
 
 var commentSB= document.getElementById('commentB');
 commentSB.onclick = function(){
