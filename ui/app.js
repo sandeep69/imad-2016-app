@@ -107,6 +107,49 @@ $(document).ready(function() { //remember to include jquery.min.js in the html f
 
 });
 
+//insert users comment and names and get the comment list
+function display_comments(name){
+    
+    var requestList = new XMLHttpRequest();
+    
+    //check if response status has changed
+    requestList.onreadystatechange = function(){
+         
+        //check it result has been loaded
+        if(requestList.readyState === XMLHttpRequest.DONE){
+            //check if it was a success - it has inserted the comment and returned a list
+            if (requestList.status === 200) {
+                
+                var comments = requestList.responseText;
+                console.log(comments);
+                comments = JSON.parse(comments);
+               
+                var list='';
+                for(var i=0; i<comments.length;i++){
+                    console.log (comments[i].user-name);
+                    list= list+ '<li class= "indComment"> <p><span class ="bigBold">' + comments[i].name + '</span><span class ="listHyp">' +comments[i].date +'</span></p><p>'+ comments[i].comment + '</p></li>';
+                    list=list+'<li class="hiddenlist"> </li>';
+                }
+                  
+                var nameList = document.getElementById("commentList");
+                nameList.innerHTML = list;
+            }
+        }
+                
+    };
+    var user = document.getElementById("comment");
+    var pageH = document.getElementById("myHeader");
+
+     
+    var page='';
+    page=pageH.innerHTML; 
+    alert("The inner html = "+page);
+    //send a request to comment_list - it inserts the comment and returns a list of comments           
+    requestList.open('GET', 'http://sandeep69.imad.hasura-app.io/'+page+'/'+name+'/comment_list?comment='+user.value,true);
+    requestList.send(null);
+ }
+ 
+ 
 
 var commentSB= document.getElementById('commentB');
 commentSB.onclick = function(){
@@ -119,12 +162,14 @@ commentSB.onclick = function(){
          
         //check it result has been loaded
         if(request.readyState === XMLHttpRequest.DONE){
-            //check if it was a success
+            //check if it was a success - it should as button will be visible only then
             if (request.status === 200) {
                 var name = request.responseText;
                 console.log(name);
+                display_comments(name);
                 
-                //as user is logged in get the list of comments by making next get request
+    /*
+    //as user is logged in get the list of comments by making next get request
                 var requestList = new XMLHttpRequest();
                 //get the response
              
@@ -165,14 +210,14 @@ commentSB.onclick = function(){
                 requestList.send(null);
  
  
- 
+ */
                 //ends here
             }
         }
        
     };
     
-  
+    //send request to find user name 
     request.open('GET', 'http://sandeep69.imad.hasura-app.io/check-login',true);
     request.send(null);
   
