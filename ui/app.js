@@ -10,8 +10,11 @@ function display_likes(page)
          
         //check it result has been loaded
         if(request.readyState === XMLHttpRequest.DONE){
+            
+            console.log ("got response");
             //check if it was a success
             if (request.status === 200) {
+                console.log("response success can set the value");
                 var likesCount = document.getElementById("likesCount");
                 likesCount.innerHTML = request.responseText;
             }
