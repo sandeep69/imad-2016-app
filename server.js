@@ -59,7 +59,7 @@ var htmlTemplate= `<html>
                 <h3>Date: ${date.toDateString()}</h3>
             </div>
             <div class = "likeBox">
-                <input type="submit" value="Likes" id="likesButton"></input> &emsp;&emsp; <span id = "likesCount"> </span>
+                <input type="submit" value="Likes" id="likesButton"></input> &emsp; <span id = "likesCount"> </span>
               
             </div>    
             <div>
