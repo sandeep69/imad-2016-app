@@ -25,7 +25,7 @@ function display_likes(page)
     var page=pageH.innerHTML; 
     console.log("getting likes count for:"+page);
     */ 
-    //page = page.substring()
+    page = page.substring(3,page.length);
     request.open('GET', 'http://sandeep69.imad.hasura-app.io/'+ page +'/likes',true);
     request.send(null);
 }
