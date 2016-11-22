@@ -298,9 +298,8 @@ app.get('/listOfArticles',function(req,res){
 
 app.get('/:an/likes', function (req, res) {
     var an = req.params.an;
-    res.send(an);
-   /*
-    pool.query("SELECT * FROM article WHERE title=$1", [an], function(err,result){
+  
+    pool.query("SELECT * FROM article WHERE title = $1", [an], function(err,result){
       if (err) {
           res.status(500).send(err.toString());
       } else {
@@ -313,7 +312,7 @@ app.get('/:an/likes', function (req, res) {
           }
       }
     });
-    */
+   
 });
 
 
