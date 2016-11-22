@@ -76,6 +76,7 @@ $(document).ready(function() { //remember to include jquery.min.js in the html f
                             var nameList = document.getElementById("commentList");
                             nameList.innerHTML = list;
                             console.log ("article:"+page);
+                            console.log("going to call display likes");
                             display_likes(page,0);
                         }
                 }
