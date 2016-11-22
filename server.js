@@ -84,7 +84,7 @@ var htmlTemplate= `<html>
             </div>
         </div>    
         </div>
-      //  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script type="text/javascript" src="/ui/main.js">
         </script>
         <script type="text/javascript" src="/ui/app.js"> </script>
