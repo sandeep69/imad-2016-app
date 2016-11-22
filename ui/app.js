@@ -27,11 +27,52 @@ function display_likes(page,inc)
 }
 
 
+function display_comments(){
+    var requestList = new XMLHttpRequest();
+    //get the response
+             
+    //check if response status has changed
+    requestList.onreadystatechange = function(){
+     
+        //check if result has been loaded
+        if(requestList.readyState === XMLHttpRequest.DONE){
+                       //check if it was a success
+                        if (requestList.status === 200) {
+                            
+                            var comments = requestList.responseText;
+                            console.log(comments);
+                            comments = JSON.parse(comments);
+                           
+                            var list='';
+                            for(var i=0; i<comments.length;i++){
+                                console.log (comments[i].user-name);
+                                list= list+ '<li class= "indComment"> <p><span class ="bigBold">' + comments[i].name + '</span><span class ="listHyp">' +comments[i].date +'</span></p><p>'+ comments[i].comment + '</p></li>';
+                                list=list+'<li class="hiddenlist"> </li>';
+                            }
+                          
+                            var nameList = document.getElementById("commentList");
+                            nameList.innerHTML = list;
+                            console.log ("article:"+page);
+                            console.log("going to call display likes");
+                            display_likes(page,0);
+                        }
+                    }
+            
+    };
+           
+    var pageH = document.getElementById("myHeader");
 
+    var page='';
+    page=pageH.innerHTML; 
+    alert("The inner html = "+page);
+           
+    requestList.open('GET', 'http://sandeep69.imad.hasura-app.io/'+page+'/get_comment_list',true);
+    requestList.send(null);
+}
 
 $(document).ready(function() { //remember to include jquery.min.js in the html file
    
-    //check if user has logged in - if yes show the commentDisplay box  
+    //check if user has logged in  
     var request = new XMLHttpRequest();
     console.log("in app document ready fn");
       //check if response status has changed
@@ -39,64 +80,69 @@ $(document).ready(function() { //remember to include jquery.min.js in the html f
          
         //check it result has been loaded
         if(request.readyState === XMLHttpRequest.DONE){
-            //check if it was a success
+            //if success - user logged in - username returned - display comment box
             if (request.status === 200) {
                 var name = request.responseText;
                 console.log("herer:" +name);
                 
-                // user logged in display enter comment box
+                // display enter comment box
                 var commentDisplay = document.getElementById("commentDisplay");
 	             if (commentDisplay !== null){
 	                comment.style.display ="block";
 	             } 
-                console.log();
-                //as user is logged in get the list of comments by making next get request
-                var requestList = new XMLHttpRequest();
-                //get the response
+            }
+            //once the request for user name has been processed
+            console.log("finished handling comment box display");
+            
+            //get the list of comments by making next get request
+            display_comments();
+
+/*            
+            var requestList = new XMLHttpRequest();
+            //get the response
              
-                //check if response status has changed
-                requestList.onreadystatechange = function(){
+            //check if response status has changed
+            requestList.onreadystatechange = function(){
          
                 //check it result has been loaded
-                    if(requestList.readyState === XMLHttpRequest.DONE){
-                        //check if it was a success
-                        if (requestList.status === 200) {
-                    
-                            var comments = requestList.responseText;
-                            console.log(comments);
-                            comments = JSON.parse(comments);
-                   
-                            var list='';
-                            for(var i=0; i<comments.length;i++){
-                                console.log (comments[i].user-name);
-                                list= list+ '<li class= "indComment"> <p><span class ="bigBold">' + comments[i].name + '</span><span class ="listHyp">' +comments[i].date +'</span></p><p>'+ comments[i].comment + '</p></li>';
-                                list=list+'<li class="hiddenlist"> </li>';
-                            }
-                  
-                            var nameList = document.getElementById("commentList");
-                            nameList.innerHTML = list;
-                            console.log ("article:"+page);
-                            console.log("going to call display likes");
-                            display_likes(page,0);
+                if(requestList.readyState === XMLHttpRequest.DONE){
+                   //check if it was a success
+                    if (requestList.status === 200) {
+                        
+                        var comments = requestList.responseText;
+                        console.log(comments);
+                        comments = JSON.parse(comments);
+                       
+                        var list='';
+                        for(var i=0; i<comments.length;i++){
+                            console.log (comments[i].user-name);
+                            list= list+ '<li class= "indComment"> <p><span class ="bigBold">' + comments[i].name + '</span><span class ="listHyp">' +comments[i].date +'</span></p><p>'+ comments[i].comment + '</p></li>';
+                            list=list+'<li class="hiddenlist"> </li>';
                         }
+                      
+                        var nameList = document.getElementById("commentList");
+                        nameList.innerHTML = list;
+                        console.log ("article:"+page);
+                        console.log("going to call display likes");
+                        display_likes(page,0);
+                    }
                 }
-                
-                };
-               
-                var pageH = document.getElementById("myHeader");
+            
+            };
+           
+            var pageH = document.getElementById("myHeader");
 
-     
-                var page='';
-                page=pageH.innerHTML; 
-                alert("The inner html = "+page);
-               
-                requestList.open('GET', 'http://sandeep69.imad.hasura-app.io/'+page+'/get_comment_list',true);
-                requestList.send(null);
+            var page='';
+            page=pageH.innerHTML; 
+            alert("The inner html = "+page);
+           
+            requestList.open('GET', 'http://sandeep69.imad.hasura-app.io/'+page+'/get_comment_list',true);
+            requestList.send(null);
  
- 
+*/ 
  
                 //ends here
-            }
+
         }
        
     };
@@ -108,7 +154,7 @@ $(document).ready(function() { //remember to include jquery.min.js in the html f
 });
 
 //insert users comment and names and get the comment list
-function display_comments(name){
+function insert_and_display_comments(name){
     
     var requestList = new XMLHttpRequest();
     
@@ -162,7 +208,7 @@ commentSB.onclick = function(){
             if (request.status === 200) {
                 var name = request.responseText;
                 console.log(name);
-                display_comments(name); //send name to insert the comment and display the list of comments
+                insert_and_display_comments(name); //send name to insert the comment and display the list of comments
                 
     /*
     //as user is logged in get the list of comments by making next get request
