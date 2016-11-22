@@ -101,7 +101,7 @@ $(document).ready(function() { //remember to include jquery.min.js in the html f
        
     };
     
-  
+    //check if user is logged in - it returns username  
     request.open('GET', 'http://sandeep69.imad.hasura-app.io/check-login',true);
     request.send(null);
 
