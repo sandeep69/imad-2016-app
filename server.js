@@ -249,7 +249,7 @@ app.get('/check-login', function(req,res){
                 if(err) {
                     res.status(500).send(err.toString());
                 } else if (result.rows.length === 0){
-                  res.status(404).send("Article not found");
+                  res.status(404).send("User not found");
                 }
                 else {
                      var name= result.rows[0].username;
@@ -260,7 +260,7 @@ app.get('/check-login', function(req,res){
         res.send("You are logged in as :" + req.session.auth.userId.toString());
 */
     } else {//401
-        res.send("You are not logged in");
+        res.status(401).send("You are not logged in");
     }
 });
 
