@@ -86,7 +86,7 @@ $(document).ready(function() { //remember to include jquery.min.js in the html f
                 // display enter comment box
                 var commentDisplay = document.getElementById("commentDisplay");
 	             if (commentDisplay !== null){
-	                comment.style.display ="block";
+	                commentDisplay.style.display ="block";
 	             } 
             }
             //once the request for user name has been processed
