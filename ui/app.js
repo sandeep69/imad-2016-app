@@ -42,14 +42,14 @@ $(document).ready(function() { //remember to include jquery.min.js in the html f
             //check if it was a success
             if (request.status === 200) {
                 var name = request.responseText;
-                console.log(name);
+                console.log("herer:" +name);
                 
                 // user logged in display enter comment box
                 var commentDisplay = document.getElementById("commentDisplay");
 	             if (commentDisplay !== null){
 	                comment.style.display ="block";
 	             } 
-                
+                console.log();
                 //as user is logged in get the list of comments by making next get request
                 var requestList = new XMLHttpRequest();
                 //get the response
