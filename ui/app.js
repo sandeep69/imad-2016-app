@@ -52,9 +52,7 @@ function display_comments(){
                           
                             var nameList = document.getElementById("commentList");
                             nameList.innerHTML = list;
-                            console.log ("article:"+page);
-                            console.log("going to call display likes");
-                            display_likes(page,0);
+                           
                         }
                     }
             
@@ -96,6 +94,12 @@ $(document).ready(function() { //remember to include jquery.min.js in the html f
             
             //get the list of comments by making next get request
             display_comments();
+            
+            //display likes
+            var pageH = document.getElementById("myHeader");
+            page=pageH.innerHTML; 
+            console.log ("goint to fetch likes for article:"+page);
+            display_likes(page,0);
 
 /*            
             var requestList = new XMLHttpRequest();
