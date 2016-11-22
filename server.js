@@ -308,6 +308,7 @@ app.get('/:an/likes', function (req, res) {
           }
           else {
              var likes = result.rows[0].likes;
+             /*
              if (inc === '1'){
                  ++likes;
                  pool.query("INSERT INTO article (likes) VALUES ($1) WHERE title = $2", [likes,an],function(err,result){
@@ -315,8 +316,11 @@ app.get('/:an/likes', function (req, res) {
                         res.status(500).send(err.toString());
                     } 
                  });
-             }    
+             } 
+             
              res.send(likes.toString());
+             */
+               res.send(inc);
           }
       }
     });
