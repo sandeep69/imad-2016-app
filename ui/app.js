@@ -33,7 +33,7 @@ $(document).ready(function() { //remember to include jquery.min.js in the html f
    
     //check if user has logged in - if yes show the commentDisplay box  
     var request = new XMLHttpRequest();
-
+    console.log("in app document ready fn");
       //check if response status has changed
     request.onreadystatechange = function(){
          
