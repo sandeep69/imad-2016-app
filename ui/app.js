@@ -139,9 +139,6 @@ function display_comments(name){
     };
     var user = document.getElementById("comment");
     var pageH = document.getElementById("myHeader");
-
-     
-    var page='';
     page=pageH.innerHTML; 
     alert("The inner html = "+page);
     //send a request to comment_list - it inserts the comment and returns a list of comments           
