@@ -75,11 +75,18 @@ a {
 .articleContainer {
     position:relative;
     background-color:rgb(247, 232, 187);
-    top:20px;
+    top:120px;
     padding : 40px;
 }
 
 #profile-pic{
+    position: absolute;
+    margin:0;
+    top:0;
+    left:100px;
+}
+
+#article-pic{
     position: absolute;
     margin:0;
     top:0;
