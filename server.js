@@ -393,7 +393,8 @@ app.get('/article/:articleName', function (req, res) {
           }
           else {
              var articleData = result.rows[0];
-             res.send(createTemplate(articleData));
+             res.send(result.rows[0].image);
+             //res.send(createTemplate(articleData));
           }
       }
   });
