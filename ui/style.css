@@ -171,6 +171,34 @@ a {
 	padding :50px; 
 }
 
+/*components of signup box */
+#submitButton {
+width:200px;
+background-color:#abb2b5;
+color:black;
+height:35px;
+box-shadow: 10px 10px 5px #0c0c0c;
+font-size:20px;
+}
+#logsubmitButton {
+border:none;
+background-color:transparent;
+font-size:15px;
+}
+
+#username,#password {
+width:200px;
+height:20px;
+font-size:15px;
+background-color:transparent;
+border-top:none;
+border-left:none;
+border-right:none;
+
+}
+
+/*End of components of signup box*/
+
 #closeButton {
 	position : absolute;
 	margin: 0;
