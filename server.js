@@ -48,8 +48,8 @@ var htmlTemplate= `<html>
         <div class="container">
         <p id= "tabs">
             <a href='/' id="homeTab">Home</a>
-            <a href='/profile' id="profileTab">Profile</a>
-    	    <input type="submit" value="Sign Up/Register" id="signUpTab"/>
+            <a href='/profile' id="profileTab">About Me</a>
+    	    <input type="submit" value="Sign Up/Sign In" id="signUpTab"/>
     	    <input type="submit" value="Sign Out" id="signOutTab"/>
         </p>
        
