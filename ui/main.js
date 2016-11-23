@@ -130,6 +130,8 @@ signOutTab.onclick = function(){
 signUpTab.onclick = function(){
     
     alert ('signup clicked');
+    var x = document.getElementById("mp");
+	x.style.display = "block";
 	var signUp = document.getElementById("signUpBox");
 	console.log(signUp);
 	signUp.style.display ="block";
@@ -143,7 +145,8 @@ closeButton.onclick = function(){
 	var signUp = document.getElementById("signUpBox");
 	console.log(signUp);
 	signUp.style.display ="none";
-
-    	console.log(signUp);
+    var x = document.getElementById("mp");
+	x.style.display = "none";
+   	console.log(signUp);
 };
 
