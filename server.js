@@ -150,6 +150,10 @@ app.get('/myImadStory', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'womanComp.png'));
 });
 
+app.get('/decoupage', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'decoupage.png'));
+});
+
 app.get('/ui/mainPage.js', function (req, res) {
      res.sendFile(path.join(__dirname, 'ui', 'mainPage.js'));
 });
