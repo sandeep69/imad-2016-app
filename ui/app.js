@@ -197,7 +197,7 @@ function insert_and_display_comments(name){
     var user = document.getElementById("comment");
     var pageH = document.getElementById("myHeader");
     page=pageH.innerHTML; 
-    alert("The inner html = "+page);
+
     //send a request to comment_list - it inserts the comment and returns a list of comments           
     requestList.open('GET', 'http://sandeep69.imad.hasura-app.io/'+page+'/'+name+'/comment_list?comment='+user.value,true);
     requestList.send(null);
