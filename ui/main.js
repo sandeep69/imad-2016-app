@@ -5,7 +5,6 @@ var submitB= document.getElementById('submitButton');
 
 submitB.onclick = function(){
     
-    alert ('submit clicked');
     //get the response
     var request = new XMLHttpRequest();
    
@@ -51,7 +50,6 @@ var submitB= document.getElementById('logsubmitButton');
 
 submitB.onclick = function(){
     
-    alert ('submit clicked');
     //get the response
     var request = new XMLHttpRequest();
    
@@ -98,7 +96,6 @@ submitB.onclick = function(){
 var signOutTab = document.getElementById("signOutTab");
 signOutTab.onclick = function(){
     
-    alert ('sign Out clicked');
     //get the response
     var request = new XMLHttpRequest();
    
@@ -136,7 +133,6 @@ signOutTab.onclick = function(){
 /* signup tab - open and close*/
 signUpTab.onclick = function(){
     
-    alert ('signup clicked');
     var x = document.getElementById("mp");
 	x.style.display = "block";
 	var signUp = document.getElementById("signUpBox");
@@ -148,8 +144,7 @@ signUpTab.onclick = function(){
 
 closeButton.onclick = function(){
     
-    alert("close clicked");
-	var signUp = document.getElementById("signUpBox");
+   	var signUp = document.getElementById("signUpBox");
 	console.log(signUp);
 	signUp.style.display ="none";
     var x = document.getElementById("mp");
