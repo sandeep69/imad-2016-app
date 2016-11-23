@@ -54,7 +54,7 @@ var htmlTemplate= `<html>
         </p>
         //trying to add pic
         <div class="center" id="article-pic">
-            <img src="$(image)" class="img-medium"/>
+            <img src=$(image) class="img-medium"/>
         </div>
         //end pic   
         <div class="articleContainer">
