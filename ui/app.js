@@ -62,8 +62,7 @@ function display_comments(){
 
     var page='';
     page=pageH.innerHTML; 
-    alert("The inner html = "+page);
-           
+
     requestList.open('GET', 'http://sandeep69.imad.hasura-app.io/'+page+'/get_comment_list',true);
     requestList.send(null);
 }
