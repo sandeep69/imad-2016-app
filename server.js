@@ -71,16 +71,24 @@ var htmlTemplate= `<html>
             </div>
             <ul id="commentList">
             </ul>
-             <div id = "signUpBox">
-    	        <input type="submit" value="X" id="closeButton"/>
-                <h2>Login/Sign Up</h2>
-                <input type="text" id="username" placeholder="User Name"/>
-                <input type="password" id="password" placeholder="password"/>
-                <p>
-                    <input type="submit" value="Login" id="logsubmitButton"/>
-                    &emsp;&emsp;&emsp;
-                    <input type="submit" value="Sign Up" id="submitButton"/>
+            <div id = "signUpBox">
+                <input type="submit" value="X" id="closeButton"/>
+            
+        	    <p>&emsp; </p>
+        	    <p>Name </p>
+                    <input type="text" id="username" />
+        	    <p> &emsp;&emsp;</p>
+        	    <p> Password </p>
+                    <input type="password" id="password" />
+        	    <p>&emsp; </p>
+        	    <p>
+                        <input type="submit" value="Sign Up" id="submitButton"/>
                 </p>
+        	    <p>
+        		     <input type="submit" value="Already signed up? Login" id="logsubmitButton"/>
+                </P>
+        	    <p>&emsp;&emsp;</P>
+            
             </div>
         </div>    
         </div>
