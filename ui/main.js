@@ -22,7 +22,8 @@ submitB.onclick = function(){
                 var signUp = document.getElementById("signUpBox");
 	            console.log(signUp);
 	            signUp.style.display ="none";
-
+                var x = document.getElementById("mp");
+	            x.style.display = "none";
             }
             else { 
                 alert(request.responseText);
@@ -71,6 +72,8 @@ submitB.onclick = function(){
 	           signUp.style.display = "none";
 	           var signOut = document.getElementById("signOutTab");
 	           signOut.style.display = "block";
+	           var x = document.getElementById("mp");
+	           x.style.display = "none";
             }
             else { 
                 alert(request.responseText);
