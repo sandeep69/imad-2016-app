@@ -90,8 +90,10 @@ a {
     position: absolute;
     margin:0;
     top:0;
-    left:100px;
+    left: 50%;
+    transform: TRANSLATEX(-50%);
 }
+
 
 #side-text{
     position: relative;
