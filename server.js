@@ -97,7 +97,7 @@ return htmlTemplate;
 var pool = new Pool(config);
 
 app.get ('/test-db', function (req,res) {
-/*
+
     pool.query('SELECT * FROM comments', function(err,result){ 
         if (err) {
             res.status(500).send(err.toString());
@@ -105,30 +105,6 @@ app.get ('/test-db', function (req,res) {
             res.send(JSON.stringify(result.rows));
         }
     });
-*/
-var an = "article-five";
-    var feedback = "try again";
-    var date = new Date();
-    date = date.toDateString();
-    var name = "susan";
-pool.query("INSERT INTO comments (article, date, comment, name) VALUES ($1,$2,$3, $4)", [an,date,feedback, name],function(err,result){
-      if (err) {
-          res.status(500).send(err.toString());
-      } else {
-            pool.query("SELECT * FROM comments WHERE article = $1", [an],function(err,result){
-                if(err) {
-                    res.status(500).send(err.toString());
-                } else if (result.rows.length === 0){
-                  res.status(404).send("Article not found");
-                }
-                else {
-                     var CommentList = result.rows;
-                     res.send(JSON.stringify(CommentList));
-                }
-            });
-      }
-    });  
- 
 });
 
 app.get('/', function (req, res) {
