@@ -52,11 +52,11 @@ var htmlTemplate= `<html>
     	    <input type="submit" value="Sign Up/Register" id="signUpTab"/>
     	    <input type="submit" value="Sign Out" id="signOutTab"/>
         </p>
-        //trying to add pic
+       
         <div class="center" id="article-pic">
             <img src="${image}" class="img-medium"/>
         </div>
-        //end pic   
+       
         <div class="articleContainer">
             <div>
                 <h2 id="myHeader"> ${heading}</h2>
