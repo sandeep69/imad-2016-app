@@ -22,7 +22,11 @@ submitB.onclick = function(){
                 var signUp = document.getElementById("signUpBox");
 	            console.log(signUp);
 	            signUp.style.display ="none";
-                var x = document.getElementById("mp");
+                var signUp = document.getElementById("signUpTab");
+	            signUp.style.display = "none";
+	            var signOut = document.getElementById("signOutTab");
+	            signOut.style.display = "block";
+	            var x = document.getElementById("mp");
 	            x.style.display = "none";
             }
             else { 
