@@ -101,7 +101,7 @@ a {
     width:300px;
     padding:20px;
     margin:0;
-    top:20px;
+    top:90px;
     left:60%;
     font-size:15px;
     line-height: 30px;
@@ -112,7 +112,7 @@ a {
     position: relative;
     background-color:rgb(247, 232, 187);
     padding:20px;
-    top:100px;
+    top:200px;
     left:0;
     text-align: justify;
     line-height: 30px;
