@@ -146,6 +146,10 @@ app.get('/profilepic', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'profilepic.png'));
 });
 
+app.get('/myImadStory', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'womanComp.png'));
+});
+
 app.get('/ui/mainPage.js', function (req, res) {
      res.sendFile(path.join(__dirname, 'ui', 'mainPage.js'));
 });
