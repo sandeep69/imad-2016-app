@@ -154,6 +154,10 @@ app.get('/decoupage', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'decoupage.png'));
 });
 
+app.get('/bDayCake', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'bDayCake.png'));
+});
+
 app.get('/ui/mainPage.js', function (req, res) {
      res.sendFile(path.join(__dirname, 'ui', 'mainPage.js'));
 });
