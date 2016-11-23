@@ -71,6 +71,7 @@ var htmlTemplate= `<html>
             </div>
             <ul id="commentList">
             </ul>
+            <div id ="mp"> </div>
             <div id = "signUpBox">
                 <input type="submit" value="X" id="closeButton"/>
             
