@@ -36,6 +36,8 @@ var date = data.date;
 var content = data.content;
 var image = data.image;
 
+return(image);
+
 var htmlTemplate= `<html>
 
     <head>
