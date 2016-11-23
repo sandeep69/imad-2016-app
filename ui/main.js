@@ -17,9 +17,10 @@ submitB.onclick = function(){
             //check if it was a success
             if (request.status === 200) {
   
-                alert ('Successfully signed up');
+                alert ('Successfully signed up! Please Sign in with your new username and password');
                 var signUp = document.getElementById("signUpBox");
 	            console.log(signUp);
+	            /*
 	            signUp.style.display ="none";
                 var signUp = document.getElementById("signUpTab");
 	            signUp.style.display = "none";
@@ -27,6 +28,7 @@ submitB.onclick = function(){
 	            signOut.style.display = "block";
 	            var x = document.getElementById("mp");
 	            x.style.display = "none";
+	            */
             }
             else { 
                 alert(request.responseText);
