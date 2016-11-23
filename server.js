@@ -34,6 +34,7 @@ var title = data.title;
 var heading = data.heading;
 var date = data.date;
 var content = data.content;
+var image = data.image;
 
 var htmlTemplate= `<html>
 
@@ -51,11 +52,11 @@ var htmlTemplate= `<html>
     	    <input type="submit" value="Sign Out" id="signOutTab"/>
         </p>
         <div class="articleContainer">
-        /*trying pic*/
+      //trying to add pic
             <div class="center" id="profile-pic">
-                <img src="/profilepic" class="img-medium"/>
+                <img src="$(image)" class="img-medium"/>
             </div>
-        /**/    
+      //end pic   
             <div>
                 <h2 id="myHeader"> ${heading}</h2>
             </div>
