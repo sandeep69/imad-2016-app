@@ -58,7 +58,7 @@ a {
 }
 
 .img-medium {
-    height: 200px;
+    height: 350px;
 }
 
 .container {
@@ -82,7 +82,7 @@ a {
 #profile-pic{
     position: absolute;
     margin:0;
-    top:40px;
+    top:0;
     left:100px;
 }
 
