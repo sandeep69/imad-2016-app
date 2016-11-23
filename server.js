@@ -51,7 +51,11 @@ var htmlTemplate= `<html>
     	    <input type="submit" value="Sign Out" id="signOutTab"/>
         </p>
         <div class="articleContainer">
-           
+        /*trying pic*/
+            <div class="center" id="profile-pic">
+                <img src="/profilepic" class="img-medium"/>
+            </div>
+        /**/    
             <div>
                 <h2 id="myHeader"> ${heading}</h2>
             </div>
