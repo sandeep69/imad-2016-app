@@ -4,6 +4,7 @@ body {
     background-repeat:repeat;
     font-family: "Times New Roman";
     background-size:cover;
+    background-height:100vh;
     margin-top: 75px;
 }
 
