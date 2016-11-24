@@ -1,8 +1,7 @@
 body {
     position: relative;
     background-image:url("http://www.webdesignburn.com/wp-content/uploads/2015/04/Grey-Texture-Background-and-Wallpaper-9.jpg");
-   /*background-position:center;*/
-   background-repeat:no repeat;
+    background-repeat:repeat;
     font-family: "Times New Roman";
     background-size:cover;
     margin-top: 75px;
