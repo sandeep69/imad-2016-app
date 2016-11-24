@@ -1,3 +1,4 @@
+$('.container').css('min-height', '100%');
 function check_tabs() {//check if user logged in- put signup/signOut
    
     //check if user has logged in  
