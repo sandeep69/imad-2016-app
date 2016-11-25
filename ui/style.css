@@ -84,26 +84,25 @@ a {
     position:absolute;
  	right:20%;
 }
-#signUpTab {
-    position:absolute;
- 	right: 5%;
-	background-color:transparent;
+
+.button_like_hL {
+    background-color:transparent;
 	border:none;
 	color:white;
  	font-weight:bold;
  	font-size:25px;
+ 	font-style:"Times New Roman";
     text-decoration:none;
+}
+#signUpTab {
+    position:absolute;
+ 	right: 5%;
 	display:block;
 }
 
 #signOutTab {
- 	right: -12%;
-	background-color:transparent;
-	border:none;
-	color:white;
-	font-size:25px;
- 	font-weight:bold;
-    text-decoration:none;
+    position:absolute;
+ 	right: 5%;
 	display:none;
 }
 
