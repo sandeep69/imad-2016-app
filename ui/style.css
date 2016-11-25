@@ -243,7 +243,8 @@ a {
     background-color:rgb(247, 232, 187);
     padding:20px;
     top:50%;
-    left:0;
+    left: 50%;
+    transform: TRANSLATEX(-50%);
     text-align: justify;
     max-width:800px;
     line-height: 30px;
