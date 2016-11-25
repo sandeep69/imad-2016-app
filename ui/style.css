@@ -64,6 +64,7 @@ a {
     background-color:rgb(247, 232, 187);
     top:400px;
     padding : 40px;
+    max-width:1000px;
 }
 
 .hiddenlist {
