@@ -150,7 +150,7 @@ a {
 
 /*mainpage begins*/
 
-#mpPic {                                /*The picture on mainpage*/
+#mpPic {                            /*The picture on mainpage*/
     position:absolute;
     right:0;
     top:0;
@@ -160,7 +160,7 @@ a {
 
 #compPic {
     position:absolute;
-    height:100%;
+    height:117%;
     width:50%;
     right:0;
     top:-90px;
