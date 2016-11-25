@@ -224,7 +224,8 @@ a {
     position: absolute;
     margin:0;
     top:50px;
-    left:10%;
+    left: 50%;
+    transform: TRANSLATEX(-50%);
     height:280%;
 }
 
