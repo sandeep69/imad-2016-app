@@ -155,15 +155,15 @@ a {
     right:0;
     top:0;
     height:100%;
-    width:40%;
+    width:50%;
 }
 
 #compPic {
     position:absolute;
     height:117%;
-    width:50%;
+    width:100%;
     right:0;
-    top:-90px;
+    top:0;
 }
 
 
