@@ -89,8 +89,9 @@ a {
     background-color:transparent;
 	border:none;
 	color:white;
+ 	font-weight:bold;
  	font-size:25px;
- 	font-style:"Times New Roman";
+ 	font-family:"Times New Roman";
     text-decoration:none;
 }
 #signUpTab {
