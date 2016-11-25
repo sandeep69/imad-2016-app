@@ -31,7 +31,6 @@ h3 {
 }
 a {
     color:white;
-    font-weight:bold;
     text-decoration:none;
     font-size:25px;
 }
@@ -75,19 +74,20 @@ a {
 #tab {
     margin: 0;
 	top :0;
-	font-size:25px;
+	font-weight:bold;
+    font-size:25px;
 }
 #homeTab {
     position:absolute;
- 	right: 20%;
+ 	right: 40%;
 }
 #profileTab {
     position:absolute;
- 	right:5%;
+ 	right:20%;
 }
 #signUpTab {
     position:absolute;
- 	right: -19%;
+ 	right: 5%;
 	background-color:transparent;
 	border:none;
 	color:white;
