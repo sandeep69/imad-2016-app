@@ -46,6 +46,7 @@ a {
 
 .img-medium {
     height: 50%;
+    max-width:1000px;
 }
 
 .container {
