@@ -220,8 +220,8 @@ a {
     position: absolute;
     margin:0;
     top:0;
-    left:100px;
-    height:200%;
+    left:10%px;
+    height:30%;
 }
 
 #side-text{
@@ -241,7 +241,7 @@ a {
     position: relative;
     background-color:rgb(247, 232, 187);
     padding:20px;
-    top:200px;
+    top:50%;
     left:0;
     text-align: justify;
     line-height: 30px;
@@ -258,6 +258,9 @@ a {
     left: 50%;
     transform: TRANSLATEX(-50%);
 }
+
+
+
 
 
 
