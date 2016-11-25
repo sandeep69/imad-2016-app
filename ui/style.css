@@ -65,6 +65,8 @@ a {
     top:400px;
     padding : 40px;
     max-width:1000px;
+    left: 50%;
+    transform: TRANSLATEX(-50%);
 }
 
 .hiddenlist {
