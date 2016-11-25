@@ -220,26 +220,36 @@ a {
 /* About me begins */
 
 #profile-pic{
-    position: relative;
+    position: absolute;
     margin:0;
-    top:50px;
-    left: 50%;
-    transform: TRANSLATEX(-50%);
-    width:30%;
+    top:0;
+    left:10%px;
+    height:30%;
 }
 
+#side-text{
+    position: relative;
+    background-color:rgb(247, 232, 187);
+    width:300px;
+    padding:20px;
+    margin:0;
+    top:90px;
+    left:60%;
+    font-size:15px;
+    line-height: 30px;
+    
+}
 
-#AboutMe-text{
+#bottom-text{
     position: relative;
     background-color:rgb(247, 232, 187);
     padding:20px;
-    top:80px;
-    left: 50%;
-    transform: TRANSLATEX(-50%);
+    top:50%;
+    left:0;
     text-align: justify;
-    max-width:1000px;
     line-height: 30px;
     font-size:15px;
+    z-index:-1;
 }
 
 
