@@ -179,15 +179,25 @@ a {
     top:0;
 }
 
+mpArticles {
+    position:absolute;
+    height:100%;
+    width:50%;
+    top:0;
+    left:0;
+}
+
 #articleH {
     position:absolute;
     top:0;
-    left:20%;
+    left: 50%;
+    transform: TRANSLATEX(-50%);
 }
 
 #articleList {
     position:absolute;
-	left:0;
+    left: 50%;
+    transform: TRANSLATEX(-50%);
 	top:10%;
 	list-style:none;
 
@@ -196,7 +206,7 @@ a {
 .list {
 	background-color:rgb(247, 232, 187);
 	box-shadow: 10px 10px 5px #504f4f;
-   	width:40%;
+   	width:80%;
 	padding:10px;
     font-size:15px;
 	color:black;
