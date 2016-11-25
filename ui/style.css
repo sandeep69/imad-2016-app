@@ -58,8 +58,7 @@ a {
     margin: 0 auto;
     text-align:justify;
     max-width: 1000px;
-    padding-left:20px;
-    padding-right:20px;
+    padding:20px;
     color: black;
     width : 100%;
     height:100%;
@@ -73,51 +72,39 @@ a {
 }
 
 /*tab functions */
-
-#homeTab {
- 	position:absolute;
+#tab {
+    position:absolute;
 	margin: 0;
-	top :-30px;
-	right: 20%;
+	top :0;
 	font-size:25px;
+}
+#homeTab {
+ 	right: 20%;
 }
 #profileTab {
- 	position:absolute;
-	margin: 0;
-	top :-30px;
-	right:5%;
-	font-size:25px;
+ 	right:5%;
 }
 #signUpTab {
- 	position:absolute;
-	margin: 0;
-	top :-30px;
-	right: -19%;
+ 	right: -19%;
 	background-color:transparent;
 	border:none;
 	color:white;
  	font-weight:bold;
-	font-family:"Times New Roman";
     text-decoration:none;
-	font-size:25px;
 	display:block;
 }
 
 #signOutTab {
- 	position:absolute;
-	margin: 0;
-	top :-30px;
-	right: -12%;
+ 	right: -12%;
 	background-color:transparent;
 	border:none;
 	color:white;
  	font-weight:bold;
-	font-family:"Times New Roman";
     text-decoration:none;
-	font-size:25px;
 	display:none;
 }
 
+/* signup box and its elements*/
 #signUpBox {
 	display : none;
 	position:fixed;
@@ -129,7 +116,6 @@ a {
 	padding :50px; 
 }
 
-/*components of signup box */
 #submitButton {
     width:200px;
     background-color:#abb2b5;
@@ -157,6 +143,7 @@ a {
 }
 
 /*End of components of signup box*/
+
 /*mainpage begins*/
 
 #compPic {
