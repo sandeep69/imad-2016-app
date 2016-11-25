@@ -196,7 +196,7 @@ a {
 }
 
 #articleList {
-    position:absolute;
+    position:relative;
     left: 50%;
     transform: TRANSLATEX(-50%);
 	top:10%;
