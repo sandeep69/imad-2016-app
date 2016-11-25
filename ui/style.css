@@ -15,7 +15,7 @@ h3 {
     text-decoration:none;
 }
 
-#mp {
+#mp {                           /* to dim bg when sign up box comes up*/
     position :fixed;
     left:0;
     top:0;
@@ -150,7 +150,7 @@ a {
 
 /*mainpage begins*/
 
-#mpPic {  /*The picture on mainpage*/
+#mpPic {                                /*The picture on mainpage*/
     position:absolute;
     right:0;
     top:0;
@@ -158,13 +158,6 @@ a {
     width:40%;
 }
 
-#compPic {
-    position:absolute;
-    height:117%;
-    width:50%;
-    right:0;
-    top:-90px;
-}
 
 
 
