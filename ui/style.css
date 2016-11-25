@@ -158,6 +158,16 @@ a {
     width:50%;
 }
 
+#MPheading {                        /*src file showing title*/
+	position:absolute;
+	opacity:0.7;
+    width:80%;
+    bottom:4%;
+    left: 50%;
+    transform: TRANSLATEX(-50%);
+}
+
+
 #compPic {
     position:absolute;
     height:100%;
@@ -311,15 +321,6 @@ a {
 .likes {
     float:right;
     font-size:12px;
-}
-
-
-#MPheading {
-	position:absolute;
-	opacity:0.7;
-    width:550px;
-    bottom:-680px;
-    right:-17%;
 }
 
 #commentDisplay {
