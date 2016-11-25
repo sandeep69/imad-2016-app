@@ -225,18 +225,6 @@ a {
     width:30%;
 }
 
-#side-text{
-    position: relative;
-    background-color:rgb(247, 232, 187);
-    width:300px;
-    padding:20px;
-    margin:0;
-    top:90px;
-    left:60%;
-    font-size:15px;
-    line-height: 30px;
-    
-}
 
 #AboutMe-text{
     position: relative;
