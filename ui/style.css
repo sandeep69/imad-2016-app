@@ -25,10 +25,7 @@ h3 {
     opacity:0.6;
     display:none;
 }
-#articleH {
-    position:absolute;
-    top:-60px;
-}
+
 a {
     color:white;
     text-decoration:none;
@@ -67,6 +64,13 @@ a {
     background-color:rgb(247, 232, 187);
     top:400px;
     padding : 40px;
+}
+
+.hiddenlist {
+	background-color:transparent;
+    width:600px;
+	padding:20px;
+   
 }
 
 /*tab functions */
@@ -167,7 +171,6 @@ a {
     transform: TRANSLATEX(-50%);
 }
 
-
 #compPic {
     position:absolute;
     height:100%;
@@ -175,6 +178,29 @@ a {
     right:0;
     top:0;
 }
+
+#articleH {
+    position:absolute;
+    top:0;
+    text-align:center;
+}
+
+#articleList {
+    position:absolute;
+	left:0;
+	list-style:none;
+
+}
+
+.list {
+	background-color:rgb(247, 232, 187);
+	box-shadow: 10px 10px 5px #504f4f;
+   	width:50%;
+	padding:10px;
+    font-size:15px;
+	color:black;
+}
+
 
 /* About me begins */
 
@@ -260,20 +286,8 @@ a {
 	
 }
 
-#articleList {
-    position:absolute;
-	left:-27%;
-	list-style:none;
 
-}
-.list {
-	background-color:rgb(247, 232, 187);
-	box-shadow: 10px 10px 5px #504f4f;
-   	width:50%;
-	padding:10px;
-    font-size:15px;
-	color:black;
-}
+
 
 #commentList {
     position:relative;
@@ -291,12 +305,7 @@ a {
     padding-bottom:1px;
 }
 
-.hiddenlist {
-	background-color:transparent;
-    width:600px;
-	padding:20px;
-   
-}
+
 
 .listHyp {
     color:#3f6f3f;
