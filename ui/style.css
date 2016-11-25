@@ -182,12 +182,13 @@ a {
 #articleH {
     position:absolute;
     top:0;
-    text-align:center;
+    left:20%;
 }
 
 #articleList {
     position:absolute;
 	left:0;
+	top:10%;
 	list-style:none;
 
 }
