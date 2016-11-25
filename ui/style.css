@@ -150,6 +150,14 @@ a {
 
 /*mainpage begins*/
 
+#mpPic {  /*The picture on mainpage*/
+    position:absolute;
+    right:0;
+    top:0;
+    height:100%;
+    width:40%;
+}
+
 #compPic {
     position:absolute;
     height:117%;
