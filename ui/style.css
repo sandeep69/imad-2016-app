@@ -223,7 +223,7 @@ a {
 #profile-pic{
     position: absolute;
     margin:0;
-    top:50px;
+    top:80px;
     left: 50%;
     transform: TRANSLATEX(-50%);
     height:280%;
