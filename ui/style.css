@@ -217,10 +217,11 @@ a {
 /* About me begins */
 
 #profile-pic{
-    position: absolute;
+    position: relative;
     margin:0;
     top:15%;
-    left:10%;
+   left: 50%;
+    transform: TRANSLATEX(-50%);
     height:30%;
 }
 
@@ -237,7 +238,7 @@ a {
     
 }
 
-#bottom-text{
+#AboutMe-text{
     position: relative;
     background-color:rgb(247, 232, 187);
     padding:20px;
