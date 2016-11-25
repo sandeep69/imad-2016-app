@@ -4,7 +4,7 @@ body {
     background-repeat:repeat;
     font-family: "Times New Roman";
     background-size:cover;
-    margin-top: 75px;
+    margin-top: 0;
 }
 
 h2,h1{
@@ -29,14 +29,6 @@ h3 {
     position:absolute;
     top:-60px;
 }
-#compPic {
-    position:absolute;
-    height:117%;
-    width:50%;
-    right:0;
-    top:-90px;
-}
-
 a {
     color:white;
     font-weight:bold;
@@ -80,64 +72,8 @@ a {
     padding : 40px;
 }
 
-#profile-pic{
-    position: absolute;
-    margin:0;
-    top:0;
-    left:100px;
-    height:200%;
-}
+/*tab functions */
 
-#article-pic{
-    position: absolute;
-    margin:0;
-    top:0;
-    left: 50%;
-    transform: TRANSLATEX(-50%);
-}
-
-
-#side-text{
-    position: relative;
-    background-color:rgb(247, 232, 187);
-    width:300px;
-    padding:20px;
-    margin:0;
-    top:90px;
-    left:60%;
-    font-size:15px;
-    line-height: 30px;
-    
-}
-
-#bottom-text{
-    position: relative;
-    background-color:rgb(247, 232, 187);
-    padding:20px;
-    top:200px;
-    left:0;
-    text-align: justify;
-    line-height: 30px;
-    font-size:15px;
-    z-index:-1;
-}
-
-.submitbutton{
-    background-color:brown;
-    color:white;
-}
-
-.rtAlign{
-    text-align: center;
-    color:green;
-}
-
-.profile {
-    background:url(https://s-media-cache-ak0.pinimg.com/564x/8b/98/b7/8b98b71ae62f2762c0548249eca5106d.jpg);
-    background-color:green;
-}
-
-/*added from local*/
 #homeTab {
  	position:absolute;
 	margin: 0;
@@ -221,6 +157,80 @@ a {
 }
 
 /*End of components of signup box*/
+/*mainpage begins*/
+
+#compPic {
+    position:absolute;
+    height:117%;
+    width:50%;
+    right:0;
+    top:-90px;
+}
+
+
+
+
+
+/*About me begins*/
+
+#profile-pic{
+    position: absolute;
+    margin:0;
+    top:0;
+    left:100px;
+    height:200%;
+}
+
+#side-text{
+    position: relative;
+    background-color:rgb(247, 232, 187);
+    width:300px;
+    padding:20px;
+    margin:0;
+    top:90px;
+    left:60%;
+    font-size:15px;
+    line-height: 30px;
+    
+}
+
+#bottom-text{
+    position: relative;
+    background-color:rgb(247, 232, 187);
+    padding:20px;
+    top:200px;
+    left:0;
+    text-align: justify;
+    line-height: 30px;
+    font-size:15px;
+    z-index:-1;
+}
+
+
+/*Article begins*/
+#article-pic{
+    position: absolute;
+    margin:0;
+    top:0;
+    left: 50%;
+    transform: TRANSLATEX(-50%);
+}
+
+
+
+
+.submitbutton{
+    background-color:brown;
+    color:white;
+}
+
+.rtAlign{
+    text-align: center;
+    color:green;
+}
+
+
+
 
 #closeButton {
 	position : absolute;
