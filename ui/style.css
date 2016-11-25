@@ -219,7 +219,7 @@ a {
 #profile-pic{
     position: absolute;
     margin:0;
-    top:0;
+    top:15%;
     left:10%px;
     height:30%;
 }
