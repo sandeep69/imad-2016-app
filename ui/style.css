@@ -205,6 +205,7 @@ a {
 }
 
 .list {
+    position:relative;
 	background-color:rgb(247, 232, 187);
 	box-shadow: 10px 10px 5px #504f4f;
    	width:80%;
