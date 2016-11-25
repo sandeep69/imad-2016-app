@@ -73,18 +73,20 @@ a {
 
 /*tab functions */
 #tab {
-    position:absolute;
-	margin: 0;
+    margin: 0;
 	top :0;
 	font-size:25px;
 }
 #homeTab {
+    position:absolute;
  	right: 20%;
 }
 #profileTab {
+    position:absolute;
  	right:5%;
 }
 #signUpTab {
+    position:absolute;
  	right: -19%;
 	background-color:transparent;
 	border:none;
