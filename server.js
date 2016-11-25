@@ -49,8 +49,8 @@ var htmlTemplate= `<html>
         <p id= "tabs">
             <a href='/' id="homeTab">Home</a>
             <a href='/profile' id="profileTab">About Me</a>
-    	    <input type="submit" value="Sign Up/Sign In" id="signUpTab"/>
-    	    <input type="submit" value="Sign Out" id="signOutTab"/>
+     	    <input type="submit" value="Sign Up / Sign In" id="signUpTab"  class = "button_like_HL"/>
+    	    <input type="submit" value="Sign Out" id="signOutTab" class = "button_like_HL"/>
         </p>
        
         <div class="center" id="article-pic">
