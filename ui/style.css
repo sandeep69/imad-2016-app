@@ -246,7 +246,8 @@ a {
     background-color:rgb(247, 232, 187);
     padding:20px;
     top:500px;
-    left:0;
+    left: 50%;
+    transform: TRANSLATEX(-50%);
     text-align: justify;
     max-width:1000px;
     line-height: 30px;
