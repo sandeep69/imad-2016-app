@@ -229,7 +229,6 @@ a {
 
 #profile-pic{
     position: relative;
-
     top:80px;
     left: 50%;
     transform: TRANSLATEX(-50%);
