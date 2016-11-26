@@ -228,8 +228,8 @@ a {
 /* About me begins */
 
 #profile-pic{
-    position: absolute;
-    margin:0;
+    position: relative;
+
     top:80px;
     left: 50%;
     transform: TRANSLATEX(-50%);
