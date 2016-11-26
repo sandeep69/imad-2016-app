@@ -226,7 +226,7 @@ a {
     top:80px;
     left: 50%;
     transform: TRANSLATEX(-50%);
-    height:280%;
+    max-height:280%;
 }
 
 #side-text{
