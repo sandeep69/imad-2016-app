@@ -242,6 +242,7 @@ a {
     left: 50%;
     transform: TRANSLATEX(-50%);
     max-width:1000px;
+    padding :30px;
 }
 
 #side-text{
