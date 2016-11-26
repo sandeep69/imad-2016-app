@@ -7,6 +7,20 @@ body {
     margin-top: 0;
 }
 
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    body {
+    position: relative;
+    background-image:none;
+    
+    font-family: "Times New Roman";
+   
+    margin-top: 0;
+}
+   
+}
+
 h2,h1{
     color:white;
 }
