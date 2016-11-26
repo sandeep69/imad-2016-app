@@ -217,6 +217,13 @@ a {
 	color:black;
 }
 
+.listHyp {
+    color:#5b9813;
+    float:right;
+    font-weight:bold;
+    font-size:12px;
+ }
+ 
 
 /* About me begins */
 
@@ -329,12 +336,7 @@ a {
 
 
 
-.listHyp {
-    color:#3f6f3f;
-    float:right;
-    font-size:12px;
- }
- 
+
  .bigBold {
      size:20px;
      font-weight:bold;
