@@ -233,8 +233,7 @@ a {
     top:80px;
     left: 50%;
     transform: TRANSLATEX(-50%);
-    height:280%;
-}
+   }
 
 #profile-text{
     position: relative;
@@ -243,6 +242,7 @@ a {
     left: 50%;
     transform: TRANSLATEX(-50%);
 }
+
 #side-text{
     position: relative;
     background-color:rgb(247, 232, 187);
