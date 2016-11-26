@@ -232,13 +232,13 @@ a {
     top:80px;
     left: 50%;
     transform: TRANSLATEX(-50%);
-    width:90%;
+    width:80%;
    }
 
 #profile-text{
     position: relative;
     background-color:rgb(247, 232, 187);
-    bottom:20%;
+    bottom:-150px;
     left: 50%;
     transform: TRANSLATEX(-50%);
     max-width:1000px;
