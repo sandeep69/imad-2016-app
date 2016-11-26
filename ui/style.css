@@ -232,6 +232,7 @@ a {
     top:80px;
     left: 50%;
     transform: TRANSLATEX(-50%);
+    width:70%;
    }
 
 #profile-text{
