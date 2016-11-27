@@ -139,7 +139,7 @@ app.get('/profile', function (req, res) {
 });
 
 app.get('/hours', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'hours1.png'));
+  res.sendFile(path.join(__dirname, 'ui', 'hours.png'));
 });
 
 app.get('/profilepic', function (req, res) {
