@@ -6,7 +6,7 @@ var menu = document.getElementById('menuTab');
 menu.onclick = function(){
     
     var menulist = document.getElementById('menu');
-    if (menulist.style.display = "block") {
+    if (menulist.style.display === "block") {
         menulist.style.display = "none";
     } else {
         menulist.style.display = "block";
