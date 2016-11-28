@@ -8,7 +8,8 @@ menu.onclick = function(){
     var menulist = document.getElementById('menu');
     menulist.style.display = "block";
     
-};    
+}; 
+
 var submitB= document.getElementById('submitButton');
 
 submitB.onclick = function(){
@@ -141,6 +142,7 @@ signOutTab.onclick = function(){
 };
 
 /* signup tab - open and close*/
+var signUpTab = document.getElementById("signUpTab");
 signUpTab.onclick = function(){
     
     var x = document.getElementById("mp");
