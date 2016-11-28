@@ -159,7 +159,11 @@ MsignUpTab.onclick = function(){
 	x.style.display = "block";
 	var signUp = document.getElementById("signUpBox");
 	console.log(signUp);
-	signUp.style.display ="block";
+	if(signUp.style.display ="block") {
+        signUp.style.display ="none";
+    } else {
+        signUp.style.display ="block"; 
+    }
 
     	console.log(signUp);
 };
