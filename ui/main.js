@@ -144,7 +144,6 @@ signOutTab.onclick = function(){
 /* signup tab - open and close*/
 var signUpTab = document.getElementById("signUpTab");
 signUpTab.onclick = function(){
-    alert ("sign up clicked");
     var x = document.getElementById("mp");
 	x.style.display = "block";
 	var signUp = document.getElementById("signUpBox");
@@ -153,6 +152,18 @@ signUpTab.onclick = function(){
 
     	console.log(signUp);
 };
+
+var MsignUpTab = document.getElementById("MsignUpTab");
+MsignUpTab.onclick = function(){
+    var x = document.getElementById("mp");
+	x.style.display = "block";
+	var signUp = document.getElementById("signUpBox");
+	console.log(signUp);
+	signUp.style.display ="block";
+
+    	console.log(signUp);
+};
+
 
 closeButton.onclick = function(){
     
