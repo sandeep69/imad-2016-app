@@ -144,7 +144,7 @@ signOutTab.onclick = function(){
 /* signup tab - open and close*/
 var signUpTab = document.getElementById("signUpTab");
 signUpTab.onclick = function(){
-    
+    alert ("sign up clicked");
     var x = document.getElementById("mp");
 	x.style.display = "block";
 	var signUp = document.getElementById("signUpBox");
