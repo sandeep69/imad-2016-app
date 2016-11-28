@@ -6,7 +6,11 @@ var menu = document.getElementById('menuTab');
 menu.onclick = function(){
     
     var menulist = document.getElementById('menu');
-    menulist.style.display = "block";
+    if (menulist.style.display = "block") {
+        menulist.style.display = "none";
+    } else {
+        menulist.style.display = "block";
+    }
     
 }; 
 
@@ -159,13 +163,8 @@ MsignUpTab.onclick = function(){
 	x.style.display = "block";
 	var signUp = document.getElementById("signUpBox");
 	console.log(signUp);
-	if(signUp.style.display ==="block") {
-        signUp.style.display ="none";
-    } else {
-        signUp.style.display ="block"; 
-    }
-
-    	console.log(signUp);
+    signUp.style.display ="block"; 
+	console.log(signUp);
 };
 
 
