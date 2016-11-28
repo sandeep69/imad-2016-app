@@ -6,7 +6,7 @@ var menu = document.getElementById('menuTab');
 menu.onclick = function(){
     
     var menulist = document.getElementById('menu');
-    menu.style.display = "block";
+    menulist.style.display = "block";
     
 };    
 var submitB= document.getElementById('submitButton');
