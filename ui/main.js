@@ -91,6 +91,10 @@ submitB.onclick = function(){
 	           signOut.style.display = "block";
 	           var x = document.getElementById("mp");
 	           x.style.display = "none";
+	           var MsignUp = document.getElementById("MsignUpTab");
+	           MsignUp.style.display ="none";
+	           var MsignOut = document.getElementById("MsignOutTab");
+	           MsignOut.style.display ="block";
 	           var menu = document.getElementById("menu");
 	           menu.style.display ="none";
             }
