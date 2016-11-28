@@ -544,7 +544,7 @@ a {
 #articleH {
     position:absolute;
     width:100%;
-    top:10%;
+    top:0;
     text-align:center;
     
 }
@@ -553,7 +553,7 @@ a {
     position:relative;
     left: 50%;
     transform: TRANSLATEX(-50%);
-    top:10%;
+    top:25%;
 	list-style:none;
 
 }
