@@ -494,7 +494,7 @@ a {
     text-decoration:none;
 	font-size:15px;
 }
-#signUpTab {
+#MsignUpTab {
     position:relative;
  	right: 2%;
  	font-family:"Times New Roman";
@@ -503,7 +503,7 @@ a {
 
 }
 
-#signOutTab {
+#MsignOutTab {
     position:absolute;
  	right: 2%;
  	font-family:"Times New Roman";
