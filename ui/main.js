@@ -91,6 +91,8 @@ submitB.onclick = function(){
 	           signOut.style.display = "block";
 	           var x = document.getElementById("mp");
 	           x.style.display = "none";
+	           var menu = document.getElementById("menu");
+	           menu.style.display ="none";
             }
             else { 
                 alert(request.responseText);
@@ -133,6 +135,8 @@ signOutTab.onclick = function(){
 	            signOut.style.display = "none";
 	            var signUp = document.getElementById("signUpTab");
 	            signUp.style.display = "block";
+	            var menu = document.getElementById("menu");
+	            menu.style.display ="none";
             }
             else { 
                 alert(request.responseText);
