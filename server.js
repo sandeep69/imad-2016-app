@@ -162,6 +162,10 @@ app.get('/ui/mainPage.js', function (req, res) {
      res.sendFile(path.join(__dirname, 'ui', 'mainPage.js'));
 });
 
+app.get('/menuicon', function (req, res) {
+     res.sendFile(path.join(__dirname, 'ui', 'menuicon.jpg'));
+});
+
 app.get('/ui/main.js', function (req, res) {
      res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
