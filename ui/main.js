@@ -141,6 +141,49 @@ signOutTab.onclick = function(){
 	            signUp.style.display = "block";
 	            var menu = document.getElementById("menu");
 	            menu.style.display ="none";
+	            var MsignUp = document.getElementById("MsignUpTab");
+	            MsignUp.style.display ="none";
+	            var MsignOut = document.getElementById("MsignOutTab");
+	            MsignOut.style.display ="block";
+	       }
+            else { 
+                alert(request.responseText);
+            }
+        }
+    };
+    
+    request.open('GET', 'http://sandeep69.imad.hasura-app.io/logout',true);
+    request.send(null);
+ 
+};
+
+var MsignOutTab = document.getElementById("MsignOutTab");
+MsignOutTab.onclick = function(){
+    
+    //get the response
+    var request = new XMLHttpRequest();
+   
+    
+    //check if response status has changed
+    request.onreadystatechange = function(){
+         
+        //check it result has been loaded
+        if(request.readyState === XMLHttpRequest.DONE){
+            //check if it was a success
+            if (request.status === 200) {
+                
+                console.log("sign Out");
+	            var comment = document.getElementById("commentDisplay");
+	            if (comment !== null){
+	                comment.style.display ="none";
+	             }     
+	            alert ('Successfully logged Out');
+	            var signOut = document.getElementById("signOutTab");
+	            signOut.style.display = "none";
+	            var signUp = document.getElementById("signUpTab");
+	            signUp.style.display = "block";
+	            var menu = document.getElementById("menu");
+	            menu.style.display ="none";
             }
             else { 
                 alert(request.responseText);
@@ -152,6 +195,8 @@ signOutTab.onclick = function(){
     request.send(null);
  
 };
+
+
 
 /* signup tab - open and close*/
 var signUpTab = document.getElementById("signUpTab");
