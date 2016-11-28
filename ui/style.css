@@ -119,14 +119,7 @@ a {
 	display:none;
 }
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
- 
- 
- 
- 
-   
-}
+
 
 /* signup box and its elements*/
 #signUpBox {
@@ -395,4 +388,169 @@ a {
     position:absolute;
     top:40px;
     right:40px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+ 
+ 
+
+
+h2,h1{
+    color:white;
+    font-size:25px;
+}
+h3 {
+    font-size:25px;
+    text-decoration:none;
+}
+
+
+a {
+    color:black;
+    text-decoration:none;
+    font-size:25px;
+}
+
+.center {
+    text-align: center;
+}
+
+.text-big {
+    font-size: 300%;
+}
+
+
+.img-medium {
+    height: 50%;
+}
+
+
+.articleContainer {
+    position:relative;
+    background-color:rgb(247, 232, 187);
+    top:400px;
+    padding : 40px;
+    max-width:800px;
+    left: 50%;
+    transform: TRANSLATEX(-50%);
+}
+
+/*menu instead of tab*/
+#menuTab {
+	display:block;
+	position:relative;
+	top:10px;
+	float:right;
+	padding-right:20px;
+}
+
+#menu{
+	display:block;
+	position:relative;
+	float:right;
+ 	background-color:white;
+	width:100px;
+	top:10px;
+	padding:20px;
+	width:100px;
+	display:none;
+}
+
+
+#tabs {
+   	display:none;
+	
+}
+
+#homeTab {
+    	position:relative;
+   	right: 2%;
+   	font-weight:bold;
+    	font-size:15px;
+    
+}
+#profileTab {
+    	position:relative;
+ 	right:2%;
+	font-weight:bold;
+	font-size:15px;
+}
+
+.button_like_HL {
+    background-color:transparent;
+	border:none;
+	color:black;
+  	font-size:2vw;
+    text-decoration:none;
+	font-size:15px;
+}
+#signUpTab {
+    position:relative;
+ 	right: 2%;
+ 	font-family:"Times New Roman";
+ 	font-weight:bold;
+	display:block;
+
+}
+
+#signOutTab {
+    position:absolute;
+ 	right: 2%;
+ 	font-family:"Times New Roman";
+ 	font-weight:bold;
+	display:none;
+
+}
+
+/*main page image*/
+#mpPic {                            /*The picture on mainpage*/
+    position:absolute;
+    left:0;
+    top:0;
+    height:50%;
+    width:100%;
+}
+
+#MPheading {                        /*src file showing title*/
+	position:absolute;
+	opacity:0.7;
+	width:100%;
+	height:55%;
+	padding:0 40px;
+	bottom:0;
+ 	right:0;
+   
+}
+
+#mpArticles {
+    position:relative;
+    height:50%;
+    width:100%;
+    top:50%;
+    left:0;
+}
+
+#articleH {
+    position:absolute;
+    width:100%;
+    top:0;
+    text-align:center;
+    
+}
+
+#articleList {
+    position:relative;
+    left: 50%;
+    transform: TRANSLATEX(-50%);
+    top:10%;
+	list-style:none;
+
+}
+
+
+
+
+
 }
