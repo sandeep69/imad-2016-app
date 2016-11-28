@@ -142,9 +142,9 @@ signOutTab.onclick = function(){
 	            var menu = document.getElementById("menu");
 	            menu.style.display ="none";
 	            var MsignUp = document.getElementById("MsignUpTab");
-	            MsignUp.style.display ="none";
+	            MsignUp.style.display ="block";
 	            var MsignOut = document.getElementById("MsignOutTab");
-	            MsignOut.style.display ="block";
+	            MsignOut.style.display ="none";
 	       }
             else { 
                 alert(request.responseText);
@@ -184,6 +184,10 @@ MsignOutTab.onclick = function(){
 	            signUp.style.display = "block";
 	            var menu = document.getElementById("menu");
 	            menu.style.display ="none";
+	            var MsignUp = document.getElementById("MsignUpTab");
+	            MsignUp.style.display ="block";
+	            var MsignOut = document.getElementById("MsignOutTab");
+	            MsignOut.style.display ="none";
             }
             else { 
                 alert(request.responseText);
