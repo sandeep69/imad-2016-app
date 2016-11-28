@@ -80,6 +80,14 @@ a {
    
 }
 
+#menuTab {
+	display:none;
+	
+}
+#menu {
+	display:none;
+}
+
 /*tab functions */
 #tabs {
     margin: 0;
