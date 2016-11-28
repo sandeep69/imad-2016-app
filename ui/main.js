@@ -173,7 +173,7 @@ closeButton.onclick = function(){
     var x = document.getElementById("mp");
 	x.style.display = "none";
    	console.log(signUp);
-   	var MsignUp = document.getElementById("MsignUpBox");
-	MsignUp.style.display ="none";
+   	var menu = document.getElementById("menu");
+	menu.style.display ="none";
 };
 
