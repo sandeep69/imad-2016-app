@@ -56,6 +56,14 @@ var htmlTemplate= `<html>
         <div class="center" id="article-pic">
             <img src="${image}" class="img-medium"/>
         </div>
+        
+        <input type="submit" value="MENU" id="menuTab"/>
+        <div id = "menu">
+        	<p><a href='/' id="homeTab">HOME</a></p>
+        	<p><a href='/profile' id="profileTab">ABOUT ME</a></p>
+    	    <p><input type="submit" value="SIGN UP / SIGN IN" id="MsignUpTab"  class = "button_like_HL"/></p>
+    	    <p><input type="submit" value="SIGN OUT" id="MsignOutTab" class = "button_like_HL"/></p>
+        </div> 
        
         <div class="articleContainer">
             <div>
