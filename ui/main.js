@@ -216,6 +216,7 @@ signUpTab.onclick = function(){
 
 var MsignUpTab = document.getElementById("MsignUpTab");
 MsignUpTab.onclick = function(){
+    alert ("menu sign up");
     var x = document.getElementById("mp");
 	x.style.display = "block";
 	var signUp = document.getElementById("signUpBox");
