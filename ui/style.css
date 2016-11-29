@@ -448,7 +448,7 @@ a {
 /*menu instead of tab*/
 #menuTab {
 	display:block;
-	position:relative;
+	position:absolute;
 	top:10px;
 	float:right;
 	padding-right:20px;
