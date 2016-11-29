@@ -85,7 +85,9 @@ var htmlTemplate= `<html>
             </div>
             <ul id="commentList">
             </ul>
-            <div id ="mp"> </div>
+            
+        </div> 
+        <div id ="mp"> </div>
             <div id = "signUpBox">
                 <input type="submit" value="X" id="closeButton"/>
             
@@ -105,7 +107,6 @@ var htmlTemplate= `<html>
         	    <p>&emsp;&emsp;</P>
             
             </div>
-        </div>    
         </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script type="text/javascript" src="/ui/main.js">
