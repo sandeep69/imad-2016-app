@@ -454,9 +454,11 @@ a {
 	padding-right:20px;
 	width:70px;
 	padding: 10px;
-  border: solid 1px #fff;
-  box-shadow: inset 1px 1px 2px 0 #707070;
-  transition: box-shadow 0.3s;
+    border: solid 1px #fff;
+    box-shadow: inset 1px 1px 2px 0 #707070;
+    transition: box-shadow 0.3s;
+    background-color:whitesmoke;
+    font-weight:bold;
 }
 
 #menu{
@@ -469,7 +471,10 @@ a {
 	padding:0 20px;
 	width:100px;
 	display:none;
-	border: solid black 2px;
+    border: solid 1px #fff;
+    box-shadow: inset 1px 1px 2px 0 #707070;
+    transition: box-shadow 0.3s;
+    background-color:whitesmoke;
 }
 
 
