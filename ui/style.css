@@ -296,7 +296,9 @@ a {
 }
 
 
-
+#myHeader {
+    color:black;
+}
 
 
 
@@ -382,7 +384,7 @@ a {
 
 #comment {
     position:relative;
-    width: 700px;
+    width: 70%;
     left:-5%;
 } 
 #commentB {
