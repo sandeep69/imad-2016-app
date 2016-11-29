@@ -452,7 +452,7 @@ a {
 	top:10px;
 	float:right;
 	padding-right:20px;
-	right:20px;
+	right:40px;
 	width:70px;
 	padding: 10px;
     border: solid 1px #fff;
@@ -468,7 +468,7 @@ a {
 	position:absolute;
 	float:right;
 	right:40px;
-	top:58px;
+	top:50px;
 	padding:0 20px;
 	display:none;
     border: solid 1px #fff;
