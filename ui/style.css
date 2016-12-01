@@ -566,9 +566,20 @@ a {
     transform: TRANSLATEX(-50%);
     top:25%;
 	list-style:none;
+	
 
 }
-
+.list {
+    position:relative;
+	background-color:rgb(247, 232, 187);
+	box-shadow: 10px 10px 5px #504f4f;
+   	width:80%;
+	padding:10px 20px;
+    font-size:15px;
+	color:black;
+	left: 50%;
+    transform: TRANSLATEX(-50%);
+}
 
 
 
