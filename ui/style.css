@@ -258,32 +258,6 @@ a {
     padding :30px;
 }
 
-#side-text{
-    position: relative;
-    background-color:rgb(247, 232, 187);
-    width:300px;
-    padding:20px;
-    margin:0;
-    top:90px;
-    left:60%;
-    font-size:15px;
-    line-height: 30px;
-    
-}
-
-#bottom-text{
-    position: relative;
-    background-color:rgb(247, 232, 187);
-    padding:20px;
-    top:500px;
-    left: 50%;
-    transform: TRANSLATEX(-50%);
-    text-align: justify;
-    max-width:1000px;
-    line-height: 30px;
-    font-size:15px;
-    z-index:-1;
-}
 
 
 /*Article begins*/
