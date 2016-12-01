@@ -566,7 +566,7 @@ a {
     transform: TRANSLATEX(-50%);
     top:25%;
 	list-style:none;
-	padding :0;
+	padding :0 40px 0 0;
 	
 
 }
